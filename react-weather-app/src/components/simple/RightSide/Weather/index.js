@@ -1,4 +1,4 @@
 import Weather from './Weather.jsx';
-import './style.css';
+import './style.scss';
 
 export default Weather;

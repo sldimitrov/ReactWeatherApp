@@ -1,4 +1,4 @@
-export default function ({ children }) {
+export default function BarContainer({ children }) {
   return (
     <div className="sidebar-container">
       <section className="history-container">

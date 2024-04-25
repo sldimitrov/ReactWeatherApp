@@ -1,4 +1,4 @@
 import Logo from './Logo.jsx';
-import './style.css';
+import './style.scss';
 
 export default Logo;

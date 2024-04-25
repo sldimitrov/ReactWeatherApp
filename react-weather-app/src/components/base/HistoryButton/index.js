@@ -1,4 +1,4 @@
 import HistoryButton from './HistoryButton.jsx';
-import './style.css';
+import './style.scss';
 
 export default HistoryButton;

@@ -1,4 +1,4 @@
 import ExitButton from "./ExitButton";
-import './style.css';
+import './style.scss';
 
 export default ExitButton;

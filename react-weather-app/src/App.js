@@ -12,7 +12,7 @@ import BarContainer from './components/simple/SlideBar/BarContainer';
 import Heading from "./components/simple/SlideBar/Heading";
 import ExitButton from './components/base/ExitButton';
 import BlackBackground from './components/base/BlackBackground';
-import "./index.css";
+import "./index.scss";
 
 function App() {
   const [sideBarShowed, setSideBarShowed] = useState(false);

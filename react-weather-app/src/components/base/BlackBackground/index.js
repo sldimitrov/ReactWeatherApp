@@ -1,4 +1,4 @@
 import BlackBackground from "./BlackBackground";
-import './style.css';
+import './style.scss';
 
 export default BlackBackground

@@ -1,4 +1,4 @@
 import TopBar from './TopBar.jsx';
-import './style.css';
+import './style.scss';
 
 export default TopBar;

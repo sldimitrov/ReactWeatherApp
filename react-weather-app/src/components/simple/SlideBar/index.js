@@ -1,4 +1,4 @@
 import SlideBar from './SlideBar.jsx';
-import './style.css';
+import './style.scss';
 
 export default SlideBar

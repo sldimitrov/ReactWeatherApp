@@ -1,4 +1,4 @@
 import Parent from './Parent.jsx';
-import './style.css';
+import './style.scss';
 
 export default Parent;

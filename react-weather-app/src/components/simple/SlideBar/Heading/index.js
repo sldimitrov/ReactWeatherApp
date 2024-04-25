@@ -1,4 +1,4 @@
 import Heading from "./Heading";
-import './style.css';
+import './style.scss';
 
 export default Heading;

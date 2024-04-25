@@ -1,4 +1,4 @@
 import Forecast from './Forecast.jsx';
-import './style.css';
+import './style.scss';
 
 export default Forecast;

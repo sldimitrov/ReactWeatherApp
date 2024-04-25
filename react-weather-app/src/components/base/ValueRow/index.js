@@ -1,4 +1,4 @@
 import ValueRow from './ValueRow';
-import './style.css';
+import './style.scss';
 
 export default ValueRow

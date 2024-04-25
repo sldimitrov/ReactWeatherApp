@@ -1,4 +1,4 @@
 import Core from './Core.jsx';
-import './style.css';
+import './style.scss';
 
 export default Core;

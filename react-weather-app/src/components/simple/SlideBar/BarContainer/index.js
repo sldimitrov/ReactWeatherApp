@@ -1,4 +1,4 @@
 import BarContainer from "./BarContainer";
-import './style.css';
+import './style.scss';
 
 export default BarContainer;

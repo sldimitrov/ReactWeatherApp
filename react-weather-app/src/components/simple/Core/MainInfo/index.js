@@ -1,4 +1,4 @@
 import MainInfo from "./MainInfo";
-import './style.css';
+import './style.scss';
 
 export default MainInfo;
