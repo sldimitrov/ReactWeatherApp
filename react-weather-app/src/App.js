@@ -8,6 +8,9 @@ import MainInfo from "./components/simple/Core/MainInfo";
 import Parent from "./components/simple/Parent";
 import RightSide from "./components/simple/RightSide";
 import SlideBar from "./components/simple/SlideBar";
+import BarContainer from './components/simple/SlideBar/BarContainer';
+import Heading from "./components/simple/SlideBar/Heading";
+import ExitButton from './components/base/ExitButton';
 import BlackBackground from './components/base/BlackBackground';
 import "./index.css";
 
@@ -29,9 +32,18 @@ function App() {
       </Core>
       <RightSide />
       {sideBarShowed && (
-        <SlideBar>
+        <div>
+          <SlideBar>
+            <aside className="aside">
+              <BarContainer>
+                <Heading>
+                  <ExitButton onSelectExit={handleSelectHistory} />
+                </Heading>
+              </BarContainer>
+            </aside>
+          </SlideBar>
           <BlackBackground onClickBackground={handleSelectHistory}/>
-        </SlideBar>
+        </div>
       )}
     </Parent>
   );
