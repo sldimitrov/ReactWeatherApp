@@ -1,0 +1,33 @@
+@media only screen and (max-width: 639px) { 
+
+}
+
+
+@media only screen and (min-width: 640px)
+and (max-width: 1149px) {
+
+  #logo {
+    display: flex;
+    width: 80px;
+    height: 45px;
+    padding-left: 15px;
+}
+} 
+
+@media only screen and (min-width: 1150px) {
+  #logo-container {
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      width: 15vw;
+      height: 10vh;
+  }
+
+  #logo {
+      display: flex;
+      width: 96px;
+      height: 55px;
+      left: 75px;
+      top: 30px;
+  }
+}

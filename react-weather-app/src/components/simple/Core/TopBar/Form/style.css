@@ -1,0 +1,48 @@
+
+@media only screen and (max-width: 639px) { 
+  #search-text {
+    display: flex;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 9px;
+    opacity: 0.8;
+    margin-bottom: 4x;
+    border-radius: 40px;
+    border-width: 3px;
+    width: 20vw;
+}
+}
+
+
+@media only screen and (min-width: 640px)
+and (max-width: 1149px) {
+  #search-text {
+    display: flex;
+    flex-shrink: 1;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 0.8;
+    border-radius: 40px;
+    border-width: 3px;
+    width: 22.5vw;
+}
+} 
+
+
+@media only screen and (min-width: 1150px) {
+  #search-text {
+    display: flex;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 18px;
+    opacity: 0.8;
+    width: 185px;
+    border-radius: 40px;
+    border-width: 4px;
+    padding: 5px;
+  }
+}

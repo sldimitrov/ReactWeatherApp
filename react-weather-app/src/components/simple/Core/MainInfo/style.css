@@ -1,0 +1,144 @@
+
+
+
+@media only screen and (max-width: 639px) { 
+  .info-container {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+    top: 18.5vh;
+    left: 5vw;
+}
+
+  .current-temperature {
+      flex: 1;
+      font-size: 64px;
+      margin: 0px;
+  }
+
+  #additional-info {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 140px;
+      padding-left: 5px;
+      padding-top: 10px;
+  }
+
+  #city {
+      max-height: 195px;
+      font-size: 30px;
+
+  }
+
+  #date {
+      margin: 0px;
+      font-size: 9px;
+  }
+
+  #cloud-img {
+      height: 55px;
+      width: 55px;
+  }
+
+}
+
+
+@media only screen and (min-width: 640px)
+and (max-width: 1149px) {
+  .info-container {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+    top: 24vh;
+    left: 5vw;
+}
+
+  .current-temperature {
+      flex: 1;
+      font-size: 120px;
+      margin: 0px;
+  }
+
+  #additional-info {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 260px;
+      padding-left: 5px;
+      padding-top: 15px;
+  }
+
+  #city {
+      max-height: 195px;
+      font-size: 48px;
+
+  }
+
+  #date {
+      margin: 0px;
+      font-size: 16px;
+  }
+
+  #cloud-img {
+      height: 55px;
+      width: 55px;
+      padding-left: 10px;
+  }
+} 
+
+
+@media only screen and (min-width: 1150px) {
+
+  .info-container {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+    top: 68vh;
+    left: 7vw;
+  }
+  
+  .current-temperature {
+    flex: 1;
+    font-size: 140px;
+    margin: 0px;
+  }
+  
+  #additional-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 260px;
+    padding-left: 5px;
+    padding-top: 15px;
+  }
+  
+  #city {
+    max-height: 195px;
+    font-size: 55px;
+  
+  }
+  
+  #date {
+    margin: 0px;
+    font-size: 17px;
+  }
+  
+  #cloud-img {
+    height: 75px;
+    width: 75px;
+    padding-left: 10px;
+  }
+}
