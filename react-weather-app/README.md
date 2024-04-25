@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# React Weather App Documentation 🌤️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Description #
+This React Weather Application combine wide range of skills including working with React of course, HTML, CSS and Javascript with RESTapi. The design is responsible and it's suitable for many divices. The functionality of the website imitates the behaviour of all modern weather apps. This means you can check the forecast and other details in real-time for every city, town or country in the world. 
 
-## Available Scripts
+# Live demo of the functionality #
 
-In the project directory, you can run:
+https://github.com/sldimitrov/Web/assets/135168991/41c57568-3de4-469f-b46b-392aaf3ad847
 
-### `npm start`
+# Knowledge stack #
+ ### As I had already mentioned in the description I have used HTML, CSS and JS inside the React environment for the development of the website application. ⚙️
+The use of RESTapi that request data from remove served allowed response to the user desires with an actual information. 🔍
+--
+![Screenshot 2024-04-14 210046](https://github.com/sldimitrov/Web/assets/135168991/15fbc680-94fb-48f7-99bf-976210a32d62)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Screenshots #
+### Overview of the phone and tablet design 🎨
+<img src="https://github.com/sldimitrov/Web/assets/135168991/8f616d41-3f13-4cee-96e3-87a258682fb2" width="380" height="525"/>
+<img src="https://github.com/sldimitrov/Web/assets/135168991/d6b6d2e9-a095-4411-b551-91db94212ba5" width="190" height="380" />
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here
+# Postscript #
+```python 
+print('Thank you for the attention!' * n_times)
+```
