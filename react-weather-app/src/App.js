@@ -25,14 +25,16 @@ import "./index.scss";
 
 function App() {
   const [sideBarShowed, setSideBarShowed] = useState(false);
-
   const [selectedCity, setSelectedCity] = useState("");
 
+  const [mainInfo, setMainInfo] = useState(["16°", "Aytos", 'Tuesday, 22/11/2005', 'Clouds'])
+  console.log(mainInfo)
+
   // Define the default values for the elements within the mainInfo C.
-  var city = "London";
-  var currentTemperature = "16°";
-  var curDate = "06:09 - Monday, 9 Sep ‘23";
-  var forecastHeading = "Cloudy"
+  var city
+  var currentTemperature
+  var curDate
+  var forecastImg
   var weatherIcon
   var icon
 
@@ -65,23 +67,11 @@ function App() {
     var currentTemperature = Math.round(data.main.temp) + "°";
     const myUnixTimestamp = data.dt; 
     const curDate = new Date(myUnixTimestamp * 1000).toUTCString(); // convert timestamp to milliseconds
-    // Initialise a mapper in order to optimize the change of the icons
-    const mapper = new Map([
-      ["Clouds", "./components/images/clouds.png"],
-      ["Clear", "./components/images/clear.png"],
-      ["Rain", "./components/images/rain.png"],
-      ["Drizzle", "./components/images/drizzle.png"],
-      ["Mist", "./components/images/mist.png"],
-    ]);
-    // Get the forecast heading 
-    forecastHeading = data.weather[0].main;
-    // and the icon that is suitable for the current weather
-    weatherIcon = mapper.get(forecastHeading)
+    forecastImg = data.weather[0].main;
 
-    console.log(city)
-    console.log(currentTemperature)
-    console.log(curDate)
-    console.log(weatherIcon)
+
+    let dataArray = [currentTemperature, city, curDate, forecastImg]
+    setMainInfo(dataArray)
   }
 
   return (
@@ -95,7 +85,7 @@ function App() {
             <SearchButton onSelectButton={handleGetData} city={selectedCity}/>
           </div>
         </TopBar>
-        <MainInfo temperature={currentTemperature} city={city} date={curDate}/>
+        <MainInfo temperature={mainInfo[0]} city={mainInfo[1]} date={mainInfo[2]} forecastHeading={mainInfo[3]}/>
       </Core>
       <RightSide> 
         <Forecast>
