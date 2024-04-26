@@ -54,10 +54,8 @@ function App() {
           <Logo />
           <div className="search-bar-container blank-line">
             <Form selectedCity={selectedCity} onSelectCity={setSelectedCity}/>
-            <span>
             <HistoryButton onSelectButton={handleSelectHistory} />
             <SearchButton onSelectButton={handleGetData} city={selectedCity}/>
-            </span>
           </div>
         </TopBar>
         <MainInfo />

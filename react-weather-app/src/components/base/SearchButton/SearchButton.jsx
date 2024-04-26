@@ -2,7 +2,6 @@ import searchImg from "../../images/search.png";
 
 export default function SearchButton({ onSelectButton, city }) {
   function handleButtonClick() {
-    console.log("func active");
     onSelectButton(city);
   }
 
