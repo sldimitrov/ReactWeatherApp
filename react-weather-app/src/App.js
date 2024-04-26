@@ -27,6 +27,7 @@ function App() {
 
   const [mainInfo, setMainInfo] = useState(["16°", "London", '06:09 - Monday, 9 Sep ‘23', 'Clouds'])
   const [rowValues, setRowValues] = useState(["19°", "15°", "58%", "86%", "5km/h"])
+  const [forecastHeading, setForecastHeading] = useState('THUNDERSTORM WITH LIGHT DRIZZLE')
 
   function handleSelectHistory() {
     /* This function is reponsible for managing the state of the
@@ -46,6 +47,9 @@ function App() {
   function displayData(data) {
     /* This function is called just after the handleGetData. 
       It takes data from the RESTapi and extract the required one */
+
+    var currentHeading = data.weather[0].description;
+    setForecastHeading(currentHeading);
 
     // Extract the data for the mainInfo component
     var city = data.name;
@@ -82,7 +86,7 @@ function App() {
         <MainInfo temperature={mainInfo[0]} city={mainInfo[1]} date={mainInfo[2]} forecastHeading={mainInfo[3]}/>
       </Core>
       <RightSide> 
-        <Forecast>
+        <Forecast forecastHeading={forecastHeading}>
           <ValueRow parameter={"Temp max"} value={rowValues[0]} image={highTempImg} />
           <ValueRow parameter={"Temp min"} value={rowValues[1]} image={lowTempImg} />
           <ValueRow parameter={"Humadity"} value={rowValues[2]} image={humadityImg} />
@@ -90,7 +94,7 @@ function App() {
           <ValueRow parameter={"Wind"} value={rowValues[4]} image={windImg} />
         </Forecast>
         <Weather>
-          <InfoRow />
+          <InfoRow forecastHeading={mainInfo[3]} temperature={mainInfo[0]}/>
         </Weather>
       </RightSide>
       {sideBarShowed && (
