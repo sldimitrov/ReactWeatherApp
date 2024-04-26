@@ -28,6 +28,14 @@ function App() {
 
   const [selectedCity, setSelectedCity] = useState("");
 
+  // Define the default values for the elements within the mainInfo C.
+  var city = "London";
+  var currentTemperature = "16°";
+  var curDate = "06:09 - Monday, 9 Sep ‘23";
+  var forecastHeading = "Cloudy"
+  var weatherIcon
+  var icon
+
   function handleSelectHistory() {
     /* This function is reponsible for managing the state of the
       left-slide-bar | It shows and dissapears on base of the state |
@@ -44,7 +52,36 @@ function App() {
 
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     var data = await response.json();
+    displayData(data)
+  }
+
+  function displayData(data) {
+    /* This function is called just after the handleGetData. 
+      It takes data from the RESTapi and extract the required one */
     console.log(data);
+
+    // Extract the data for the mainInfo component
+    var city = data.name;
+    var currentTemperature = Math.round(data.main.temp) + "°";
+    const myUnixTimestamp = data.dt; 
+    const curDate = new Date(myUnixTimestamp * 1000).toUTCString(); // convert timestamp to milliseconds
+    // Initialise a mapper in order to optimize the change of the icons
+    const mapper = new Map([
+      ["Clouds", "./components/images/clouds.png"],
+      ["Clear", "./components/images/clear.png"],
+      ["Rain", "./components/images/rain.png"],
+      ["Drizzle", "./components/images/drizzle.png"],
+      ["Mist", "./components/images/mist.png"],
+    ]);
+    // Get the forecast heading 
+    forecastHeading = data.weather[0].main;
+    // and the icon that is suitable for the current weather
+    weatherIcon = mapper.get(forecastHeading)
+
+    console.log(city)
+    console.log(currentTemperature)
+    console.log(curDate)
+    console.log(weatherIcon)
   }
 
   return (
@@ -58,7 +95,7 @@ function App() {
             <SearchButton onSelectButton={handleGetData} city={selectedCity}/>
           </div>
         </TopBar>
-        <MainInfo />
+        <MainInfo temperature={currentTemperature} city={city} date={curDate}/>
       </Core>
       <RightSide> 
         <Forecast>
