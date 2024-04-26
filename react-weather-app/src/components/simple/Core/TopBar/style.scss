@@ -6,11 +6,10 @@
     position: absolute;
     display: flex;
     justify-content: space-between;
-    width: 80vw;
+    width: 88vw;
     height: 4vh;
     z-index: 1;
     padding-top: 15px;
-    padding-left: 15px;
   }
   
   .search-bar-container {
@@ -47,11 +46,12 @@ and (max-width: 1149px) {
   #top-bar-container {
     position: absolute;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 90.5vw;
-    height: 3vh;
+    height: 6vh;
     z-index: 1;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-left: 23px;
   }
   
@@ -60,8 +60,7 @@ and (max-width: 1149px) {
     align-items: end;
     justify-content: space-between;
     padding-bottom: 5px;
-    width: 33vw;
-    height: 3vh;
+    width: 38vw;
     padding-bottom: 5px;
   }
   

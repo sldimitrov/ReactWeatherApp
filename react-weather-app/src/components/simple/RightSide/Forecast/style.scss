@@ -8,6 +8,7 @@
     max-width: 80.5vw;
     height: 36vh;
     top: 170px;
+    padding-bottom: 20px;
   }
 
   #forecast-heading-container {
@@ -35,6 +36,7 @@ and (max-width: 1149px) {
     height: 35vh;
     top: 170px;
     border-bottom: 1px solid #ffff;
+    padding-bottom: 50px;
 }
 
   #forecast-heading-container {
@@ -55,6 +57,7 @@ and (max-width: 1149px) {
   .blank-line {
     display: flex;
     max-width: 37vw;
+    max-height: 20px;
     border-bottom: 1px solid #ffff;
 }
 } 

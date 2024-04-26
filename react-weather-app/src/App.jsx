@@ -1,4 +1,4 @@
-import {apiKey, apiUrl, city, currentTemperature, curDate, forecastImg, weatherIcon, icon} from './imports/variables.js';
+import {apiKey, apiUrl, city, currentTemperature, curDate, forecastImg, weatherIcon, icon, ROW_VALUES} from './imports/variables.js';
 import {highTempImg, lowTempImg, humadityImg, cloudyImg, windImg} from './imports/rowImages.js'
 import { useState } from 'react';
 import Parent from "./components/simple/Parent";
@@ -28,6 +28,7 @@ function App() {
   const [mainInfo, setMainInfo] = useState(["16°", "London", '06:09 - Monday, 9 Sep ‘23', 'Clouds'])
   const [rowValues, setRowValues] = useState(["19°", "15°", "58%", "86%", "5km/h"])
   const [forecastHeading, setForecastHeading] = useState('THUNDERSTORM WITH LIGHT DRIZZLE')
+  const [currentRowValues, setCurrentRowValues] = useState(ROW_VALUES)
 
   function handleSelectHistory() {
     /* This function is reponsible for managing the state of the
@@ -69,8 +70,18 @@ function App() {
     var windValue = data.wind.speed + " km/h";
     // Create an Array and set the new State of the ValueRows
     let valueRowsArray = [highTempValue, lowTempValue, humadityValue, cloudyValue, windValue]
-    setRowValues(valueRowsArray)
-  }
+    setRowValues(valueRowsArray) // // Set values
+    // Update the value of the ROW_VALUES with the new ones
+    const ROW_VALUES = [
+      {parameter: "Temp max", value: highTempValue, image: highTempImg},
+      {parameter: "Temp min", value: lowTempValue, image: lowTempImg},
+      {parameter: "Humidity", value: humadityValue, image: humadityImg},
+      {parameter: "Cloudy", value: cloudyValue, image: cloudyImg},
+      {parameter: "Wind", value: windValue, image: windImg},
+    ] 
+    setCurrentRowValues(ROW_VALUES)  // Set the new state
+
+    }
 
   return (
     <Parent>
@@ -87,11 +98,9 @@ function App() {
       </Core>
       <RightSide> 
         <Forecast forecastHeading={forecastHeading}>
-          <ValueRow parameter={"Temp max"} value={rowValues[0]} image={highTempImg} />
-          <ValueRow parameter={"Temp min"} value={rowValues[1]} image={lowTempImg} />
-          <ValueRow parameter={"Humadity"} value={rowValues[2]} image={humadityImg} />
-          <ValueRow parameter={"Cloudy"} value={rowValues[3]} image={cloudyImg} />
-          <ValueRow parameter={"Wind"} value={rowValues[4]} image={windImg} />
+          {currentRowValues.map((rowValues) => (
+            <ValueRow {...rowValues}/>
+          ))}
         </Forecast>
         <Weather>
           <InfoRow forecastHeading={mainInfo[3]} temperature={mainInfo[0]}/>

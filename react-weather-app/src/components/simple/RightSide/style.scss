@@ -22,7 +22,9 @@
 
 .weather-details-container {
     display: flex;
-    padding-top: 6vh;
+    align-items: center;
+    padding-top: 15px;
+    height: 8vh;
 }
 
 .forecast-container {
