@@ -3,6 +3,8 @@ import { useState } from 'react';
 import Parent from "./components/simple/Parent";
 import Core from "./components/simple/Core";
 import TopBar from "./components/simple/Core/TopBar";
+import Logo from "./components/simple/Core/TopBar/Logo";
+import Form from "./components/simple/Core/TopBar/Form";
 import HistoryButton from "./components/base/HistoryButton";
 import SearchButton from "./components/base/SearchButton";
 import MainInfo from "./components/simple/Core/MainInfo";
@@ -24,18 +26,39 @@ import "./index.scss";
 function App() {
   const [sideBarShowed, setSideBarShowed] = useState(false);
 
+  const [selectedCity, setSelectedCity] = useState("");
+
   function handleSelectHistory() {
+    /* This function is reponsible for managing the state of the
+      left-slide-bar | It shows and dissapears on base of the state |
+      We call it with the click of a button and its initial value is False. */
     setSideBarShowed((curSelection) => !sideBarShowed)
+  }
+
+  async function handleGetData(city) {
+    /* This function is triggered when the SeachButton is clicked |
+      It sends request to the RESTapi and get the desired data. */
+    const apiKey = "539d9b287b9b99eee7e12081aa43f3a8";
+    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
+
+
+    const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+    var data = await response.json();
+    console.log(data);
   }
 
   return (
     <Parent>
       <Core> 
         <TopBar>
-          <span>
+          <Logo />
+          <div className="search-bar-container blank-line">
+            <Form selectedCity={selectedCity} onSelectCity={setSelectedCity}/>
+            <span>
             <HistoryButton onSelectButton={handleSelectHistory} />
-            <SearchButton />
-          </span>
+            <SearchButton onSelectButton={handleGetData} city={selectedCity}/>
+            </span>
+          </div>
         </TopBar>
         <MainInfo />
       </Core>

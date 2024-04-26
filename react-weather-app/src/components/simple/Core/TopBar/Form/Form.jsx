@@ -1,4 +1,10 @@
-export default function Form() {
+import { useState } from "react";
+
+export default function Form({ selectedCity, onSelectCity }) {
+  function enterValue(value) {
+    onSelectCity(value);
+  }
+
   return (
     <>
       <input
@@ -7,6 +13,8 @@ export default function Form() {
         spellCheck="false"
         id="search-text"
         maxLength="16"
+        value={selectedCity}
+        onChange={(e) => enterValue(e.target.value)}
       />
     </>
   );
