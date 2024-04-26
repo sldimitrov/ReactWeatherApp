@@ -1,4 +1,5 @@
-import {apiKey, apiUrl, city, currentTemperature, curDate, forecastImg, weatherIcon, icon} from './var.js';
+import {apiKey, apiUrl, city, currentTemperature, curDate, forecastImg, weatherIcon, icon} from './imports/variables.js';
+import {highTempImg, lowTempImg, humadityImg, cloudyImg, windImg} from './imports/rowImages.js'
 import { useState } from 'react';
 import Parent from "./components/simple/Parent";
 import Core from "./components/simple/Core";
@@ -10,7 +11,6 @@ import SearchButton from "./components/base/SearchButton";
 import MainInfo from "./components/simple/Core/MainInfo";
 import RightSide from "./components/simple/RightSide";
 import Forecast from "./components/simple/RightSide/Forecast";
-import exampleImg from "./components/images/clouds.png";
 import ValueRow from "./components/base/ValueRow";
 import Weather from "./components/simple/RightSide/Weather";
 import InfoRow from "./components/base/InfoRow";
@@ -26,6 +26,7 @@ function App() {
   const [selectedCity, setSelectedCity] = useState("");
 
   const [mainInfo, setMainInfo] = useState(["16°", "London", '06:09 - Monday, 9 Sep ‘23', 'Clouds'])
+  const [rowValues, setRowValues] = useState(["19°", "15°", "58%", "86%", "5km/h"])
 
   function handleSelectHistory() {
     /* This function is reponsible for managing the state of the
@@ -52,11 +53,19 @@ function App() {
     const myUnixTimestamp = data.dt; 
     const curDate = new Date(myUnixTimestamp * 1000).toUTCString(); // convert timestamp to milliseconds
     var forecastImg = data.weather[0].main;
-    console.log(forecastImg)
+    // Create an Array and set the new State of the mainInfo component
+    let mainInfoArray = [currentTemperature, city, curDate, forecastImg]
+    setMainInfo(mainInfoArray)
 
-
-    let dataArray = [currentTemperature, city, curDate, forecastImg]
-    setMainInfo(dataArray)
+    // Extract the data for the ValueRows
+    var highTempValue = Math.round(data.main.temp_max) + "°c";
+    var lowTempValue = Math.round(data.main.temp_min) + "°c";
+    var humadityValue = data.main.humidity + "%";
+    var cloudyValue = data.clouds.all + "%";
+    var windValue = data.wind.speed + " km/h";
+    // Create an Array and set the new State of the ValueRows
+    let valueRowsArray = [highTempValue, lowTempValue, humadityValue, cloudyValue, windValue]
+    setRowValues(valueRowsArray)
   }
 
   return (
@@ -74,11 +83,11 @@ function App() {
       </Core>
       <RightSide> 
         <Forecast>
-          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
-          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
-          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
-          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
-          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
+          <ValueRow parameter={"Temp max"} value={rowValues[0]} image={highTempImg} />
+          <ValueRow parameter={"Temp min"} value={rowValues[1]} image={lowTempImg} />
+          <ValueRow parameter={"Humadity"} value={rowValues[2]} image={humadityImg} />
+          <ValueRow parameter={"Cloudy"} value={rowValues[3]} image={cloudyImg} />
+          <ValueRow parameter={"Wind"} value={rowValues[4]} image={windImg} />
         </Forecast>
         <Weather>
           <InfoRow />
