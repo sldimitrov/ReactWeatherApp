@@ -1,12 +1,19 @@
 import { useState } from 'react';
 
+import Parent from "./components/simple/Parent";
 import Core from "./components/simple/Core";
 import TopBar from "./components/simple/Core/TopBar";
 import HistoryButton from "./components/base/HistoryButton";
 import SearchButton from "./components/base/SearchButton";
 import MainInfo from "./components/simple/Core/MainInfo";
-import Parent from "./components/simple/Parent";
+
 import RightSide from "./components/simple/RightSide";
+import Forecast from "./components/simple/RightSide/Forecast";
+import exampleImg from "./components/images/clouds.png";
+import ValueRow from "./components/base/ValueRow";
+import Weather from "./components/simple/RightSide/Weather";
+import InfoRow from "./components/base/InfoRow";
+
 import SlideBar from "./components/simple/SlideBar";
 import BarContainer from './components/simple/SlideBar/BarContainer';
 import Heading from "./components/simple/SlideBar/Heading";
@@ -25,12 +32,25 @@ function App() {
     <Parent>
       <Core> 
         <TopBar>
-          <HistoryButton onSelectButton={handleSelectHistory} />
-          <SearchButton />
+          <span>
+            <HistoryButton onSelectButton={handleSelectHistory} />
+            <SearchButton />
+          </span>
         </TopBar>
         <MainInfo />
       </Core>
-      <RightSide />
+      <RightSide> 
+        <Forecast>
+          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
+          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
+          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
+          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
+          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
+        </Forecast>
+        <Weather>
+          <InfoRow />
+        </Weather>
+      </RightSide>
       {sideBarShowed && (
         <div>
           <SlideBar>

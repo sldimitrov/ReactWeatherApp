@@ -6,7 +6,7 @@ import ValueRow from "../../base/ValueRow";
 import Weather from "./Weather";
 import InfoRow from "../../base/InfoRow";
 
-export default function RightSide() {
+export default function RightSide({ children }) {
   return (
     <>
       <span className="weather-tab-container blur"></span>
@@ -14,17 +14,7 @@ export default function RightSide() {
         <section className="weather-details-container">
           <p id="weather-details">Weather Details...</p>
         </section>
-
-        <Forecast>
-          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
-          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
-          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
-          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
-          <ValueRow parameter={"Temp max"} value={25} image={exampleImg} />
-        </Forecast>
-        <Weather>
-          <InfoRow />
-        </Weather>
+        {children}
         <script src="index.js"></script>
       </main>
     </>
