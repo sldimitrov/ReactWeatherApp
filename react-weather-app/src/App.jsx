@@ -30,11 +30,9 @@ import Forecast from "./components/simple/RightSide/Forecast/index.js";
 import ValueRow from "./components/base/ValueRow/index.js";
 import Weather from "./components/simple/RightSide/Weather/index.js";
 import InfoRow from "./components/base/InfoRow/index.js";
-import SlideBar from "./components/simple/SlideBar/index.js";
-import BarContainer from "./components/simple/SlideBar/BarContainer/index.js";
-import Heading from "./components/simple/SlideBar/Heading/index.js";
-import ExitButton from "./components/base/ExitButton/index.js";
-import BlackBackground from "./components/base/BlackBackground/index.js";
+import LeftSide from "./components/simple/LeftSide/LeftSide.jsx";
+import Aside from "./components/simple/LeftSide/Aside/Aside.jsx";
+import Background from "./components/simple/LeftSide/Background/Background.jsx";
 import "./index.scss";
 
 function App() {
@@ -69,9 +67,11 @@ function App() {
   async function handleGetData(city) {
     /* This function is triggered when the SeachButton is clicked |
       It sends request to the RESTapi and get the desired data. */
-    const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
-    var data = await response.json();
-    displayData(data);
+    if (city != "") {
+      const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+      var data = await response.json();
+      displayData(data);
+    }
   }
 
   function displayData(data) {
@@ -146,36 +146,12 @@ function App() {
         </Weather>
       </RightSide>
       {sideBarShowed && (
-        <>
-          <aside class="aside">
-            <div class="sidebar-container active">
-              <div class="sidebar-nav">
-                <h2 id="sidebar-heading">Searching History</h2>
-                <button
-                  id="exit-button"
-                  onClick={() => {
-                    handleSelectHistory();
-                  }}
-                >
-                  <img
-                    src="images/button.png"
-                    alt="exit button"
-                    id="exit-img"
-                  />
-                </button>
-              </div>
-              <section class="history-container active">
-                <div class="browsed-city" id="example"></div>
-              </section>
-            </div>
-          </aside>
-          <div
-            class="sidebar-background-container active"
-            onClick={() => {
-              handleSelectHistory();
-            }}
-          ></div>
-        </>
+        <LeftSide>
+          <>
+            <Aside onSelectButton={handleSelectHistory} />
+            <Background onClickBackground={handleSelectHistory} />
+          </>
+        </LeftSide>
       )}
     </Parent>
   );
