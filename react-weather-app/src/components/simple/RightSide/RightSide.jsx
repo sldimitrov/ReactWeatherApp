@@ -1,10 +1,4 @@
-import exampleImg from "../../images/clouds.png";
 
-import React from "react";
-import Forecast from "./Forecast";
-import ValueRow from "../../base/ValueRow";
-import Weather from "./Weather";
-import InfoRow from "../../base/InfoRow";
 
 export default function RightSide({ children }) {
   return (

@@ -239,24 +239,6 @@ and (max-width: 1149px) {
     padding-left: 25px;
   }
 
-  .sidebar-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 10px;
-    padding-right: 5px;
-    border-bottom: 2px solid white;
-    width: 14vw;
-    
-}
-
-#sidebar-heading {
-    z-index: 2;
-    margin: 0px;
-    color: #fff;
-    font-size: 18px;
-}
-
   .sidebar-container.active {
       left: 0;
   }

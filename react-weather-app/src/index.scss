@@ -20,3 +20,139 @@ body {
 #exit-button:hover {
   background-color: rgb(160, 57, 57);
 }
+
+.sidebar-container {
+  z-index: 3;
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  width: 16vw;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  border-right: 3px solid white;
+  opacity: 1;
+  left: -18vw;
+  transition: left 0.3s ease;
+  padding-left: 25px;
+}
+
+.sidebar-container.active {
+  left: 0;
+}
+
+.sidebar-background-container {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(39, 33, 33);
+  opacity: 0.3;
+  left: -100%;
+  transition: left 0.35s ease;
+}
+
+.sidebar-background-container.active {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(27, 25, 25);
+  opacity: 0.8;
+  left: 0;
+}
+
+.sidebar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  border-bottom: 2px solid white;
+  width: 15vw;
+}
+
+#sidebar-heading {
+  z-index: 2;
+  margin: 0px;
+  color: #fff;
+  font-size: 22px;
+  width: 220px;
+}
+
+#exit-button {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  width: 36px;
+  height: 33px;
+  border-radius: 50px;
+  border: 1px solid rgb(255, 135, 135);
+  margin-bottom: 5px;
+}
+
+#exit-img {
+  width: 22px;
+  height: 23px;
+} 
+
+.history-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-top: 15px;
+  
+}
+
+.browsed-city {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 13vw;
+  height: 6vh;
+  border: 3px solid rgb(146, 180, 202);
+  border-radius: 25px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  color: black;
+  font: 30px;
+  font: 30px;
+}
+
+#example {
+  display: none;
+}
+
+.city-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 6vw;
+  height: 5.5vh;
+  margin: 0px;
+}
+
+
+.sidebar-background-container {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(39, 33, 33);
+  opacity: 0.3;
+  left: -100%;
+  transition: left 0.35s ease;
+}
+
+.sidebar-background-container.active {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(27, 25, 25);
+  opacity: 0.8;
+  left: 0;
+}
