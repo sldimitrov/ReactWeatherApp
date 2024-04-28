@@ -13,12 +13,4 @@ const ROW_VALUES = [
   {parameter: "Wind", value: defaultValues[4], image: windImg},
 ]; 
 
-var city;
-var currentTemperature;
-var curDate;
-var forecastImg;
-var weatherIcon;
-var icon;
-
-
-export {ROW_VALUES, apiKey, apiUrl, city, currentTemperature, curDate, forecastImg, weatherIcon, icon};
+export {ROW_VALUES, apiKey, apiUrl};

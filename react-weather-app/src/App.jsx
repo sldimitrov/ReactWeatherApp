@@ -1,14 +1,4 @@
-import {
-  apiKey,
-  apiUrl,
-  city,
-  currentTemperature,
-  curDate,
-  forecastImg,
-  weatherIcon,
-  icon,
-  ROW_VALUES,
-} from "./imports/variables.js";
+import { apiKey, apiUrl, ROW_VALUES } from "./imports/variables.js";
 import {
   highTempImg,
   lowTempImg,
@@ -36,9 +26,13 @@ import Background from "./components/simple/LeftSide/Background/Background.jsx";
 import "./index.scss";
 
 function App() {
+  // Initialise state const
+  const [currentRowValues, setCurrentRowValues] = useState(ROW_VALUES);
   const [sideBarShowed, setSideBarShowed] = useState(false);
   const [selectedCity, setSelectedCity] = useState("");
-
+  const [forecastHeading, setForecastHeading] = useState(
+    "THUNDERSTORM WITH LIGHT DRIZZLE"
+  );
   const [mainInfo, setMainInfo] = useState([
     "16°",
     "London",
@@ -52,21 +46,17 @@ function App() {
     "86%",
     "5km/h",
   ]);
-  const [forecastHeading, setForecastHeading] = useState(
-    "THUNDERSTORM WITH LIGHT DRIZZLE"
-  );
-  const [currentRowValues, setCurrentRowValues] = useState(ROW_VALUES);
 
   function handleSelectHistory() {
     /* This function is reponsible for managing the state of the
       left-slide-bar | It shows and dissapears on base of the state |
-      We call it with the click of a button and its initial value is False. */
+      We execute it when a button is clicked. */
     setSideBarShowed((curSelection) => !sideBarShowed);
   }
 
   async function handleGetData(city) {
-    /* This function is triggered when the SeachButton is clicked |
-      It sends request to the RESTapi and get the desired data. */
+    /* This function is triggered when the SearchButton is clicked |
+      It sends request to the RESTapi and gets the desired data. */
     if (city != "") {
       const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
       var data = await response.json();
@@ -75,8 +65,9 @@ function App() {
   }
 
   function displayData(data) {
-    /* This function is called just after the handleGetData. 
-      It takes data from the RESTapi and extract the required one */
+    /* This function by the one above (handleGetData). 
+      It takes the data from the response and updates the state =>
+      => (re-render of the screen) with actual data */
 
     var currentHeading = data.weather[0].description;
     setForecastHeading(currentHeading);
@@ -137,8 +128,8 @@ function App() {
       </Core>
       <RightSide>
         <Forecast forecastHeading={forecastHeading}>
-          {currentRowValues.map((rowValues) => (
-            <ValueRow {...rowValues} />
+          {currentRowValues.map((rowValues, index) => (
+            <ValueRow key={rowValues.parameter} {...rowValues} />
           ))}
         </Forecast>
         <Weather>
