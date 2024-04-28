@@ -68,16 +68,16 @@ function App() {
     /* This function by the one above (handleGetData). 
       It takes the data from the response and updates the state =>
       => (re-render of the screen) with actual data */
-
     var currentHeading = data.weather[0].description;
     setForecastHeading(currentHeading);
 
     // Extract the data for the mainInfo component
     var city = data.name;
     var currentTemperature = Math.round(data.main.temp) + "°";
-    const myUnixTimestamp = data.dt;
-    const curDate = new Date(myUnixTimestamp * 1000).toUTCString(); // convert timestamp to milliseconds
+    const myUnixTimestamp = data.dt; // convert timestamp to milliseconds below
+    const curDate = new Date(myUnixTimestamp * 1000).toUTCString();
     var forecastImg = data.weather[0].main;
+
     // Create an Array and set the new State of the mainInfo component
     let mainInfoArray = [currentTemperature, city, curDate, forecastImg];
     setMainInfo(mainInfoArray);
@@ -88,6 +88,7 @@ function App() {
     var humadityValue = data.main.humidity + "%";
     var cloudyValue = data.clouds.all + "%";
     var windValue = data.wind.speed + " km/h";
+
     // Create an Array and set the new State of the ValueRows
     let valueRowsArray = [
       highTempValue,
@@ -96,6 +97,7 @@ function App() {
       cloudyValue,
       windValue,
     ];
+
     setRowValues(valueRowsArray); // // Set values
     // Update the value of the ROW_VALUES with the new ones
     const ROW_VALUES = [
@@ -114,7 +116,11 @@ function App() {
         <TopBar>
           <Logo />
           <div className="search-bar-container blank-line">
-            <Form selectedCity={selectedCity} onSelectCity={setSelectedCity} />
+            <Form
+              selectedCity={selectedCity}
+              onSelectCity={setSelectedCity}
+              onSubmitForm={handleGetData}
+            />
             <HistoryButton onSelectButton={handleSelectHistory} />
             <SearchButton onSelectButton={handleGetData} city={selectedCity} />
           </div>
