@@ -4,48 +4,47 @@
     justify-content: space-between;
     width: 75vw;
     height: 10vh;
-}
+  }
 
-.left-part {
-    display: flex;
-    justify-content: center;
-}
+  .left-part {
+      display: flex;
+      justify-content: center;
+  }
 
-.weather-img {
-    height: 50px;
-    width: 50px;
-}
+  .weather-img {
+      height: 50px;
+      width: 50px;
+  }
 
-.hour-weather {
-    display: flex;
-    flex-wrap: wrap;
-    width: 18vw;
-    height: 9vh;
-    font-size: 18px;
-    opacity: 0.8;
-}
+  .hour-weather {
+      display: flex;
+      flex-wrap: wrap;
+      width: 18vw;
+      height: 9vh;
+      font-size: 18px;
+      opacity: 0.8;
+  }
 
-#current-time {
-    font-size: 20px;
-    margin: 0px;
-}
+  #current-time {
+      font-size: 20px;
+      margin: 0px;
+  }
 
-#weather-description {
-    margin: 0px;
-    width: 12vw;
-    font-size: 13px;
-    padding-bottom: 15px;
-}
+  #weather-description {
+      margin: 0px;
+      width: 12vw;
+      font-size: 13px;
+      padding-bottom: 15px;
+  }
 
-.forecast-temp {
-    margin: 0px;
-    font-size: 24px;
-    opacity: 0.7;
-    padding-top: 10px;
-    width: 12vw;
+  .forecast-temp {
+      margin: 0px;
+      font-size: 24px;
+      opacity: 0.7;
+      padding-top: 10px;
+      width: 12vw;
+  }
 }
-}
-
 
 @media only screen and (min-width: 640px)
 and (max-width: 1149px) {
@@ -96,50 +95,48 @@ and (max-width: 1149px) {
     opacity: 0.7;
     padding-top: 5px;
   }
-  
 } 
 
-
 @media only screen and (min-width: 1150px) {
-.line {
-        display: flex;
-        align-items:center;
-        justify-content: space-between;
-        width: 25vw;
-        height: 10vh;
-    }
+  .line {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 25vw;
+    height: 10vh;
+  }
 
-    .left-part {
-        display: flex;
-        justify-content: space-between;
-        width: 150px;
-    }
+  .left-part {
+      display: flex;
+      justify-content: space-between;
+      width: 150px;
+  }
 
-    .weather-img {
-        height: 48px;
-        width: 48px;
-    }
+  .weather-img {
+      height: 48px;
+      width: 48px;
+  }
 
-    .hour-weather {
-        display: flex;
-        flex-wrap: wrap;
-        width: 6vw;
-        max-width: 50px;
-        height: 6vh;
-        font-size: 18px;
-        opacity: 0.8;
-    }
+  .hour-weather {
+      display: flex;
+      flex-wrap: wrap;
+      width: 6vw;
+      max-width: 50px;
+      height: 6vh;
+      font-size: 18px;
+      opacity: 0.8;
+  }
 
-    #current-time {
-        margin: 0px;
-    }
+  #current-time {
+      margin: 0px;
+  }
 
-    #weather-description {
-        margin: 0px;
-    }
+  #weather-description {
+      margin: 0px;
+  }
 
-    .forecast-temp {
-        font-size: 24px;
-        opacity: 0.7;
-    }
+  .forecast-temp {
+      font-size: 24px;
+      opacity: 0.7;
+  }
 }
