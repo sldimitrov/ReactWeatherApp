@@ -49,6 +49,7 @@ export default function Core({ children }) {
     if (city != "") {
       const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
       var data = await response.json();
+      console.log(data);
       displayData(data);
     }
   }
