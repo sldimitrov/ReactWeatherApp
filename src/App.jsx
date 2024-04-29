@@ -1,20 +1,22 @@
-import { ROW_VALUES } from "./imports/variables.js";
 import { useState } from "react";
-import Parent from "./components/simple/Parent/index.js";
+import Frame from "./components/simple/Frame/index.js";
 import Core from "./components/simple/Core/index.js";
 import RightSide from "./components/simple/RightSide/index.js";
-
 import LeftSide from "./components/simple/LeftSide/LeftSide.jsx";
-import Aside from "./components/simple/LeftSide/Aside/Aside.jsx";
-import Background from "./components/simple/LeftSide/Background/Background.jsx";
 import "./index.scss";
 
 function App() {
+  const [sideBarShowed, setSideBarShowed] = useState(false);
+  function handleSelectHistory() {
+    /* This function is reponsible for managing the state of the left-slide-bar */
+    setSideBarShowed((curSelection) => !sideBarShowed);
+  }
   return (
-    <Parent>
-      <Core />
+    <Frame>
+      <Core onClickHistory={handleSelectHistory} />
       <RightSide />
-    </Parent>
+      {sideBarShowed && <LeftSide onClickBg={handleSelectHistory} />}
+    </Frame>
   );
 }
 
