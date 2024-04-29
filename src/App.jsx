@@ -7,14 +7,19 @@ import "./index.scss";
 
 function App() {
   const [sideBarShowed, setSideBarShowed] = useState(false);
+  const [actualData, setActualData] = useState("");
   function handleSelectHistory() {
     /* This function is reponsible for managing the state of the left-slide-bar */
     setSideBarShowed((curSelection) => !sideBarShowed);
   }
   return (
     <Frame>
-      <Core onClickHistory={handleSelectHistory} />
-      <RightSide />
+      <Core
+        onClickHistory={handleSelectHistory}
+        actualData={actualData}
+        setActualData={setActualData}
+      />
+      <RightSide actualData={actualData} setActualData={setActualData} />
       {sideBarShowed && <LeftSide onClickBg={handleSelectHistory} />}
     </Frame>
   );

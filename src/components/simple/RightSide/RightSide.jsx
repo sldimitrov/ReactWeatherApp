@@ -11,15 +11,16 @@ import {
   cloudyImg,
   windImg,
 } from "../../../constants/rowImages";
+import { ROW_VALUES } from "../../../constants/variables";
 
-export default function RightSide({ data }) {
-  const ROW_VALUES = [
-    { parameter: "Temp max", value: "19°", image: highTempImg },
-    { parameter: "Temp min", value: "15°", image: lowTempImg },
-    { parameter: "Humidity", value: "58%", image: humadityImg },
-    { parameter: "Cloudy", value: "86%", image: cloudyImg },
-    { parameter: "Wind", value: "5km/h", image: windImg },
-  ];
+export default function RightSide({ actualData, setActualData }) {
+  const [currentRowValues, setCurrentRowValues] = useState(ROW_VALUES);
+  const [forecastHeading, setForecastHeading] = useState(
+    "THUNDERSTORM WITH LIGHT DRIZZLE"
+  );
+
+  // var currentHeading = data.weather[0].description;
+  // setForecastHeading(currentHeading);
 
   return (
     <>

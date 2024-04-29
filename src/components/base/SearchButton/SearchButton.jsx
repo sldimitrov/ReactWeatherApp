@@ -1,4 +1,4 @@
-import searchImg from "../../images/search.png";
+import searchImg from "../../../images/search.png";
 
 export default function SearchButton({ onSelectButton, city }) {
   function handleButtonClick() {
