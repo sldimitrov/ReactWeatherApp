@@ -1,16 +1,6 @@
 import { useState } from "react";
 
-export default function Form({ selectedCity, onSelectCity, onSubmitForm }) {
-  function enterValue(value) {
-    onSelectCity(value);
-  }
-
-  function submitForm(pressedKey) {
-    if (pressedKey === "Enter") {
-      onSubmitForm(selectedCity);
-    }
-  }
-
+export default function Form() {
   return (
     <>
       <input
@@ -19,11 +9,6 @@ export default function Form({ selectedCity, onSelectCity, onSubmitForm }) {
         spellCheck="false"
         id="search-text"
         maxLength="16"
-        value={selectedCity}
-        onChange={(e) => enterValue(e.target.value)}
-        onKeyUp={(e) => {
-          submitForm(e.key);
-        }}
       />
     </>
   );

@@ -19,7 +19,8 @@ let weatherIcon;
 
 export default function InfoRow({ forecastHeading, temperature }) {
   // and the icon that is suitable for the current weather
-  weatherIcon = mapper.get(forecastHeading);
+
+  weatherIcon = cloudImg; //mapper.get(forecastHeading); !!!
 
   return (
     <div className="line" id="line1">
