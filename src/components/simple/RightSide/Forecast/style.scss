@@ -26,7 +26,6 @@
   }
 }
 
-
 @media only screen and (min-width: 640px)
 and (max-width: 1149px) {
   .forecast-container {
@@ -37,7 +36,7 @@ and (max-width: 1149px) {
     top: 170px;
     border-bottom: 1px solid #ffff;
     padding-bottom: 50px;
-}
+  }
 
   #forecast-heading-container {
     display: flex;
@@ -59,9 +58,8 @@ and (max-width: 1149px) {
     max-width: 37vw;
     max-height: 20px;
     border-bottom: 1px solid #ffff;
-}
+  }
 } 
-
 
 @media only screen and (min-width: 1150px) {
   .forecast-container {

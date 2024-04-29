@@ -10,7 +10,7 @@ import {
   humadityImg,
   cloudyImg,
   windImg,
-} from "../../../imports/rowImages";
+} from "../../../constants/rowImages";
 
 export default function RightSide({ data }) {
   const ROW_VALUES = [

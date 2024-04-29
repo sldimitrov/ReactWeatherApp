@@ -1,15 +1,15 @@
-import Aside from "./Aside";
-import Background from "./Background";
+import HistoryTab from "./HistoryTab";
+import BackgroundLayout from "./BackgroundLayout";
 
 export default function LeftSide({ onClickBg }) {
   return (
     <>
-      <Aside
+      <HistoryTab
         onSelectButton={() => {
           onClickBg();
         }}
       />
-      <Background
+      <BackgroundLayout
         onClickBackground={() => {
           onClickBg();
         }}

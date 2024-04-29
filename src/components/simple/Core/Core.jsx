@@ -1,22 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import { apiKey, apiUrl, ROW_VALUES } from "../../../imports/variables";
+import { apiKey, apiUrl, ROW_VALUES } from "../../../constants/variables";
 import TopBar from "./TopBar";
 import Logo from "./TopBar/Logo";
 import Form from "./TopBar/Form";
-import HistoryButton from "../../base/HistoryButton";
-import SearchButton from "../../base/SearchButton";
 import MainInfo from "./MainInfo";
-import {
-  highTempImg,
-  lowTempImg,
-  humadityImg,
-  cloudyImg,
-  windImg,
-} from "../../../imports/rowImages";
 
 export default function Core({ onClickHistory }) {
-  const [selectedCity, setSelectedCity] = useState("");
   const [currentRowValues, setCurrentRowValues] = useState(ROW_VALUES);
   const [forecastHeading, setForecastHeading] = useState(
     "THUNDERSTORM WITH LIGHT DRIZZLE"
@@ -56,51 +46,13 @@ export default function Core({ onClickHistory }) {
     // Create an Array and set the new State of the mainInfo component
     let mainInfoArray = [currentTemperature, city, curDate, forecastImg];
     setMainInfo(mainInfoArray);
-
-    // // Extract the data for the ValueRows
-    // var highTempValue = Math.round(data.main.temp_max) + "°c";
-    // var lowTempValue = Math.round(data.main.temp_min) + "°c";
-    // var humadityValue = data.main.humidity + "%";
-    // var cloudyValue = data.clouds.all + "%";
-    // var windValue = data.wind.speed + " km/h";
-    // // Create an Array and set the new State of the ValueRows
-    // let valueRowsArray = [
-    //   highTempValue,
-    //   lowTempValue,
-    //   humadityValue,
-    //   cloudyValue,
-    //   windValue,
-    // ];
-    // setRowValues(valueRowsArray); // // Set values
-    // // Update the value of the ROW_VALUES with the new ones
-    // const ROW_VALUES = [
-    //   { parameter: "Temp max", value: highTempValue, image: highTempImg },
-    //   { parameter: "Temp min", value: lowTempValue, image: lowTempImg },
-    //   { parameter: "Humidity", value: humadityValue, image: humadityImg },
-    //   { parameter: "Cloudy", value: cloudyValue, image: cloudyImg },
-    //   { parameter: "Wind", value: windValue, image: windImg },
-    // ];
-    // console.log(ROW_VALUES);
-    // setCurrentRowValues(ROW_VALUES); // Set the new state
   }
 
   return (
     <>
       <TopBar>
         <Logo />
-        <div className="search-bar-container blank-line">
-          <Form
-            selectedCity={selectedCity}
-            onSelectCity={setSelectedCity}
-            onSubmitForm={handleGetData}
-          />
-          <HistoryButton
-            onSelectButton={() => {
-              onClickHistory();
-            }}
-          />
-          <SearchButton onSelectButton={handleGetData} city={selectedCity} />
-        </div>
+        <Form onClickHistory={onClickHistory} />
       </TopBar>
       <MainInfo
         temperature={mainInfo[0]}

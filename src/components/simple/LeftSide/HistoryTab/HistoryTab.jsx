@@ -1,6 +1,6 @@
 import exitButton from "../../../images/exit_button.png";
 
-export default function Aside({ onSelectButton }) {
+export default function HistoryTab({ onSelectButton }) {
   return (
     <aside className="aside">
       <div className="sidebar-container active">
