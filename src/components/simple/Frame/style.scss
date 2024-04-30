@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 639px) { 
+  body {
+      margin: 0;
+      padding: 0;
+      background-image: url("../../../images/background_phone.png");
+      width: 300px;
+      height: 600px;
+      color: white;
+  }
+}
+
+@media only screen and (min-width: 640px)
+and (max-width: 1149px) { 
+  body {
+      background-image: url("../../../images/background_tablet.jpg");
+      width: 768;
+      height: auto;
+      color: white;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .info-container, .weather-tab-container {
+      color: #FFFFFF;
+  }
+
+  body {
+    background-image: url("../../../images/background_laptop.jpg");
+    width: 1150px;
+    height: 100%;
+  }
+}
+
