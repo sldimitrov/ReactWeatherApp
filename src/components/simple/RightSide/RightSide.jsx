@@ -1,24 +1,16 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 import Forecast from "./Forecast";
 import Weather from "./Weather";
 import ValueRow from "../../base/ValueRow";
 import InfoRow from "../../base/InfoRow";
-import {
-  highTempImg,
-  lowTempImg,
-  humadityImg,
-  cloudyImg,
-  windImg,
-} from "../../../constants/rowImages";
 import { ROW_VALUES } from "../../../constants/variables";
 
 export default function RightSide({ actualData, setActualData }) {
-  const [currentRowValues, setCurrentRowValues] = useState(ROW_VALUES);
-  const [forecastHeading, setForecastHeading] = useState(
-    "THUNDERSTORM WITH LIGHT DRIZZLE"
-  );
-
+  // const [currentRowValues, setCurrentRowValues] = useState(ROW_VALUES);
+  // const [forecastHeading, setForecastHeading] = useState(
+  //   "THUNDERSTORM WITH LIGHT DRIZZLE"
+  // );
   // var currentHeading = data.weather[0].description;
   // setForecastHeading(currentHeading);
 

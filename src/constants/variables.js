@@ -1,5 +1,4 @@
-import {highTempImg, lowTempImg, humadityImg, cloudyImg, windImg} from './rowImages.js';
-
+import { highTempImg, lowTempImg, humadityImg, cloudyImg, windImg } from './rowImages';
 // Declare the the the Key and the URL for the RESTapi
 const apiKey = "539d9b287b9b99eee7e12081aa43f3a8";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
