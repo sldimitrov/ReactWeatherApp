@@ -1,13 +1,13 @@
 import axios from "axios";
 import { apiUrl, apiKey } from "../constants/variables";
 
-export default function axiosRequest(city) {
+export default async function getWeatherData(city, setActualData) {
   const request = apiUrl + city + `&appid=${apiKey}`;
 
   axios
     .get(request)
     .then((response) => {
-      console.log(response.data);
+      setActualData(response.data);
     })
     .catch((error) => {
       console.log(error);

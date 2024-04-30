@@ -1,11 +1,10 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TopBar from "./TopBar";
 import Logo from "./TopBar/Logo";
 import Form from "./TopBar/Form";
 import MainInfo from "./MainInfo";
-import getData from "../../../services/getData.js";
-import axiosRequest from "../../../services/axiosRequest.jsx";
+import getWeatherData from "../../../services/getWeatherData.jsx";
 
 export default function Core({ onClickHistory, actualData, setActualData }) {
   const [mainInfo, setMainInfo] = useState([
@@ -15,14 +14,29 @@ export default function Core({ onClickHistory, actualData, setActualData }) {
     "Clouds",
   ]);
 
+  useEffect(() => {
+    let city = actualData.name;
+
+    if (city) {
+      let currentTemperature = Math.round(actualData.main.temp) + "°";
+      let forecastHeading = actualData.weather[0].main;
+      const myUnixTimestamp = actualData.dt; // start with a Unix timestamp
+      const currDate = new Date(myUnixTimestamp * 1000).toUTCString(); // convert timestamp to milliseconds
+
+      let dataArray = [currentTemperature, city, currDate, forecastHeading];
+      setMainInfo(dataArray);
+    }
+  }, [actualData]);
+
   return (
     <>
       <TopBar>
         <Logo />
         <Form
           onClickHistory={onClickHistory}
-          onClickSearch={axiosRequest}
-          onSubmitForm={axiosRequest}
+          onClickSearch={getWeatherData}
+          onSubmitForm={getWeatherData}
+          setActualData={setActualData}
         />
       </TopBar>
       <MainInfo

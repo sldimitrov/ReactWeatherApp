@@ -3,7 +3,12 @@ import InputField from "./InputField";
 import HistoryButton from "../../../../base/HistoryButton";
 import SearchButton from "../../../../base/SearchButton";
 
-export default function Form({ onClickHistory, onClickSearch, onSubmitForm }) {
+export default function Form({
+  onClickHistory,
+  onClickSearch,
+  onSubmitForm,
+  setActualData,
+}) {
   const [selectedCity, setSelectedCity] = useState("");
 
   return (
@@ -12,6 +17,7 @@ export default function Form({ onClickHistory, onClickSearch, onSubmitForm }) {
         selectedCity={selectedCity}
         onSelectCity={setSelectedCity}
         onSubmitForm={onSubmitForm}
+        setActualData={setActualData}
       />
       <HistoryButton
         onSelectButton={() => {
@@ -20,7 +26,7 @@ export default function Form({ onClickHistory, onClickSearch, onSubmitForm }) {
       />
       <SearchButton
         onSelectButton={() => {
-          onClickSearch(selectedCity);
+          onClickSearch(selectedCity, setActualData);
         }}
         city={selectedCity}
       />

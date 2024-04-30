@@ -4,6 +4,7 @@ export default function InputField({
   selectedCity,
   onSelectCity,
   onSubmitForm,
+  setActualData,
 }) {
   function enterValue(value) {
     onSelectCity(value);
@@ -11,7 +12,7 @@ export default function InputField({
 
   function submitForm(pressedKey) {
     if (pressedKey === "Enter") {
-      onSubmitForm(selectedCity);
+      onSubmitForm(selectedCity, setActualData);
     }
   }
 
