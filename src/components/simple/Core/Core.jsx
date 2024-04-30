@@ -5,6 +5,7 @@ import Logo from "./TopBar/Logo";
 import Form from "./TopBar/Form";
 import MainInfo from "./MainInfo";
 import getData from "../../../services/getData.js";
+import axiosRequest from "../../../services/axiosRequest.jsx";
 
 export default function Core({ onClickHistory, actualData, setActualData }) {
   const [mainInfo, setMainInfo] = useState([
@@ -20,8 +21,8 @@ export default function Core({ onClickHistory, actualData, setActualData }) {
         <Logo />
         <Form
           onClickHistory={onClickHistory}
-          onClickSearch={getData}
-          onSubmitForm={getData}
+          onClickSearch={axiosRequest}
+          onSubmitForm={axiosRequest}
         />
       </TopBar>
       <MainInfo

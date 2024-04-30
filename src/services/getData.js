@@ -1,6 +1,6 @@
 import { apiKey, apiUrl } from "../constants/variables";
 
-export default async function getData(city, setMainInfo) {
+export default async function getData(city) {
   /* This function is triggered when the SearchButton is clicked |
   It sends request to the RESTapi and returns the data. */
   if (city !== "") {
