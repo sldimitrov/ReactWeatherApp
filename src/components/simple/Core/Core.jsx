@@ -15,9 +15,8 @@ export default function Core({ onClickHistory, actualData, setActualData }) {
   ]);
 
   useEffect(() => {
-    let city = actualData.name;
-
-    if (city) {
+    if (actualData) {
+      let city = actualData.name;
       let currentTemperature = Math.round(actualData.main.temp) + "°";
       let forecastHeading = actualData.weather[0].main;
       const myUnixTimestamp = actualData.dt; // start with a Unix timestamp

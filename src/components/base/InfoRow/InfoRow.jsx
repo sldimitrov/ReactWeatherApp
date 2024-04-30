@@ -18,9 +18,8 @@ const mapper = new Map([
 let weatherIcon;
 
 export default function InfoRow({ forecastHeading, temperature }) {
-  // and the icon that is suitable for the current weather
-
-  weatherIcon = cloudImg; //mapper.get(forecastHeading); !!!
+  // Get the icon that is suitable for the current weather
+  weatherIcon = mapper.get(forecastHeading);
 
   return (
     <div className="line" id="line1">
