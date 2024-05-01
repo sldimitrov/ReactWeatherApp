@@ -1,12 +1,16 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import TopBar from "./TopBar";
 import Logo from "./TopBar/Logo";
 import Form from "./TopBar/Form";
 import MainInfo from "./MainInfo";
 import getWeatherData from "../../../services/getWeatherData.jsx";
+import { ThemeContext } from "../../../App.jsx";
 
-export default function Core({ onClickHistory, actualData, setActualData }) {
+export default function Core({ onClickHistory, actualData }) {
+  // Extract the state with the use of Context
+  const setActualData = useContext(ThemeContext);
+  // Set the initial Info values with useState
   const [mainInfo, setMainInfo] = useState([
     "16°",
     "London",
@@ -15,6 +19,8 @@ export default function Core({ onClickHistory, actualData, setActualData }) {
   ]);
 
   useEffect(() => {
+    /* This anonymous function extract the data
+     from the current state and updates UI */
     if (actualData) {
       let city = actualData.name;
       let currentTemperature = Math.round(actualData.main.temp) + "°";
@@ -23,6 +29,7 @@ export default function Core({ onClickHistory, actualData, setActualData }) {
       const currDate = new Date(myUnixTimestamp * 1000).toUTCString(); // convert timestamp to milliseconds
 
       let dataArray = [currentTemperature, city, currDate, forecastHeading];
+      // Update the mainInfo state
       setMainInfo(dataArray);
     }
   }, [actualData]);
@@ -35,7 +42,6 @@ export default function Core({ onClickHistory, actualData, setActualData }) {
           onClickHistory={onClickHistory}
           onClickSearch={getWeatherData}
           onSubmitForm={getWeatherData}
-          setActualData={setActualData}
         />
       </TopBar>
       <MainInfo

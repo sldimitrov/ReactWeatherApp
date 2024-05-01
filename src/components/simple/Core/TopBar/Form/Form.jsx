@@ -1,14 +1,11 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import InputField from "./InputField";
 import HistoryButton from "../../../../base/HistoryButton";
 import SearchButton from "../../../../base/SearchButton";
+import { ThemeContext } from "../../../../../App";
 
-export default function Form({
-  onClickHistory,
-  onClickSearch,
-  onSubmitForm,
-  setActualData,
-}) {
+export default function Form({ onClickHistory, onClickSearch, onSubmitForm }) {
+  const setActualData = useContext(ThemeContext);
   const [selectedCity, setSelectedCity] = useState("");
 
   return (

@@ -1,14 +1,18 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 
 import Forecast from "./Forecast";
 import Weather from "./Weather";
 import ValueRow from "../../base/ValueRow";
 import InfoRow from "../../base/InfoRow";
 import { ROW_VALUES } from "../../../constants/variables";
+import { ThemeContext } from "../../../App";
 
-export default function RightSide({ actualData, setActualData }) {
+export default function RightSide({ actualData }) {
+  // Extract state with the use of Context
+  const setActualData = useContext(ThemeContext);
+  // Set the initial state
   const [currentRowValues, setCurrentRowValues] = useState(ROW_VALUES);
-  const [currentTemperature, setCurrentTemperature] = useState("15°");
+  const [currentHourTemp, setCurrentHourTemp] = useState(["15°", "09:00"]);
   const [forecastHeading, setForecastHeading] = useState([
     "THUNDERSTORM WITH LIGHT DRIZZLE",
     "Snow",
@@ -20,13 +24,17 @@ export default function RightSide({ actualData, setActualData }) {
       let currentHeading = actualData.weather[0].description;
       let weatherDetails = actualData.weather[0].main;
       setForecastHeading([currentHeading, weatherDetails]);
-      let currentTemperature = Math.round(actualData.main.temp) + "°";
-      setCurrentTemperature(currentTemperature);
       currentRowValues[0].value = Math.round(actualData.main.temp_max) + "°c";
       currentRowValues[1].value = Math.round(actualData.main.temp_min) + "°c";
       currentRowValues[2].value = actualData.main.humidity + "%";
       currentRowValues[3].value = actualData.clouds.all + "%";
       currentRowValues[4].value = actualData.wind.speed + " km/h";
+
+      let currentTemperature = Math.round(actualData.main.temp) + "°";
+      let currTime = new Date(actualData.timezone)
+        .toLocaleTimeString()
+        .slice(0, 4);
+      setCurrentHourTemp([currentTemperature, currTime]);
     }
   }, [actualData]);
 
@@ -45,7 +53,8 @@ export default function RightSide({ actualData, setActualData }) {
         <Weather>
           <InfoRow
             forecastHeading={forecastHeading[1]}
-            temperature={currentTemperature}
+            temperature={currentHourTemp[0]}
+            currentTime={currentHourTemp[1]}
           />
         </Weather>
         <script src="index.js"></script>

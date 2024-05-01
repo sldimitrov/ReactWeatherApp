@@ -17,7 +17,7 @@ const mapper = new Map([
 
 let weatherIcon;
 
-export default function InfoRow({ forecastHeading, temperature }) {
+export default function InfoRow({ forecastHeading, temperature, currentTime }) {
   // Get the icon that is suitable for the current weather
   weatherIcon = mapper.get(forecastHeading);
 
@@ -26,7 +26,7 @@ export default function InfoRow({ forecastHeading, temperature }) {
       <img src={weatherIcon} alt="snowflake" className="weather-img" />
       <div className="hour-weather">
         <p id="current-time">
-          09:00
+          {currentTime}
           <br />
         </p>
         <br />
