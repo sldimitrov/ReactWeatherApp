@@ -1,16 +1,15 @@
 import React from "react";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
+import { useTheme } from "../../../themeContext.js";
 import TopBar from "./TopBar";
 import Logo from "./TopBar/Logo";
 import Form from "./TopBar/Form";
 import MainInfo from "./MainInfo";
 import getWeatherData from "../../../services/getWeatherData.jsx";
-import { ThemeContext } from "../../../App.jsx";
 
-export default function Core({ onClickHistory, actualData }) {
-  // Extract the state with the use of Context
-  const setActualData = useContext(ThemeContext);
-  // Set the initial Info values with useState
+export default function Core({ onClickHistory }) {
+  // Use custom hooks to receive the useContext state
+  const actualData = useTheme();
   const [mainInfo, setMainInfo] = useState([
     "16°",
     "London",

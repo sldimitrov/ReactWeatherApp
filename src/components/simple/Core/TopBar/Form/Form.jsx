@@ -1,11 +1,11 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import InputField from "./InputField";
+import { useThemeUpdate } from "../../../../../themeContext";
 import HistoryButton from "../../../../base/HistoryButton";
 import SearchButton from "../../../../base/SearchButton";
-import { ThemeContext } from "../../../../../App";
 
 export default function Form({ onClickHistory, onClickSearch, onSubmitForm }) {
-  const setActualData = useContext(ThemeContext);
+  const setActualData = useThemeUpdate();
   const [selectedCity, setSelectedCity] = useState("");
 
   return (
@@ -14,7 +14,6 @@ export default function Form({ onClickHistory, onClickSearch, onSubmitForm }) {
         selectedCity={selectedCity}
         onSelectCity={setSelectedCity}
         onSubmitForm={onSubmitForm}
-        setActualData={setActualData}
       />
       <HistoryButton
         onSelectButton={() => {

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import historyImg from "../../../images/history.png";
 
 export default function HistoryButton({ onSelectButton }) {

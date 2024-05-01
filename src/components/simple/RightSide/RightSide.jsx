@@ -1,15 +1,15 @@
-import { useState, useEffect, useContext } from "react";
-
+import { useState, useEffect } from "react";
+import { useTheme, useThemeUpdate } from "../../../themeContext";
 import Forecast from "./Forecast";
 import Weather from "./Weather";
 import ValueRow from "../../base/ValueRow";
 import InfoRow from "../../base/InfoRow";
 import { ROW_VALUES } from "../../../constants/variables";
-import { ThemeContext } from "../../../App";
 
-export default function RightSide({ actualData }) {
-  // Extract state with the use of Context
-  const setActualData = useContext(ThemeContext);
+export default function RightSide() {
+  // Use custom hooks to receive the useContext state
+  const actualData = useTheme();
+  const setActualData = useThemeUpdate();
   // Set the initial state
   const [currentRowValues, setCurrentRowValues] = useState(ROW_VALUES);
   const [currentHourTemp, setCurrentHourTemp] = useState(["15°", "09:00"]);

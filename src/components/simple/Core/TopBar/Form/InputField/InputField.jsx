@@ -1,12 +1,12 @@
-import { useContext } from "react";
-import { ThemeContext } from "../../../../../../App";
+import { useTheme, useThemeUpdate } from "../../../../../../themeContext";
 
 export default function InputField({
   selectedCity,
   onSelectCity,
   onSubmitForm,
 }) {
-  const setActualData = useContext(ThemeContext);
+  const actualData = useTheme();
+  const setActualData = useThemeUpdate();
 
   function enterValue(value) {
     onSelectCity(value);
