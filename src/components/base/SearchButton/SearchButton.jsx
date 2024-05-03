@@ -1,8 +1,11 @@
 import searchImg from "../../../images/search.png";
+import { useSelectedCity } from "../../../themeContext";
 
-export default function SearchButton({ onSelectButton, city }) {
+export default function SearchButton({ onSelectButton }) {
+  const selectedCity = useSelectedCity();
+
   function handleButtonClick() {
-    onSelectButton(city);
+    onSelectButton(selectedCity);
   }
 
   return (

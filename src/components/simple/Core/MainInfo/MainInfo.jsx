@@ -4,6 +4,7 @@ import rainImg from "../../../../images/rain.png";
 import drizzleImg from "../../../../images/drizzle.png";
 import mistImg from "../../../../images/mist.png";
 import squallImg from "../../../../images/squall.png";
+import hazeImg from "../../../../images/haze.png";
 
 // Initialise a mapper in order to optimize the change of the icons
 const mapper = new Map([
@@ -13,6 +14,7 @@ const mapper = new Map([
   ["Drizzle", drizzleImg],
   ["Mist", mistImg],
   ["Squall", squallImg],
+  ["Haze", hazeImg],
 ]);
 
 let weatherIcon;

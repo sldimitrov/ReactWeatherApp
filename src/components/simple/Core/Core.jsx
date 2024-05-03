@@ -7,9 +7,10 @@ import Form from "./TopBar/Form";
 import MainInfo from "./MainInfo";
 import getWeatherData from "../../../services/getWeatherData.jsx";
 
-export default function Core({ onClickHistory }) {
+export default function Core({ handleSelectHistory }) {
   // Use custom hooks to receive the useContext state
   const actualData = useTheme();
+
   const [mainInfo, setMainInfo] = useState([
     "16°",
     "London",
@@ -38,7 +39,7 @@ export default function Core({ onClickHistory }) {
       <TopBar>
         <Logo />
         <Form
-          onClickHistory={onClickHistory}
+          onClickBg={handleSelectHistory}
           onClickSearch={getWeatherData}
           onSubmitForm={getWeatherData}
         />

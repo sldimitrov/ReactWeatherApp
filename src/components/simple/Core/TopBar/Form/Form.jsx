@@ -1,30 +1,24 @@
-import { useState } from "react";
 import InputField from "./InputField";
-import { useThemeUpdate } from "../../../../../themeContext";
+import { useThemeUpdate, useSelectedCity } from "../../../../../themeContext";
 import HistoryButton from "../../../../base/HistoryButton";
 import SearchButton from "../../../../base/SearchButton";
 
-export default function Form({ onClickHistory, onClickSearch, onSubmitForm }) {
+export default function Form({ onClickBg, onClickSearch, onSubmitForm }) {
   const setActualData = useThemeUpdate();
-  const [selectedCity, setSelectedCity] = useState("");
+  const selectedCity = useSelectedCity();
 
   return (
     <div className="search-bar-container blank-line">
-      <InputField
-        selectedCity={selectedCity}
-        onSelectCity={setSelectedCity}
-        onSubmitForm={onSubmitForm}
-      />
+      <InputField onSubmitForm={onSubmitForm} />
       <HistoryButton
         onSelectButton={() => {
-          onClickHistory();
+          onClickBg();
         }}
       />
       <SearchButton
         onSelectButton={() => {
           onClickSearch(selectedCity, setActualData);
         }}
-        city={selectedCity}
       />
     </div>
   );

@@ -1,15 +1,16 @@
 import { useTheme, useThemeUpdate } from "../../../../../../themeContext";
+import {
+  useSelectedCity,
+  useSetSelectedCity,
+} from "../../../../../../themeContext";
 
-export default function InputField({
-  selectedCity,
-  onSelectCity,
-  onSubmitForm,
-}) {
-  const actualData = useTheme();
+export default function InputField({ onSubmitForm }) {
+  const selectedCity = useSelectedCity();
+  const setSelectedCity = useSetSelectedCity();
   const setActualData = useThemeUpdate();
 
   function enterValue(value) {
-    onSelectCity(value);
+    setSelectedCity(value);
   }
 
   function submitForm(pressedKey) {
