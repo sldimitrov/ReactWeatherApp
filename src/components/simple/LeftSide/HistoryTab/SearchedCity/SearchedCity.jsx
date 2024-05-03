@@ -6,8 +6,9 @@ export default function SearchedCity({ city, onClickButton }) {
 
   return (
     <div className="browsed-city" id="example">
-      <p>{city}</p>
+      <p id="town">{city}</p>
       <button
+        id="restore-button"
         onClick={() => {
           getWeatherData(city, setActualData);
           onClickButton();

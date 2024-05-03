@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect, useCallback } from 'react';
+import React, { useContext, useState, useMemo } from 'react';
 import getWeatherData from './services/getWeatherData';
 
 // Create context constants
@@ -8,8 +8,7 @@ const SelectedCity = React.createContext();
 const SetSelectedCity = React.createContext();
 const SearchHistory = React.createContext();
 const SetSearchHistory = React.createContext();
-const HistoryTabVisibility = React.createContext();
-const SetHistoryTabVisibility = React.createContext();
+
 
 // Initialise Custom Hooks to derive state when imported
 export function useTheme() { 
@@ -43,7 +42,7 @@ export function ThemeProvider({children}) {
   const [selectedCity, setSelectedCity] = useState("");
   const [searchHistory, setSearchHistory] = useState([]);
 
-  useEffect(() => {
+  useMemo(() => {
     getWeatherData("London", setActualData);
   }, []);
 
