@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import Frame from "./components/simple/Frame/index.js";
 import Core from "./components/simple/Core/index.js";
 import RightSide from "./components/simple/RightSide/index.js";
@@ -10,10 +10,11 @@ export const ThemeContext = React.createContext();
 
 function App() {
   const [historyTabVisibility, setHistoryTabVisibility] = useState(false);
-  function handleSelectHistory() {
+  const handleSelectHistory = useCallback(() => {
     // Show and hide the HistoryTab
     setHistoryTabVisibility((curSelection) => !historyTabVisibility);
-  }
+  }, [historyTabVisibility]);
+
   return (
     <ThemeProvider>
       <Frame>
