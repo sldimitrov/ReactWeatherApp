@@ -1,4 +1,4 @@
-import { useTheme, useThemeUpdate } from "../../../../../../themeContext";
+import { useThemeUpdate } from "../../../../../../themeContext";
 import {
   useSelectedCity,
   useSetSelectedCity,

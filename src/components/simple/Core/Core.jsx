@@ -1,13 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useTheme } from "../../../themeContext.js";
+import getWeatherData from "../../../services/getWeatherData.jsx";
 import TopBar from "./TopBar";
 import Logo from "./TopBar/Logo";
 import Form from "./TopBar/Form";
 import MainInfo from "./MainInfo";
-import getWeatherData from "../../../services/getWeatherData.jsx";
 
-export default function Core({ handleSelectHistory }) {
+export default function Core() {
   // Use custom hooks to receive the useContext state
   const actualData = useTheme();
 
@@ -38,11 +38,7 @@ export default function Core({ handleSelectHistory }) {
     <>
       <TopBar>
         <Logo />
-        <Form
-          onClickBg={handleSelectHistory}
-          onClickSearch={getWeatherData}
-          onSubmitForm={getWeatherData}
-        />
+        <Form onClickSearch={getWeatherData} onSubmitForm={getWeatherData} />
       </TopBar>
       <MainInfo
         temperature={mainInfo[0]}

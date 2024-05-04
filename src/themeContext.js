@@ -8,6 +8,8 @@ const SelectedCity = React.createContext();
 const SetSelectedCity = React.createContext();
 const SearchHistory = React.createContext();
 const SetSearchHistory = React.createContext();
+const HistoryTab = React.createContext();
+const SetHistoryTab = React.createContext();
 
 
 // Initialise Custom Hooks to derive state when imported
@@ -35,12 +37,21 @@ export function useSetSearchHistory() {
   return useContext(SetSearchHistory)
 }
 
+export function useHistoryTab() {
+  return useContext(HistoryTab)
+}
+
+export function useSetHistoryTab() {
+  return useContext(SetHistoryTab)
+}
+
 export function ThemeProvider({children}) {
   /* This function packs all the required state and combines it into a useful ThemeProvider.
    That allow components to use state very comfortable by just importing it. */
   const [actualData, setActualData] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
   const [searchHistory, setSearchHistory] = useState([]);
+  const [historyTabVisibility, setHistoryTabVisibility] = useState(false);
 
   useMemo(() => {
     getWeatherData("London", setActualData);
@@ -53,7 +64,11 @@ export function ThemeProvider({children}) {
           <SetSelectedCity.Provider value={setSelectedCity}>
             <SearchHistory.Provider value={searchHistory}>
               <SetSearchHistory.Provider value={setSearchHistory}>
+                <HistoryTab.Provider value={historyTabVisibility}>
+                  <SetHistoryTab.Provider value={setHistoryTabVisibility}>
                     {children} 
+                  </SetHistoryTab.Provider>
+                </HistoryTab.Provider>
               </SetSearchHistory.Provider>
             </SearchHistory.Provider>
           </SetSelectedCity.Provider>

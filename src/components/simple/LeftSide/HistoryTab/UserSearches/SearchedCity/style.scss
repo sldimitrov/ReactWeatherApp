@@ -1,5 +1,6 @@
 #town {
   color: white;
+  margin: 0px;
 }
 
 #restore-button {
@@ -7,11 +8,6 @@
   background-color: black;
   color: white;
   border-style: solid;
-}
-
-#restore-button:hover {
-  background-color: rgb(84, 73, 248);
-  color: rgb(14, 14, 14);
 }
 
 .browsed-city {
@@ -40,6 +36,17 @@
     flex-wrap: wrap;
     margin-right: 2px;
   }
+
+  #empty-descr-container {
+    width: 90%;
+    height: 25%;
+  }
+
+  
+  #empty-folder-img{
+    width: 65px;
+    height: 85px;
+  }
 }
 
 @media only screen and (min-width: 640px) {
@@ -54,12 +61,22 @@
   .restore-button {
     border-width: 3px;
   }  
+
+  #empty-descr-container {
+    width: 90%;
+    height: 30%;
+  }
+
+  #empty-folder-img{
+    width: 60px;
+    height: 80px;
+  }
 } 
 
 @media only screen and (min-width: 1150px) {
   .browsed-city {
     width: 13vw;
-    height: 6vh;
+    height: 5vh;
     margin-bottom: 10px;
     font: 30px;
     font: 30px;
@@ -67,5 +84,19 @@
 
   .restore-button {
     border-width: 2px;
+  }
+
+  #empty-descr-container {
+    width: 60%;
+    height: 35%;
+  }
+
+  #empty-descr {
+    font-size: 20px;
+  }
+
+  #empty-folder-img{
+    width: 80px;
+    height: 100px;
   }
 }
