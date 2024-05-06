@@ -1,19 +1,11 @@
 import HistoryTab from "./HistoryTab";
 import BackgroundLayout from "./BackgroundLayout";
 
-export default function LeftSide({ onClickBg }) {
+export default function LeftSide() {
   return (
     <>
-      <HistoryTab
-        onSelectButton={() => {
-          onClickBg();
-        }}
-      />
-      <BackgroundLayout
-        onClickBackground={() => {
-          onClickBg();
-        }}
-      />
+      <HistoryTab />
+      <BackgroundLayout />
     </>
   );
 }

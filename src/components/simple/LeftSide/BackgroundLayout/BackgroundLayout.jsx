@@ -1,9 +1,23 @@
-export default function BackgroundLayout({ onClickBackground }) {
+import { useHistoryTab, useSetHistoryTab } from "../../../../themeContext";
+
+export default function BackgroundLayout() {
+  const historyTab = useHistoryTab();
+  const setHistoryTab = useSetHistoryTab();
+
+  function handleClickHistory() {
+    setHistoryTab(!historyTab);
+    console.log(historyTab);
+  }
+
   return (
     <div
-      className="sidebar-background-container active"
+      className={
+        historyTab
+          ? "sidebar-background-container active"
+          : "sidebar-background-container"
+      }
       onClick={() => {
-        onClickBackground();
+        handleClickHistory();
       }}
     ></div>
   );

@@ -1,27 +1,23 @@
-import { useState } from "react";
+import React from "react";
 import Frame from "./components/simple/Frame/index.js";
 import Core from "./components/simple/Core/index.js";
 import RightSide from "./components/simple/RightSide/index.js";
 import LeftSide from "./components/simple/LeftSide/LeftSide.jsx";
+import { ThemeProvider } from "./themeContext.js";
 import "./index.scss";
 
+// Initialise ThemeContext for the child components
+export const ThemeContext = React.createContext();
+
 function App() {
-  const [sideBarShowed, setSideBarShowed] = useState(false);
-  const [actualData, setActualData] = useState("");
-  function handleSelectHistory() {
-    /* This function is reponsible for managing the state of the left-slide-bar */
-    setSideBarShowed((curSelection) => !sideBarShowed);
-  }
   return (
-    <Frame>
-      <Core
-        onClickHistory={handleSelectHistory}
-        actualData={actualData}
-        setActualData={setActualData}
-      />
-      <RightSide actualData={actualData} setActualData={setActualData} />
-      {sideBarShowed && <LeftSide onClickBg={handleSelectHistory} />}
-    </Frame>
+    <ThemeProvider>
+      <Frame>
+        <Core />
+        <RightSide />
+        <LeftSide />
+      </Frame>
+    </ThemeProvider>
   );
 }
 

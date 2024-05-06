@@ -1,0 +1,102 @@
+#town {
+  color: white;
+  margin: 0px;
+}
+
+#restore-button {
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  border-style: solid;
+}
+
+.browsed-city {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50px;
+  background-image: linear-gradient(rgb(47, 142, 47), rgb(10, 173, 244));
+  border: 2px solid rgb(255, 255, 255); // rgb(44, 244, 204)
+}
+
+@media only screen and (max-width: 639px) { 
+  .browsed-city {
+    width: 30vw;
+    height: 6vh;
+    margin-bottom: 10px;
+    font: 30px;
+    font: 30px;
+  }
+
+  .restore-button {
+    display: flex;
+    border-width: 2px;
+    border-style: solid;
+    max-width: 55px;
+    flex-wrap: wrap;
+    margin-right: 2px;
+  }
+
+  #empty-descr-container {
+    width: 90%;
+    height: 25%;
+  }
+
+  
+  #empty-folder-img{
+    width: 65px;
+    height: 85px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .browsed-city {
+    width: 22vw;
+    height: 5vh;
+    margin-bottom: 10px;
+    font: 30px;
+    font: 30px;   
+  }
+
+  .restore-button {
+    border-width: 3px;
+  }  
+
+  #empty-descr-container {
+    width: 90%;
+    height: 30%;
+  }
+
+  #empty-folder-img{
+    width: 60px;
+    height: 80px;
+  }
+} 
+
+@media only screen and (min-width: 1150px) {
+  .browsed-city {
+    width: 13vw;
+    height: 5vh;
+    margin-bottom: 10px;
+    font: 30px;
+    font: 30px;
+  }
+
+  .restore-button {
+    border-width: 2px;
+  }
+
+  #empty-descr-container {
+    width: 60%;
+    height: 35%;
+  }
+
+  #empty-descr {
+    font-size: 20px;
+  }
+
+  #empty-folder-img{
+    width: 80px;
+    height: 100px;
+  }
+}

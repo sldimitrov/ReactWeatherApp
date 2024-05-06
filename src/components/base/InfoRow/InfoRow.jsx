@@ -4,6 +4,7 @@ import rainImg from "../../../images/rain.png";
 import drizzleImg from "../../../images/drizzle.png";
 import mistImg from "../../../images/mist.png";
 import squallImg from "../../../images/squall.png";
+import hazeImg from "../../../images/haze.png";
 
 // Initialise a mapper in order to optimize the change of the icons
 const mapper = new Map([
@@ -13,21 +14,21 @@ const mapper = new Map([
   ["Drizzle", drizzleImg],
   ["Mist", mistImg],
   ["Squall", squallImg],
+  ["Haze", hazeImg],
 ]);
 
 let weatherIcon;
 
-export default function InfoRow({ forecastHeading, temperature }) {
-  // and the icon that is suitable for the current weather
-
-  weatherIcon = cloudImg; //mapper.get(forecastHeading); !!!
+export default function InfoRow({ forecastHeading, temperature, currentTime }) {
+  // Get the icon that is suitable for the current weather
+  weatherIcon = mapper.get(forecastHeading);
 
   return (
     <div className="line" id="line1">
       <img src={weatherIcon} alt="snowflake" className="weather-img" />
       <div className="hour-weather">
         <p id="current-time">
-          09:00
+          {currentTime}
           <br />
         </p>
         <br />

@@ -19,37 +19,28 @@
       left: 0;
   }
 
-  .sidebar-nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      margin-top: 10px;
-      border-bottom: 2px solid white;
-      width: 30vw;
-  }
-
-  #sidebar-heading {
+  .sidebar-background-container {
       z-index: 2;
-      margin: 0px;
-      color: #fff;
-      font-size: 10px;
-  }
-
-  #exit-button {
+      position: absolute;
       display: flex;
-      align-items: center;
-      margin: 0px;
-      width: 33px;
-      height: 30px;
-      border-radius: 50px;
-      border: 1px solid rgb(255, 135, 135);
-      margin-bottom: 5px;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(39, 33, 33);
+      opacity: 0.3;
+      left: -100%;
+      top: 0;
+      transition: left 0.35s ease;
   }
 
-  #exit-img {
-      width: 19px;
-      height: 20px;
-  } 
+  .sidebar-background-container.active {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(27, 25, 25);
+      opacity: 0.8;
+      left: 0;
+  }
 
   #history-img {
       width: 10px;
@@ -62,33 +53,6 @@
       border-color: #132059;
   }
 
-  .history-container {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      margin-top: 15px;
-      
-  }
-
-  .browsed-city {
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      width: 30vw;
-      height: 6vh;
-      border: 3px solid rgb(146, 180, 202);
-      border-radius: 25px;
-      background-color: #fff;
-      margin-bottom: 10px;
-      color: black;
-      font: 30px;
-      font: 30px;
-  }
-
-  #example {
-      display: none;
-  }
-
   .city-name {
       display: flex;
       justify-content: center;
@@ -99,18 +63,10 @@
       height: 5.5vh;
       margin: 0px;
   }
-
-  .restore-button {
-      display: flex;
-      border-radius: 25px;
-      border: 2px solid salmon;
-      max-width: 55px;
-      flex-wrap: wrap;
-      margin-right: 2px;
-  }
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 640px)
+and (max-width: 1149px) { 
   .sidebar-container {
     z-index: 3;
     position: absolute;
@@ -131,37 +87,28 @@
       left: 0;
   }
 
-  .sidebar-nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      margin-top: 10px;
-      border-bottom: 2px solid white;
-      width: 21vw;
-  }
-
-  #sidebar-heading {
+  .sidebar-background-container {
       z-index: 2;
-      margin: 0px;
-      color: #fff;
-      font-size: 18px;
-  }
-
-  #exit-button {
+      position: absolute;
       display: flex;
-      align-items: center;
-      margin: 0px;
-      width: 36px;
-      height: 33px;
-      border-radius: 50px;
-      border: 1px solid rgb(255, 135, 135);
-      margin-bottom: 5px;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(39, 33, 33);
+      opacity: 0.3;
+      left: -100%;
+      top: 0;
+      transition: left 0.35s ease;
   }
 
-  #exit-img {
-      width: 22px;
-      height: 23px;
-  } 
+  .sidebar-background-container.active {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(27, 25, 25);
+      opacity: 0.8;
+      left: 0;
+  }
 
   #history-img {
       width: 20px;
@@ -174,33 +121,6 @@
       border-color: #132059;
   }
 
-  .history-container {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      margin-top: 15px;
-      
-  }
-
-  .browsed-city {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      width: 22vw;
-      height: 5vh;
-      border: 3px solid rgb(146, 180, 202);
-      border-radius: 25px;
-      background-color: #fff;
-      margin-bottom: 10px;
-      color: black;
-      font: 30px;
-      font: 30px;
-  }
-
-  #example {
-      display: none;
-  }
-
   .city-name {
       display: flex;
       justify-content: center;
@@ -209,12 +129,8 @@
       height: 5.5vh;
       margin: 0px;
   }
-
-  .restore-button {
-      border-radius: 25px;
-      border: 3px solid salmon;
-  }
-} 
+}
+  
 
 @media only screen and (min-width: 1150px) {
   .sidebar-container {
@@ -236,67 +152,28 @@
       left: 0;
   }
 
-  .sidebar-nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      margin-top: 10px;
-      border-bottom: 2px solid white;
-      width: 15vw;
-  }
-
-  #sidebar-heading {
+  .sidebar-background-container {
       z-index: 2;
-      margin: 0px;
-      color: #fff;
-      font-size: 22px;
-      width: 220px;
-  }
-
-  #exit-button {
+      position: absolute;
       display: flex;
-      align-items: center;
-      margin: 0px;
-      width: 36px;
-      height: 33px;
-      border-radius: 50px;
-      border: 1px solid rgb(255, 135, 135);
-      margin-bottom: 5px;
-  }
-
-  #exit-img {
-      width: 22px;
-      height: 23px;
-  } 
-
-  .history-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      width: 100%;
       height: 100%;
-      margin-top: 15px;
-      
+      background-color: rgb(39, 33, 33);
+      opacity: 0.3;
+      left: -100%;
+      transition: left 0.35s ease;
   }
 
-  .browsed-city {
+  .sidebar-background-container.active {
+      position: absolute;
       display: flex;
-      align-items: center;
-      justify-content: space-around;
-      width: 13vw;
-      height: 6vh;
-      border: 3px solid rgb(146, 180, 202);
-      border-radius: 25px;
-      background-color: #fff;
-      margin-bottom: 10px;
-      color: black;
-      font: 30px;
-      font: 30px;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(27, 25, 25);
+      opacity: 0.8;
+      left: 0;
   }
-
-  #example {
-      display: none;
-  }
-
+  
   .city-name {
       display: flex;
       flex-direction: column;

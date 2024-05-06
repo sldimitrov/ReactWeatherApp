@@ -1,16 +1,20 @@
-import { useState } from "react";
 import historyImg from "../../../images/history.png";
+import { useHistoryTab, useSetHistoryTab } from "../../../themeContext";
 
-export default function HistoryButton({ onSelectButton }) {
+export default function HistoryButton() {
+  const historyTab = useHistoryTab();
+  const setHistoryTab = useSetHistoryTab();
+
   function handleClickHistory() {
-    onSelectButton();
+    setHistoryTab(!historyTab);
+    console.log(historyTab);
   }
-
   return (
     <button id="history-button">
       <img
         src={historyImg}
         id="h-image"
+        alt="history button"
         onClick={() => {
           handleClickHistory();
         }}
