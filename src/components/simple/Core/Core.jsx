@@ -38,7 +38,7 @@ export default function Core() {
     <>
       <TopBar>
         <Logo />
-        <Form onClickSearch={getWeatherData} onSubmitForm={getWeatherData} />
+        <Form onSearchCity={getWeatherData} />
       </TopBar>
       <MainInfo
         temperature={mainInfo[0]}

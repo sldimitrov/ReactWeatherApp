@@ -1,12 +1,14 @@
-import { useState } from "react";
 import { useThemeUpdate } from "../../../../../../themeContext";
 import {
   useSelectedCity,
   useSetSelectedCity,
 } from "../../../../../../themeContext";
 
-export default function InputField({ onSubmitForm }) {
-  const [currInputText, setCurrInputText] = useState("");
+export default function InputField({
+  onSearchCity,
+  currInputText,
+  setCurrInputText,
+}) {
   const setSelectedCity = useSetSelectedCity();
   const setActualData = useThemeUpdate();
 
@@ -16,7 +18,7 @@ export default function InputField({ onSubmitForm }) {
 
   function submitForm(pressedKey) {
     if (pressedKey === "Enter") {
-      onSubmitForm(currInputText, setActualData);
+      onSearchCity(currInputText, setActualData);
       setSelectedCity(currInputText);
     }
   }
