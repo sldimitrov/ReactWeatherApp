@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useTheme, useThemeUpdate } from "../../../themeContext";
+import { useTheme } from "../../../themeContext";
 import Forecast from "./Forecast";
 import Weather from "./Weather";
 import ValueRow from "../../base/ValueRow";

@@ -6,7 +6,6 @@ export default function HistoryButton() {
 
   function handleClickHistory() {
     setHistoryTab(!historyTab);
-    console.log(historyTab);
   }
   return (
     <button id="history-button">

@@ -3,7 +3,6 @@ import { useSelectedCity } from "../../../themeContext";
 
 export default function SearchButton({ onSelectButton }) {
   const selectedCity = useSelectedCity();
-
   function handleButtonClick() {
     onSelectButton(selectedCity);
   }
