@@ -10,6 +10,10 @@
   border-style: solid;
 }
 
+#restore-text {
+  margin: 0px;
+}
+
 .browsed-city {
   display: flex;
   align-items: center;
@@ -24,17 +28,20 @@
     width: 30vw;
     height: 6vh;
     margin-bottom: 10px;
-    font: 30px;
-    font: 30px;
+    font-size: 11px;
   }
 
   .restore-button {
     display: flex;
-    border-width: 2px;
-    border-style: solid;
-    max-width: 55px;
     flex-wrap: wrap;
+    border-style: solid;
+    border-width: 2px;
     margin-right: 2px;
+  }
+
+  #restore-text {
+    font-size: 11px;
+    margin: 0px;
   }
 
   #empty-descr-container {
@@ -42,7 +49,6 @@
     height: 25%;
   }
 
-  
   #empty-folder-img{
     width: 65px;
     height: 85px;
@@ -51,8 +57,8 @@
 
 @media only screen and (min-width: 640px) {
   .browsed-city {
-    width: 22vw;
-    height: 5vh;
+    width: 26vw;
+    height: 4.5vh;
     margin-bottom: 10px;
     font: 30px;
     font: 30px;   

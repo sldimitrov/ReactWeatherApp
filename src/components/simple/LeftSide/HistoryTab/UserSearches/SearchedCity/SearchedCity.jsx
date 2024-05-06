@@ -3,7 +3,6 @@ import { useThemeUpdate } from "../../../../../../themeContext";
 
 export default function SearchedCity({ city, onClickButton }) {
   const setActualData = useThemeUpdate();
-
   return (
     <div className="browsed-city" id="example">
       <p id="town">{city}</p>
@@ -14,7 +13,7 @@ export default function SearchedCity({ city, onClickButton }) {
           onClickButton();
         }}
       >
-        Restore
+        <p id="restore-text">Restore</p>
       </button>
     </div>
   );

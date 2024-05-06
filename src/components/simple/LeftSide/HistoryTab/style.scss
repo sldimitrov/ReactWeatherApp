@@ -58,7 +58,7 @@
       justify-content: center;
       align-items: center;
       font-weight: bold;
-      font-size: 11px;
+      font-size: 10px;
       width: 13vw;
       height: 5.5vh;
       margin: 0px;
@@ -72,15 +72,15 @@ and (max-width: 1149px) {
     position: absolute;
     flex-direction: column;
     display: flex;
-    width: 25vw;
+    width: 30vw;
     height: 100%;
     backdrop-filter: blur(6px);
     border-right: 3px solid white;
     opacity: 1;
-    left: -30vw;
+    left: -40vw;
     top: 0;
     transition: left 0.3s ease;
-    padding-left: 25px;
+    padding-left: 28px;
   }
 
   .sidebar-container.active {

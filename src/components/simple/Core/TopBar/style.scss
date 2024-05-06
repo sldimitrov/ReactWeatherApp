@@ -77,11 +77,11 @@ and (max-width: 1149px) {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    width: 90.5vw;
+    width: 86.5vw;
     height: 6.5vh;
     z-index: 1;
     padding-top: 25px;
-    padding-left: 38px;
+    padding-left: 100px;
   }
   
   .search-bar-container {
@@ -91,7 +91,6 @@ and (max-width: 1149px) {
     padding-bottom: 5px;
     width: 33vw;
     height: 6vh;
-    padding-bottom: 5px;
   }
   
   .blank-line {

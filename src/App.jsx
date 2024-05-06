@@ -6,9 +6,6 @@ import LeftSide from "./components/simple/LeftSide/LeftSide.jsx";
 import { ThemeProvider } from "./themeContext.js";
 import "./index.scss";
 
-// Initialise ThemeContext for the child components
-export const ThemeContext = React.createContext();
-
 function App() {
   return (
     <ThemeProvider>

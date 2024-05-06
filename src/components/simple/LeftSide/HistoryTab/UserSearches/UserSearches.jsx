@@ -4,7 +4,6 @@ import { useSearchHistory } from "../../../../../themeContext";
 
 export default function UserSearches({ handleClickHistory }) {
   const searchHistory = useSearchHistory();
-
   return (
     <section className="history-container">
       {searchHistory.length > 0 ? (

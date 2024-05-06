@@ -6,7 +6,6 @@ export default function BackgroundLayout() {
 
   function handleClickHistory() {
     setHistoryTab(!historyTab);
-    console.log(historyTab);
   }
 
   return (

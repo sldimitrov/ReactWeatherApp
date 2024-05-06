@@ -17,11 +17,9 @@ const mapper = new Map([
   ["Haze", hazeImg],
 ]);
 
-let weatherIcon;
-
 export default function MainInfo({ temperature, city, date, forecastHeading }) {
   // and the icon that is suitable for the current weather
-  weatherIcon = mapper.get(forecastHeading);
+  let weatherIcon = mapper.get(forecastHeading);
 
   return (
     <div className="info-container basic-font">
