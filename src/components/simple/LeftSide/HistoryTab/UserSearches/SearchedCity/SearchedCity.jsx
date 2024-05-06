@@ -1,8 +1,8 @@
 import getWeatherData from "../../../../../../services/getWeatherData";
-import { useThemeUpdate } from "../../../../../../themeContext";
+import { useTheme } from "../../../../../../themeContext";
 
 export default function SearchedCity({ city, onClickButton }) {
-  const setActualData = useThemeUpdate();
+  const [actualData, setActualData] = useTheme();
   return (
     <div className="browsed-city" id="example">
       <p id="town">{city}</p>

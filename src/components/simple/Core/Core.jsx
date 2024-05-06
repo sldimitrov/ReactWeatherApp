@@ -9,7 +9,7 @@ import MainInfo from "./MainInfo";
 
 export default function Core() {
   // Use custom hooks to receive the useContext state
-  const actualData = useTheme();
+  const [actualData, setActualData] = useTheme();
   const [mainInfo, setMainInfo] = useState([
     "16°",
     "London",

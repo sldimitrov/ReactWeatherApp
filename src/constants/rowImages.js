@@ -12,8 +12,17 @@ import drizzleImg from "../images/drizzle.png";
 import mistImg from "../images/mist.png";
 import squallImg from "../images/squall.png";
 import hazeImg from "../images/haze.png";
-
-// Export image objects
+// Initialise a mapper in order to optimize the change of the icons
+const mapperImg = new Map([
+  ["Clouds", cloudImg],
+  ["Clear", clearImg],
+  ["Rain", rainImg],
+  ["Drizzle", drizzleImg],
+  ["Mist", mistImg],
+  ["Squall", squallImg],
+  ["Haze", hazeImg],
+]);
+// Export constants
 export {
   highTempImg,
   lowTempImg,
@@ -27,4 +36,5 @@ export {
   mistImg,
   squallImg,
   hazeImg,
+  mapperImg,
 };

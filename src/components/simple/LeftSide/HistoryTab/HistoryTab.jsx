@@ -4,18 +4,14 @@ import { useEffect } from "react";
 import {
   useSelectedCity,
   useHistoryTab,
-  useSetHistoryTab,
   useSearchHistory,
-  useSetSearchHistory,
 } from "../../../../themeContext";
 
 export default function HistoryTab() {
   // Initialise state constants
-  const selectedCity = useSelectedCity();
-  const searchHistory = useSearchHistory();
-  const setSearchHistory = useSetSearchHistory();
-  const setHistoryTab = useSetHistoryTab();
-  const historyTab = useHistoryTab();
+  const [selectedCity, setSelectedCity] = useSelectedCity();
+  const [searchHistory, setSearchHistory] = useSearchHistory();
+  const [historyTab, setHistoryTab] = useHistoryTab();
 
   function handleClickHistory() {
     setHistoryTab(!historyTab);

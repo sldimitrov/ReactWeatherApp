@@ -1,16 +1,12 @@
-import { useThemeUpdate } from "../../../../../../themeContext";
-import {
-  useSelectedCity,
-  useSetSelectedCity,
-} from "../../../../../../themeContext";
+import { useTheme, useSelectedCity } from "../../../../../../themeContext";
 
 export default function InputField({
   onSearchCity,
   currInputText,
   setCurrInputText,
 }) {
-  const setSelectedCity = useSetSelectedCity();
-  const setActualData = useThemeUpdate();
+  const [selectedCity, setSelectedCity] = useSelectedCity();
+  const [actualData, setActualData] = useTheme();
 
   function enterValue(value) {
     setCurrInputText(value);

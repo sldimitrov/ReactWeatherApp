@@ -8,8 +8,7 @@ import { ROW_VALUES } from "../../../constants/variables";
 
 export default function RightSide() {
   // Use custom hooks to receive the useContext state
-  const actualData = useTheme();
-  const setActualData = useThemeUpdate();
+  const [actualData, setActualData] = useTheme();
   // Set the initial state
   const [currentRowValues, setCurrentRowValues] = useState(ROW_VALUES);
   const [currentHourTemp, setCurrentHourTemp] = useState(["15°", "09:00"]);

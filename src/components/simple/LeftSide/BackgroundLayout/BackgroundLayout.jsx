@@ -1,8 +1,7 @@
-import { useHistoryTab, useSetHistoryTab } from "../../../../themeContext";
+import { useHistoryTab } from "../../../../themeContext";
 
 export default function BackgroundLayout() {
-  const historyTab = useHistoryTab();
-  const setHistoryTab = useSetHistoryTab();
+  const [historyTab, setHistoryTab] = useHistoryTab();
 
   function handleClickHistory() {
     setHistoryTab(!historyTab);

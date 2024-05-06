@@ -1,15 +1,12 @@
 import { useState } from "react";
 import InputField from "./InputField";
-import {
-  useThemeUpdate,
-  useSetSelectedCity,
-} from "../../../../../themeContext";
+import { useTheme, useSelectedCity } from "../../../../../themeContext";
 import HistoryButton from "../../../../base/HistoryButton";
 import SearchButton from "../../../../base/SearchButton";
 
 export default function Form({ onSearchCity }) {
-  const setActualData = useThemeUpdate();
-  const setSelectedCity = useSetSelectedCity();
+  const [actualData, setActualData] = useTheme();
+  const [selectedCity, setSelectedCity] = useSelectedCity();
   const [currInputText, setCurrInputText] = useState("");
 
   return (
