@@ -1,7 +1,7 @@
 import { mapperImg } from "../../../../constants/rowImages";
 
 export default function MainInfo({ temperature, city, date, forecastHeading }) {
-  // and the icon that is suitable for the current weather
+  // Icon suitable for the current weather
   let weatherIcon = mapperImg.get(forecastHeading);
 
   return (

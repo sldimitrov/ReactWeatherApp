@@ -7,10 +7,9 @@ import InfoRow from "../../base/InfoRow";
 import { ROW_VALUES } from "../../../constants/variables";
 
 export default function RightSide() {
-  // Use custom hooks to receive the useContext state
-  const [actualData, setActualData] = useTheme();
-  // Set the initial state
-  const [currentRowValues, setCurrentRowValues] = useState(ROW_VALUES);
+  // Extract useContext state and initialise new
+  const [actualData] = useTheme();
+  const [currentRowValues] = useState(ROW_VALUES);
   const [currentHourTemp, setCurrentHourTemp] = useState(["15°", "09:00"]);
   const [forecastHeading, setForecastHeading] = useState([
     "THUNDERSTORM WITH LIGHT DRIZZLE",
@@ -30,9 +29,8 @@ export default function RightSide() {
       currentRowValues[4].value = actualData.wind.speed + " km/h";
 
       let currentTemperature = Math.round(actualData.main.temp) + "°";
-      let currTime = new Date(actualData.timezone)
-        .toLocaleTimeString()
-        .slice(0, 4);
+      let currTime = new Date();
+      currTime = currTime.getHours() + ":" + currTime.getMinutes();
       setCurrentHourTemp([currentTemperature, currTime]);
     }
   }, [actualData]);
@@ -45,7 +43,7 @@ export default function RightSide() {
           <p id="weather-details">Weather Details...</p>
         </section>
         <Forecast forecastHeading={forecastHeading[0]}>
-          {ROW_VALUES.map((rowValues, index) => (
+          {ROW_VALUES.map((rowValues) => (
             <ValueRow key={rowValues.parameter} {...rowValues} />
           ))}
         </Forecast>
