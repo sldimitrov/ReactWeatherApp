@@ -57,11 +57,14 @@
   }
 
   #value {
-    padding-left: 20px;
+    display: flex;
+    justify-content: end;
+    width: 90px;
+    font-size: 18px;
   }
 
   .icons {
-    height: 25px;
-    width: 19px;
+    height: 28px;
+    width: 24px;
   }
 }

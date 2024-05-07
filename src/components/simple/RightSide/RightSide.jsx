@@ -26,7 +26,7 @@ export default function RightSide() {
       currentRowValues[1].value = Math.round(actualData.main.temp_min) + "°c";
       currentRowValues[2].value = actualData.main.humidity + "%";
       currentRowValues[3].value = actualData.clouds.all + "%";
-      currentRowValues[4].value = actualData.wind.speed + " km/h";
+      currentRowValues[4].value = Math.round(actualData.wind.speed) + " km/h";
 
       let currentTemperature = Math.round(actualData.main.temp) + "°";
       let currTime = new Date();

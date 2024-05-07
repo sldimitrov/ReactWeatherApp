@@ -16,17 +16,8 @@ button, input {
   cursor: pointer;
 }
 
-#history-button:hover,
-#search-button:hover {
-  background-color: rgba(175, 230, 248, 0.903);
-}
-
 #exit-button:hover {
   background-color: rgb(246, 169, 169);
-}
-
-.restore-button:hover {
-  background-color: black;
 }
 
 #empty-descr:hover {
@@ -35,6 +26,6 @@ button, input {
 }
 
 #restore-button:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(14, 14, 14);
+  background-color: black;
+  color: white;
 }

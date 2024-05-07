@@ -104,7 +104,8 @@ and (max-width: 1149px) {
   
   .current-temperature {
     flex: 1;
-    font-size: 140px;
+    font-size: 143px;
+    font-weight: 400px;
     margin: 0px;
   }
   
@@ -116,17 +117,18 @@ and (max-width: 1149px) {
     flex-wrap: wrap;
     max-width: 260px;
     padding-left: 5px;
-    padding-top: 14px;
+    padding-top: 10px;
   }
   
   #city {
     max-height: 195px;
-    font-size: 55px;
+    font-weight: 400px;
+    font-size: 60px;
   }
   
   #date {
     margin: 0px;
-    font-size: 17px;
+    font-size: 18px;
   }
   
   #cloud-img {

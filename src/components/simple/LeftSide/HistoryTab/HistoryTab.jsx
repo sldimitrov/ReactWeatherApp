@@ -25,10 +25,10 @@ export default function HistoryTab() {
       }
     }
   }, [selectedCity]);
-
   function handleClearHistory() {
     setSearchHistory([]);
     handleClickHistory();
+    window.localStorage.clear();
   }
 
   return (

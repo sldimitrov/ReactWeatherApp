@@ -115,7 +115,6 @@ and (max-width: 1149px) {
   }
 } 
 
-
 @media only screen and (min-width: 1150px) {
   .info-container, .weather-tab-container {
     color: #FFFFFF;
@@ -147,6 +146,8 @@ and (max-width: 1149px) {
   }
   
   #weather-details {
+    font-size: 18px;
+    font-weight: 400;
     margin: 0px;
   }
   

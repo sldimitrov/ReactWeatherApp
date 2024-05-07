@@ -15,7 +15,7 @@ export default function UserSearches({ handleClickHistory }) {
           />
         ))
       ) : (
-        <EmptyHistory />
+        <EmptyHistory onClickCont={handleClickHistory} />
       )}
     </section>
   );
