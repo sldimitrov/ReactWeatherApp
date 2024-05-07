@@ -1,9 +1,10 @@
+#history-button {
+  padding: 0px;
+  border: none;
+  background: none;
+}
+
 @media only screen and (max-width: 639px) { 
-  #history-button {
-    border-radius: 50px;
-    border-width: 2px;
-    border-color: #132059;
-  }
   #h-image {
     width: 10px;
     height: 10px;
@@ -12,11 +13,6 @@
 
 @media only screen and (min-width: 640px)
 and (max-width: 1149px) {
-  #history-button {
-    border-radius: 50px;
-    border-width: 3px;
-    border-color: #132059;
-  }
   #h-image {
     width: 19px;
     height: 21px;
@@ -25,14 +21,11 @@ and (max-width: 1149px) {
 
 @media only screen and (min-width: 1150px) {
   #history-button {
-    margin-left: 15px;
-    border-radius: 50px;
-    border-width: 5px;
-    border-color: #132059;
+    padding-bottom: 2px;
   }
   
   #h-image {
-    width: 37px;
-    height: 37px;
+    width: 30px;
+    height: 30px;
   }
 }

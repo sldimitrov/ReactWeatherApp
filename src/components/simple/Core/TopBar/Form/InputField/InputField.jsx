@@ -26,7 +26,7 @@ export default function InputField({
         placeholder="Search Location..."
         spellCheck="false"
         id="search-text"
-        maxLength="16"
+        maxLength="22"
         value={currInputText}
         onChange={(e) => enterValue(e.target.value)}
         onKeyUp={(e) => {
