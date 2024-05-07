@@ -140,9 +140,8 @@ and (max-width: 1149px) {
   .weather-details-container {
     display: flex;
     align-items: end;
-    height: 20vh;
+    height: 23vh;
     width: 15vw;
-    top: 55px;
   }
   
   #weather-details {
@@ -156,18 +155,10 @@ and (max-width: 1149px) {
     width: 30vh;
   }
   
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 40vw;
-    height: 8vh;
-  }
-  
   #blank-container {
     display: flex;
     width: 42vw;
-    height: 8vh;
+    height: 7vh;
   }
   
   .blur {
