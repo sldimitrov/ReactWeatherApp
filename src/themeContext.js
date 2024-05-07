@@ -6,7 +6,6 @@ const DataContext = React.createContext();
 const SelectedCity = React.createContext();
 const SearchHistory = React.createContext();
 const HistoryTab = React.createContext();
-
 // Initialise Custom Hooks to derive state when imported
 export function useTheme() {
   return useContext(DataContext);
@@ -20,6 +19,7 @@ export function useSearchHistory() {
 export function useHistoryTab() {
   return useContext(HistoryTab);
 }
+
 export function ThemeProvider({ children }) {
   /* This function packs all the required state and combines it into a useful ThemeProvider.
    That allow components to use state very comfortable by just importing it. */

@@ -1,5 +1,6 @@
 import HistoryHeading from "./HistoryHeading";
 import UserSearches from "./UserSearches";
+import ClearHistory from "./UserSearches/ClearHistory";
 import { useEffect } from "react";
 import {
   useSelectedCity,
@@ -25,6 +26,11 @@ export default function HistoryTab() {
     }
   }, [selectedCity]);
 
+  function handleClearHistory() {
+    setSearchHistory([]);
+    handleClickHistory();
+  }
+
   return (
     <aside className="aside">
       <div
@@ -34,6 +40,9 @@ export default function HistoryTab() {
       >
         <HistoryHeading handleClickHistory={handleClickHistory} />
         <UserSearches handleClickHistory={handleClickHistory} />
+        {searchHistory.length > 0 && (
+          <ClearHistory handleClearHistory={handleClearHistory} />
+        )}
       </div>
     </aside>
   );

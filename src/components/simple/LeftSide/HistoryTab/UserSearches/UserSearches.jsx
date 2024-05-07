@@ -1,5 +1,5 @@
-import SearchedCity from "./SearchedCity";
 import EmptyHistory from "./EmptyHistory";
+import SearchedCity from "./SearchedCity";
 import { useSearchHistory } from "../../../../../themeContext";
 
 export default function UserSearches({ handleClickHistory }) {
