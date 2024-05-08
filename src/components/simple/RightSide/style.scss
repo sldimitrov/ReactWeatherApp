@@ -120,14 +120,6 @@ and (max-width: 1149px) {
     color: #FFFFFF;
   }
 
-  // ::-webkit-scrollbar {
-  //   width: 5px;
-  // }
-
-  // :webkit-scrollbar-thumb {
-  //   background-color: #fff;
-  // }
-
   .weather-tab-container {
     position: absolute;
     display: flex;
@@ -153,7 +145,7 @@ and (max-width: 1149px) {
   .weather-details-container {
     display: flex;
     align-items: end;
-    height: 23vh;
+    height: 19vh;
     width: 15vw;
   }
   
@@ -171,7 +163,7 @@ and (max-width: 1149px) {
   #blank-container {
     display: flex;
     width: 42vw;
-    height: 7vh;
+    height: 5.7vh;
   }
   
   .blur {

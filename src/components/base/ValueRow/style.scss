@@ -47,13 +47,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 76vw;
-    height: 6vh;
+    width: 50vw;
+    height: 30px;
   }
 
   .w-characteristics {
       opacity: 0.7;
       width: 23vh;
+      min-width: 20vh;
   }
 
   #value {

@@ -3,6 +3,7 @@ import InputField from "./InputField";
 import { useTheme, useSelectedCity } from "../../../../../themeContext";
 import HistoryButton from "../../../../base/HistoryButton";
 import SearchButton from "../../../../base/SearchButton";
+import getWeatherDataHourly from "../../../../../services/getWeatherDataHourly";
 
 export default function Form({ onSearchCity }) {
   const [actualData, setActualData] = useTheme();
@@ -19,6 +20,7 @@ export default function Form({ onSearchCity }) {
       <HistoryButton />
       <SearchButton
         onSelectButton={() => {
+          getWeatherDataHourly(currInputText);
           onSearchCity(currInputText, setActualData);
           setSelectedCity(currInputText);
         }}
