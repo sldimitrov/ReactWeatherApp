@@ -1,7 +1,7 @@
 import axios from "axios";
 import { apiUrlHours, apiKey } from "../constants/variables";
 
-export default async function getWeatherHourly(coords) {
+export default async function getWeatherHourly(coords, setHourlyData) {
   const { lon, lat } = coords;
   const request =
     apiUrlHours +
@@ -13,7 +13,7 @@ export default async function getWeatherHourly(coords) {
   axios
     .get(request)
     .then((response) => {
-      console.log(response.data);
+      setHourlyData(response.data);
     })
     .catch((error) => {
       console.log(error);

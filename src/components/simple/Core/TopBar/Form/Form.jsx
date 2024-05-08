@@ -1,12 +1,16 @@
 import { useState } from "react";
 import InputField from "./InputField";
-import { useTheme, useSelectedCity } from "../../../../../themeContext";
+import {
+  useTheme,
+  useSelectedCity,
+  useHourlyData,
+} from "../../../../../themeContext";
 import HistoryButton from "../../../../base/HistoryButton";
 import SearchButton from "../../../../base/SearchButton";
-import getWeatherDataHourly from "../../../../../services/getWeatherDataHourly";
 
 export default function Form({ onSearchCity }) {
   const [actualData, setActualData] = useTheme();
+  const [hourlyData, setHourlyData] = useHourlyData();
   const [selectedCity, setSelectedCity] = useSelectedCity();
   const [currInputText, setCurrInputText] = useState("");
 
@@ -20,8 +24,7 @@ export default function Form({ onSearchCity }) {
       <HistoryButton />
       <SearchButton
         onSelectButton={() => {
-          getWeatherDataHourly(currInputText);
-          onSearchCity(currInputText, setActualData);
+          onSearchCity(currInputText, setActualData, setHourlyData);
           setSelectedCity(currInputText);
         }}
       />

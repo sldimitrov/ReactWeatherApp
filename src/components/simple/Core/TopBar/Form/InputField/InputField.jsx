@@ -1,4 +1,8 @@
-import { useTheme, useSelectedCity } from "../../../../../../themeContext";
+import {
+  useTheme,
+  useSelectedCity,
+  useHourlyData,
+} from "../../../../../../themeContext";
 
 export default function InputField({
   onSearchCity,
@@ -6,6 +10,7 @@ export default function InputField({
   setCurrInputText,
 }) {
   const [selectedCity, setSelectedCity] = useSelectedCity();
+  const [hourlyData, setHourlyData] = useHourlyData();
   const [actualData, setActualData] = useTheme();
 
   function enterValue(value) {
@@ -14,7 +19,7 @@ export default function InputField({
 
   function submitForm(pressedKey) {
     if (pressedKey === "Enter") {
-      onSearchCity(currInputText, setActualData);
+      onSearchCity(currInputText, setActualData, setHourlyData);
       setSelectedCity(currInputText);
     }
   }

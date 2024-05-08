@@ -1,15 +1,16 @@
 import getWeatherData from "../../../../../../services/getWeatherData";
-import { useTheme } from "../../../../../../themeContext";
+import { useTheme, useHourlyData } from "../../../../../../themeContext";
 
 export default function SearchedCity({ city, onClickButton }) {
   const [actualData, setActualData] = useTheme();
+  const [hourlyData, setHourlyData] = useHourlyData();
   return (
     <div className="browsed-city" id="example">
       <p id="town">{city}</p>
       <button
         id="restore-button"
         onClick={() => {
-          getWeatherData(city, setActualData);
+          getWeatherData(city, setActualData, setHourlyData);
           onClickButton();
         }}
       >
