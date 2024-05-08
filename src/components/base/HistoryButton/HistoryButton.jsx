@@ -1,4 +1,4 @@
-import historyImg from "../../../images/history.png";
+import historyImg from "../../../assets/history.png";
 import { useHistoryTab } from "../../../themeContext";
 
 export default function HistoryButton() {

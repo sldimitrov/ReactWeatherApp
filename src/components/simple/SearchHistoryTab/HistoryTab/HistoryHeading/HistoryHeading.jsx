@@ -1,4 +1,4 @@
-import exitButton from "../../../../../images/exit_button.png";
+import exitButton from "../../../../../assets/exit_button.png";
 
 export default function HistoryHeading({ handleClickHistory }) {
   return (

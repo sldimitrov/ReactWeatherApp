@@ -1,17 +1,17 @@
 // Images for the infoRow component icons
-import highTempImg from "../images/hot_thernometer.png";
-import lowTempImg from "../images/cold_thernometer.png";
-import humadityImg from "../images/waterdrop.png";
-import cloudyImg from "../images/cloudy.png";
-import windImg from "../images/wind.png";
+import highTempImg from "../assets/hot_thernometer.png";
+import lowTempImg from "../assets/cold_thernometer.png";
+import humadityImg from "../assets/waterdrop.png";
+import cloudyImg from "../assets/cloudy.png";
+import windImg from "../assets/wind.png";
 // Images for the mainInfo component icon
-import cloudImg from "../images/Cloud.png";
-import clearImg from "../images/clear.png";
-import rainImg from "../images/rain.png";
-import drizzleImg from "../images/rain.png";
-import mistImg from "../images/mist.png";
-import squallImg from "../images/squall.webp";
-import hazeImg from "../images/haze.png";
+import cloudImg from "../assets/Cloud.png";
+import clearImg from "../assets/clear.png";
+import rainImg from "../assets/rain.png";
+import drizzleImg from "../assets/rain.png";
+import mistImg from "../assets/mist.png";
+import squallImg from "../assets/squall.webp";
+import hazeImg from "../assets/haze.png";
 // Initialise a mapper in order to optimize the change of the icons
 const mapperImg = new Map([
   ["Clouds", cloudImg],

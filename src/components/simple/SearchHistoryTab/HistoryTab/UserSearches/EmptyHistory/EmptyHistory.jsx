@@ -1,4 +1,4 @@
-import emptyImg from "../../../../../../images/empty.png";
+import emptyImg from "../../../../../../assets/empty.png";
 
 export default function EmptyHistory({ onClickCont }) {
   return (
