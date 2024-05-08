@@ -13,6 +13,7 @@ const apiUrl =
 
 // Define the default state for the Forecast component
 const defaultValues = ["19°", "15°", "58%", "86%", "5km/h"];
+const timeIntervals = ["07:00", "10:00", "13:00"];
 const ROW_VALUES = [
   { parameter: "Temp max", value: defaultValues[0], image: highTempImg },
   { parameter: "Temp min", value: defaultValues[1], image: lowTempImg },
@@ -21,4 +22,4 @@ const ROW_VALUES = [
   { parameter: "Wind", value: defaultValues[4], image: windImg },
 ];
 
-export { ROW_VALUES, apiKey, apiUrl };
+export { ROW_VALUES, apiKey, apiUrl, timeIntervals };

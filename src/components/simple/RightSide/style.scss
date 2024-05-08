@@ -120,15 +120,28 @@ and (max-width: 1149px) {
     color: #FFFFFF;
   }
 
+  // ::-webkit-scrollbar {
+  //   width: 5px;
+  // }
+
+  // :webkit-scrollbar-thumb {
+  //   background-color: #fff;
+  // }
+
   .weather-tab-container {
     position: absolute;
     display: flex;
     top: 0;
     right: 0;
     width: 34vw;
-    height: 100dvh;
+    height: 100%;
     flex-direction: column;
     border-left: 4px solid rgba(212, 211, 211, 0.2);
+  }
+
+  .scrollbox {
+    overflow: auto;
+    height: 1205px;
   }
   
   .weather-tab-container, .section-heading{

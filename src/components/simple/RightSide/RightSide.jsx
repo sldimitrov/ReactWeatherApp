@@ -4,7 +4,7 @@ import Forecast from "./Forecast";
 import Weather from "./Weather";
 import ValueRow from "../../base/ValueRow";
 import InfoRow from "../../base/InfoRow";
-import { ROW_VALUES } from "../../../constants/variables";
+import { ROW_VALUES, timeIntervals } from "../../../constants/variables";
 
 export default function RightSide() {
   // Extract useContext state and initialise new
@@ -39,22 +39,31 @@ export default function RightSide() {
     <>
       <span className="weather-tab-container blur"></span>
       <main className="weather-tab-container">
-        <section className="weather-details-container">
-          <p id="weather-details">Weather Details...</p>
-        </section>
-        <Forecast forecastHeading={forecastHeading[0]}>
-          {ROW_VALUES.map((rowValues) => (
-            <ValueRow key={rowValues.parameter} {...rowValues} />
-          ))}
-        </Forecast>
-        <Weather>
-          <InfoRow
-            forecastHeading={forecastHeading[1]}
-            temperature={currentHourTemp[0]}
-            currentTime={currentHourTemp[1]}
-          />
-        </Weather>
-        <script src="index.js"></script>
+        <div className="scrollbox">
+          <div className="scrollbox inner">
+            <section className="weather-details-container">
+              <p id="weather-details">Weather Details...</p>
+            </section>
+            <Forecast forecastHeading={forecastHeading[0]}>
+              {ROW_VALUES.map((rowValues) => (
+                <ValueRow key={rowValues.parameter} {...rowValues} />
+              ))}
+            </Forecast>
+            <Weather>
+              <InfoRow
+                forecastHeading={forecastHeading[1]}
+                temperature={currentHourTemp[0]}
+                currentTime={timeIntervals[0]}
+              />
+              <InfoRow
+                forecastHeading={currentTime}
+                temperature={currentHourTemp[0]}
+                currentTime={timeIntervals[1]}
+              />
+            </Weather>
+          </div>
+          <script src="index.js"></script>
+        </div>
       </main>
     </>
   );
