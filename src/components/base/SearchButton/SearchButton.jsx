@@ -2,7 +2,7 @@ import searchImg from "../../../images/search.png";
 import { useSelectedCity } from "../../../themeContext";
 
 export default function SearchButton({ onSelectButton }) {
-  const [selectedCity, setSelectedCity] = useSelectedCity();
+  const [selectedCity] = useSelectedCity();
   function handleButtonClick() {
     onSelectButton(selectedCity);
   }

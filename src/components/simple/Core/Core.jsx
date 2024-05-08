@@ -10,7 +10,7 @@ import dateFormatter from "../../../services/dateFormatter.js";
 
 export default function Core() {
   // Use custom hooks to receive the useContext state
-  const [actualData, setActualData] = useTheme();
+  const [actualData] = useTheme();
   const [mainInfo, setMainInfo] = useState([
     "16°",
     "London",

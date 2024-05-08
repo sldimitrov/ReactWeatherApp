@@ -10,8 +10,6 @@
   }
   
   #searcher-img {
-    background-color: rgb(48, 54, 141);
-    border-radius: 50px;
     width: 7px;
     height: 8px;
     padding: 2px;
@@ -26,11 +24,9 @@ and (max-width: 1149px) {
   }
 
   #searcher-img {
-    background-color: rgb(48, 54, 141);
-    border-radius: 50px;
-    width: 10px;
-    height: 12px;
-    padding: 5px;
+    width: 22px;
+    height: 21px;
+    padding-right: 3px;
   }
 } 
 

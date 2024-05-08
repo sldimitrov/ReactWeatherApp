@@ -1,3 +1,5 @@
+
+
 @media only screen and (max-width: 639px) { 
   .weather-tab-container {
     position: absolute;
@@ -65,48 +67,74 @@ and (max-width: 1149px) {
     left: 0;
     margin: 0;
     width: auto;
-    height: 55dvh;
+    height: 56dvh;
     flex-direction: column;
     border-top: 4px solid rgba(212, 211, 211, 0.2);
   }
 
+  #forecast-heading {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
   .weather-tab-container, .section-heading{
-      font-size: 17px;
+    font-size: 18px;
+    font-size: 400;
+  }
+
+  .scrollbox {
+    overflow: auto;
+    height: 1205px;
+  }
+
+  ::-webkit-scrollbar {
+    width: none;
   }
 
   .weather-details-container {
-      display: flex;
-      align-items:end;
-      height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11vh;
+  }
+
+  #weather-details {
+    font-size: 18px;
+    font-weight: 400;
   }
   
   .row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 48vw;
-      height: 4.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 48vw;
+    height: 4.4vh;
   }
 
   .w-characteristics {
-      opacity: 0.7;
-      margin: 0px;
-      width: 22vh;
+    opacity: 0.7;
+    margin: 0px;
+    width: 22vh;
   }
 
   .value {
-      margin: 0px;
+    margin: 0px;
+  }
+
+  .icons {
+    width: 22px;
+    height: 23px;
   }
 
   #blank-container {
-      height: 6vh;
-      width: 100%;
-      border: none;
+    height: 6vh;
+    width: 100%;
+    border: none;
   }
 
   .blur {
     display: flex;
-    height: 55dvh;
+    height: 56dvh;
     bottom: 0;
     right: 0;
     left: 0;
@@ -135,7 +163,16 @@ and (max-width: 1149px) {
     overflow: auto;
     height: 1205px;
   }
-  
+
+  ::-webkit-scrollbar {
+    width: 3px;
+    margin-left: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #3dc8ff;
+  }
+
   .weather-tab-container, .section-heading{
     font-size: 17px;
     padding-left: 35px;

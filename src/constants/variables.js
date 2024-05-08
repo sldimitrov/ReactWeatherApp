@@ -29,6 +29,7 @@ const INFO_ROWS = [
   { forecastHeading: "Clouds", temperature: "5°", currentTime: "16:00" },
   { forecastHeading: "Clouds", temperature: "8°", currentTime: "19:00" },
   { forecastHeading: "Clouds", temperature: "5°", currentTime: "21:00" },
+  { forecastHeading: "Clouds", temperature: "9°", currentTime: "00:00" },
 ];
 
 export { ROW_VALUES, INFO_ROWS, apiKey, apiUrl, apiUrlHours };

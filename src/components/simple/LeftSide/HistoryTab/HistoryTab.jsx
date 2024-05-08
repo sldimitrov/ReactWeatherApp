@@ -10,7 +10,7 @@ import {
 
 export default function HistoryTab() {
   // Initialise state constants
-  const [selectedCity, setSelectedCity] = useSelectedCity();
+  const [selectedCity] = useSelectedCity();
   const [searchHistory, setSearchHistory] = useSearchHistory();
   const [historyTab, setHistoryTab] = useHistoryTab();
 

@@ -10,37 +10,37 @@
   }
 
   .current-temperature {
-      flex: 1;
-      font-size: 64px;
-      margin: 0px;
+    flex: 1;
+    font-size: 64px;
+    margin: 0px;
   }
 
   #additional-info {
-      flex: 2;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      flex-wrap: wrap;
-      max-width: 160px;
-      padding-left: 5px;
-      padding-top: 2px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 160px;
+    padding-left: 5px;
+    padding-top: 2px;
   }
 
   #city {
-      max-height: 195px;
-      font-size: 32px;
+    max-height: 195px;
+    font-size: 32px;
 
   }
 
   #date {
-      margin: 0px;
-      font-size: 8px;
+    margin: 0px;
+    font-size: 8px;
   }
 
   #cloud-img {
-      height: 45px;
-      width: 45px;
-      padding: 10px 0px 0px 5px;
+    height: 45px;
+    width: 45px;
+    padding: 10px 0px 0px 5px;
   }
 }
 
@@ -57,37 +57,39 @@ and (max-width: 1149px) {
   }
 
   .current-temperature {
-      flex: 1;
-      font-size: 120px;
-      margin: 0px;
+    flex: 1;
+    font-weight: 400;
+    font-size: 120px;
+    text-shadow: black 3px 3px 25px;
+    margin: 0px;
   }
 
   #additional-info {
-      flex: 2;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      flex-wrap: wrap;
-      max-width: 260px;
-      padding-left: 5px;
-      padding-top: 15px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 260px;
+    padding-left: 5px;
+    padding-top: 15px;
   }
 
   #city {
-      max-height: 195px;
-      font-size: 52px;
+    max-height: 195px;
+    font-size: 48px;
 
   }
 
   #date {
-      margin: 0px;
-      font-size: 16px;
+    margin: 0px;
+    font-size: 16px;
   }
 
   #cloud-img {
-      height: 55px;
-      width: 55px;
-      padding: 20px 0px 0px 10px;
+    height: 55px;
+    width: 55px;
+    padding: 20px 0px 0px 10px;
   }
 } 
 

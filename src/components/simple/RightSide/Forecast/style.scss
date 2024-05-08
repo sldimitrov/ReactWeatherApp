@@ -43,9 +43,10 @@ and (max-width: 1149px) {
     display: flex;
     flex-wrap: wrap;
     width: 48vw;
-    height: 35vh;
+    height: 32vh;
     top: 170px;
     border-bottom: 1px solid #ffff;
+    padding-right: 10px;
     padding-bottom: 50px;
   }
 
@@ -53,8 +54,9 @@ and (max-width: 1149px) {
     display: flex;
     align-items:center;
     justify-content: center;
-    height: 5vh;
+    height: 4vh;
     width: 55vw;
+    padding-bottom: 10px;
   }
 
   #forecast-heading {
@@ -73,6 +75,12 @@ and (max-width: 1149px) {
     height: 4.4vh;
   }
 
+  #value {
+    display: flex;
+    justify-content: end;
+    width: 80px;
+  }
+
   .w-characteristics {
     opacity: 0.7;
     margin: 0px;
@@ -82,7 +90,7 @@ and (max-width: 1149px) {
   .blank-line {
     display: flex;
     max-width: 37vw;
-    max-height: 20px;
+    max-height: 15px;
     border-bottom: 1px solid #ffff;
   }
 } 

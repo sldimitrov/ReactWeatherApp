@@ -3,7 +3,7 @@ import SearchedCity from "./SearchedCity";
 import { useSearchHistory } from "../../../../../themeContext";
 
 export default function UserSearches({ handleClickHistory }) {
-  const [searchHistory, setSearchHistory] = useSearchHistory();
+  const [searchHistory] = useSearchHistory();
   return (
     <section className="history-container">
       {searchHistory.length > 0 ? (

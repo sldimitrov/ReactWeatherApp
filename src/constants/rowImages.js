@@ -5,12 +5,12 @@ import humadityImg from "../images/waterdrop.png";
 import cloudyImg from "../images/cloudy.png";
 import windImg from "../images/wind.png";
 // Images for the mainInfo component icon
-import cloudImg from "../images/clouds.png";
+import cloudImg from "../images/Cloud.png";
 import clearImg from "../images/clear.png";
 import rainImg from "../images/rain.png";
-import drizzleImg from "../images/drizzle.png";
+import drizzleImg from "../images/rain.png";
 import mistImg from "../images/mist.png";
-import squallImg from "../images/squall.png";
+import squallImg from "../images/squall.webp";
 import hazeImg from "../images/haze.png";
 // Initialise a mapper in order to optimize the change of the icons
 const mapperImg = new Map([
