@@ -6,6 +6,7 @@ import TopBar from "./TopBar";
 import Logo from "./TopBar/Logo";
 import Form from "./TopBar/Form";
 import MainInfo from "./MainInfo";
+import dateFormatter from "../../../services/dateFormatter.js";
 
 export default function Core() {
   // Use custom hooks to receive the useContext state
@@ -23,9 +24,8 @@ export default function Core() {
       let city = actualData.name;
       let currentTemperature = Math.round(actualData.main.temp) + "°";
       let forecastHeading = actualData.weather[0].main;
-      const myUnixTimestamp = actualData.dt; // start with a Unix timestamp
-      const currDate = new Date(myUnixTimestamp * 1000).toUTCString(); // convert timestamp to milliseconds
-      let dataArray = [currentTemperature, city, currDate, forecastHeading];
+      const date = dateFormatter(actualData.dt); // start with a Unix timestamp
+      let dataArray = [currentTemperature, city, date, forecastHeading];
       // Update the mainInfo state
       setMainInfo(dataArray);
     }

@@ -14,7 +14,6 @@ const apiUrlHours = "https://api.openweathermap.org/data/2.5/forecast?";
 
 // Define the default state for the Forecast component
 const defaultValues = ["19°", "15°", "58%", "86%", "5km/h"];
-const timeIntervals = ["07:00", "10:00", "13:00"];
 const ROW_VALUES = [
   { parameter: "Temp max", value: defaultValues[0], image: highTempImg },
   { parameter: "Temp min", value: defaultValues[1], image: lowTempImg },
@@ -32,4 +31,4 @@ const INFO_ROWS = [
   { forecastHeading: "Clouds", temperature: "5°", currentTime: "21:00" },
 ];
 
-export { ROW_VALUES, INFO_ROWS, apiKey, apiUrl, apiUrlHours, timeIntervals };
+export { ROW_VALUES, INFO_ROWS, apiKey, apiUrl, apiUrlHours };

@@ -37,7 +37,7 @@ export default function RightSide() {
     }
     if (hourlyData) {
       // Extract the required data
-      let rows = hourlyData.list.slice(0, 6);
+      let rows = hourlyData.list.slice(4, 10);
       const weatherData = rows.map((row) => {
         const forecastHeading = row.weather[0].main;
         const currentTime = row.dt_txt.slice(11, 16);
