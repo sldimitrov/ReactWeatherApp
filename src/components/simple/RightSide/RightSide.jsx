@@ -16,7 +16,6 @@ export default function RightSide() {
     "THUNDERSTORM WITH LIGHT DRIZZLE",
     "Snow",
   ]);
-
   useEffect(() => {
     if (actualData) {
       // Extract and set the data for the Weather
@@ -30,7 +29,6 @@ export default function RightSide() {
       currentRowValues[4].value = Math.round(actualData.wind.speed) + " km/h";
     }
   }, [actualData]);
-
   useEffect(() => {
     if (!hourlyData || !hourlyData.list) {
       return; // Check for an undefined list
@@ -56,6 +54,7 @@ export default function RightSide() {
     <>
       <span className="weather-tab-container blur"></span>
       <main className="weather-tab-container">
+        <h1 id="invisible-search"></h1>
         <div className="scrollbox">
           <div className="scrollbox inner">
             <section className="weather-details-container">

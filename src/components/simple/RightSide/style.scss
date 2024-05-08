@@ -145,7 +145,7 @@ and (max-width: 1149px) {
   .weather-details-container {
     display: flex;
     align-items: end;
-    height: 19vh;
+    height: 8.5vh;
     width: 15vw;
   }
   
@@ -174,5 +174,9 @@ and (max-width: 1149px) {
     right: 0;
     backdrop-filter: blur(9px);
     z-index: 0;
+  }
+
+  #invisible-search {
+    height: 70px;
   }
 }
