@@ -15,15 +15,22 @@
     border-top: 4px solid rgba(212, 211, 211, 0.2);
   }
 
-  .weather-tab-container, .section-heading{
-      font-size: 17px;
+  .scrollbox {
+    overflow: auto;
+    height: 990px;
+  }
+
+  ::-webkit-scrollbar {
+    width: none;
   }
 
   .weather-details-container {
       display: flex;
+      justify-content: center;
       align-items: center;
-      padding-top: 15px;
-      height: 8vh;
+      padding-right: 5px;
+      font-size: 14px;
+      height: 7vh;
   }
 
   .row {
@@ -119,11 +126,6 @@ and (max-width: 1149px) {
 
   .value {
     margin: 0px;
-  }
-
-  .icons {
-    width: 22px;
-    height: 23px;
   }
 
   #blank-container {
