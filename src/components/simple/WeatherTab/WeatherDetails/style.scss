@@ -39,6 +39,9 @@
   }
 
   #value {
+    display: flex;
+    justify-content: end;
+    width: 48px;
     font-size: 14px;
   }
 }
