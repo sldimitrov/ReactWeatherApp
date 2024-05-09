@@ -17,14 +17,8 @@
   }
 
   #exit-button {
-      display: flex;
-      align-items: center;
-      margin: 0px;
-      width: 33px;
-      height: 30px;
-      border-radius: 50px;
-      border: 1px solid rgb(255, 135, 135);
-      margin-bottom: 5px;
+    background: none;
+    border: none;
   }
 
   #exit-img {
@@ -52,14 +46,8 @@ and (max-width: 1149px) {
   }
 
   #exit-button {
-      display: flex;
-      align-items: center;
-      margin: 0px;
-      width: 36px;
-      height: 33px;
-      border-radius: 50px;
-      border: 1px solid rgb(255, 135, 135);
-      margin-bottom: 5px;
+    background: none;
+    border: none;
   }
 
   #exit-img {
@@ -82,19 +70,13 @@ and (max-width: 1149px) {
       z-index: 2;
       margin: 0px;
       color: #fff;
-      font-size: 22px;
+      font-size: 20px;
       width: 220px;
   }
 
   #exit-button {
-      display: flex;
-      align-items: center;
-      margin: 0px;
-      width: 36px;
-      height: 33px;
-      border-radius: 50px;
-      border: 1px solid rgb(255, 135, 135);
-      margin-bottom: 5px;
+    background: none;
+    border: none;
   }
 
   #exit-img {

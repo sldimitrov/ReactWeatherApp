@@ -11,8 +11,8 @@
   border: 1px solid black;
 }
 
-#restore-text {
-  margin: 0px;
+#reset-button {
+  cursor: pointer;
 }
 
 .browsed-city {
@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: space-around;
   border-radius: 50px;
-  background-image: linear-gradient(rgb(47, 142, 47), rgb(10, 173, 244));
+  background-image: linear-gradient(rgb(2, 146, 79), rgb(4, 93, 209));
   border: 2px solid rgb(255, 255, 255); // rgb(44, 244, 204)
 }
 
@@ -32,17 +32,14 @@
     font-size: 11px;
   }
 
-  .restore-button {
-    display: flex;
-    flex-wrap: wrap;
-    border-style: solid;
-    border-width: 2px;
-    margin-right: 2px;
+  #reset-button {
+    width: 27px;
+    height: 27px;
+    opacity: 0.7;
   }
 
-  #restore-text {
-    font-size: 11px;
-    margin: 0px;
+  #reset-button:hover {
+    opacity: 1;
   }
 
   #empty-descr-container {
@@ -65,9 +62,15 @@
     font: 30px;   
   }
 
-  .restore-button {
-    border-width: 3px;
-  }  
+  #reset-button {
+    width: 35px;
+    height: 35px;
+    opacity: 0.7;
+  }
+
+  #reset-button:hover {
+    opacity: 1;
+  }
 
   #empty-descr-container {
     width: 90%;
@@ -83,14 +86,20 @@
 @media only screen and (min-width: 1150px) {
   .browsed-city {
     width: 13vw;
-    height: 5vh;
+    height: 6vh;
     margin-bottom: 10px;
     font: 30px;
     font: 30px;
   }
 
-  .restore-button {
-    border-width: 2px;
+  #reset-button {
+    width: 3.5vw;
+    height: 5vh;
+    opacity: 0.7;
+  }
+
+  #reset-button:hover {
+    opacity: 1;
   }
 
   #empty-descr-container {

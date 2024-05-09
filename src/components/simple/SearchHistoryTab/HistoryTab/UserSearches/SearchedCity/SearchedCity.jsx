@@ -1,5 +1,6 @@
 import getWeatherData from "../../../../../../services/getWeatherData";
 import { useTheme, useHourlyData } from "../../../../../../themeContext";
+import resetImg from "../../../../../../assets/reset_white.png";
 
 export default function SearchedCity({ city, onClickButton }) {
   const [actualData, setActualData] = useTheme();
@@ -7,15 +8,16 @@ export default function SearchedCity({ city, onClickButton }) {
   return (
     <div className="browsed-city" id="example">
       <p id="town">{city}</p>
-      <button
-        id="restore-button"
+
+      <img
+        src={resetImg}
+        alt="Image for reseting searches"
+        id="reset-button"
         onClick={() => {
           getWeatherData(city, setActualData, setHourlyData);
           onClickButton();
         }}
-      >
-        <p id="restore-text">Restore</p>
-      </button>
+      />
     </div>
   );
 }

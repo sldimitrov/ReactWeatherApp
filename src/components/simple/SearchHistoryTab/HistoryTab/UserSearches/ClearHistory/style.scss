@@ -3,12 +3,15 @@
   display: flex;
   border: 2px solid white;
   border-radius: 5px;
-  background-image: linear-gradient(to top, red, rgb(247, 151, 167));
+  background-image: linear-gradient(to top, black, grey);
+  box-shadow: 0px 0px 25px white;
+  opacity: 0.7;
   bottom: 20px;
 }
 
 #clear-history-btn:hover {
-  background-image: linear-gradient(to bottom, red, purple);
+  background-image: linear-gradient(to top, rgb(70, 70, 70), rgb(165, 165, 165));
+  opacity: 1;
 }
 
 #clear-text {
