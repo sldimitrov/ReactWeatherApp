@@ -10,7 +10,7 @@ The design is responsible and it's suitable for `many divices`. The functionalit
 [https://github.com/sldimitrov/Web/assets/135168991/41c57568-3de4-469f-b46b-392aaf3ad847](https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/3ae2d7ed-a9ae-41b7-9843-e18a628effcd)
 
 # Knowledge stack: ⚛️ #
- ### Many core principles in React were applied as i have been developing this project.
+ ### Many core principles in React were applied as I have been developing this project.
  <img align="right" width="340" height="190" alt="react core concepts" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/7b864aeb-9cf4-49a4-905e-ec10290f2932" /> 
  <p>
  ⚙️ Lets begin with the JSX syntax that is something specific for this framework.
