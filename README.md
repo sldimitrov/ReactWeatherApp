@@ -42,10 +42,9 @@ Install React Weather APP with npm
 All tasks that were given to me for this project are completed. ✅ <br/> 
 Although, I am not satisfied completely because there is always a thing or two to improve. Stay tuned for more!
 
-# Postscript #
-```python 
-print('Thank you for the attention!' * n_times)
-```
+# Credits: 📝
+This project is course work for my internship in Orbis. <br/>
+Here I want to express my gratitude for my menthor Mr. Serafimov. 🙏 He was always by my side and without him and his responsive help this project could never be started. Along with that thanks to the other workers in the compnany that welcomed me warmly. Last but not least, acknowledgement to Mr. Kovachev that gave me the change to show my skills and determination and what I am capable of!
 
 # License: ©️
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
