@@ -34,7 +34,7 @@ Some of which have state and change dynamically on base on the extracted data. O
   npm start
 ```
 
-Approach: 🚶
+# Approach: 🚶 #
 Briefly explain how you went about the project. The design patterns implemented and code styles used.
 
 # Screenshots #
