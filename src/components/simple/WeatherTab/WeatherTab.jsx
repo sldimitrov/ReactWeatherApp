@@ -28,7 +28,7 @@ export default function WeatherTab() {
       currentRowValues[3].value = actualData.clouds.all + "%";
       currentRowValues[4].value = Math.round(actualData.wind.speed) + " km/h";
     }
-  }, [actualData]);
+  }, [actualData, currentRowValues]);
   useEffect(() => {
     if (!hourlyData || !hourlyData.list) {
       return; // Check for an undefined list
@@ -43,34 +43,32 @@ export default function WeatherTab() {
         return { forecastHeading, currentTime, temperature };
       });
       // Set the new data to the HourlyData state
-      currentInfoRows.map((key, index) => {
+      for (let index = 0; index < currentInfoRows.length; index++) {
         currentInfoRows[index] = weatherData[index];
-      });
+      }
       setHourlyData(currentInfoRows);
     }
-  }, [hourlyData]);
+  }, [hourlyData, currentInfoRows, setHourlyData]);
 
   return (
     <>
       <span className="weather-tab-container blur"></span>
       <main className="weather-tab-container">
-        <h1 id="invisible-search"></h1>
+        <div id="invisible-search"></div>
         <div className="scrollbox">
-          <div className="scrollbox inner">
-            <section className="weather-details-container">
-              <p id="weather-details">Weather Details...</p>
-            </section>
-            <WeatherDetails forecastHeading={forecastHeading[0]}>
-              {ROW_VALUES.map((rowValues) => (
-                <ValueRow key={rowValues.parameter} {...rowValues} />
-              ))}
-            </WeatherDetails>
-            <HoursForecast>
-              {currentInfoRows.map((infoRows, index) => (
-                <InfoRow key={index} {...infoRows} />
-              ))}
-            </HoursForecast>
-          </div>
+          <section className="weather-details-container">
+            <p id="weather-details">Weather Details...</p>
+          </section>
+          <WeatherDetails forecastHeading={forecastHeading[0]}>
+            {ROW_VALUES.map((rowValues) => (
+              <ValueRow key={rowValues.parameter} {...rowValues} />
+            ))}
+          </WeatherDetails>
+          <HoursForecast>
+            {currentInfoRows.map((infoRows, index) => (
+              <InfoRow key={index} {...infoRows} />
+            ))}
+          </HoursForecast>
           <script src="index.js"></script>
         </div>
       </main>

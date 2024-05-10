@@ -1,4 +1,6 @@
-
+::-webkit-scrollbar {
+  display: none
+}
 
 @media only screen and (max-width: 639px) { 
   .weather-tab-container {
@@ -207,6 +209,6 @@ and (max-width: 1149px) {
   }
 
   #invisible-search {
-    height: 70px;
+    height: 135px;
   }
 }

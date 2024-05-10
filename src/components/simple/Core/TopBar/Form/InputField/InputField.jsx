@@ -31,7 +31,7 @@ export default function InputField({
         placeholder="Search Location..."
         spellCheck="false"
         id="search-text"
-        autocomplete="off"
+        autoComplete="off"
         maxLength="18"
         value={currInputText}
         onChange={(e) => enterValue(e.target.value)}
