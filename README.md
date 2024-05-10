@@ -41,7 +41,8 @@ Install React Weather APP with npm
 
 # Status: 📶
 All tasks that were given to me for this project are completed. ✅ <br/> 
-Although, I am not satisfied completely because there is always a thing or two to improve. Stay tuned for more!
+Although, I am not satisfied completely because there is always a thing or two to improve. <br/>
+#Stay tuned for more!#
 
 # Credits: 📝
 This project is course work for my internship in Orbis. <br/>
