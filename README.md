@@ -18,9 +18,9 @@ The design is responsible and it's suitable for `many divices`. The functionalit
 Some of which have state and change dynamically on base on the extracted data. Other were rendered conditionality is something that you do a lot when using React. So what where I got this weather data from 🔍? The answer is - OpenWeatherAPI. For the API request i have been using axios which provides excellent opportunity to handle requests and their reponses. 
 
 
-## Installation
+# Installation
 
-Install React Weather APP with npm
+##Install React Weather APP with npm
 
 * First make sure that you have cloned the repo in your local folder.
 * Then open it in your favourite code editor and type this in the console:
