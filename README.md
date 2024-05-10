@@ -20,7 +20,7 @@ Some of which have state and change dynamically on base on the extracted data. O
 
 # Installation
 
-##Install React Weather APP with npm
+## Install React Weather APP with npm
 
 * First make sure that you have cloned the repo in your local folder.
 * Then open it in your favourite code editor and type this in the console:
