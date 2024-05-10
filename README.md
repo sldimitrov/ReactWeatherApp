@@ -42,3 +42,6 @@ Install React Weather APP with npm
 ```python 
 print('Thank you for the attention!' * n_times)
 ```
+
+# License: ©️
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
