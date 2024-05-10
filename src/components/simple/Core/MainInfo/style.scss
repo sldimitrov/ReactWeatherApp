@@ -139,3 +139,37 @@ and (max-width: 1149px) {
     padding: 20px 0px 0px 16px;
   }
 }
+
+@media only screen and (min-width: 1800px) {
+  .info-container {
+    top: 69vh;
+    left: 9vw;
+  }
+  
+  .current-temperature {
+    font-size: 156px;
+    font-weight: 400px;
+  }
+  
+  #additional-info {
+    max-width: 270px;
+    padding-left: 5px;
+    padding-top: 10px;
+  }
+  
+  #city {
+    max-height: 195px;
+    font-weight: 400px;
+    font-size: 70px;
+  }
+  
+  #date {
+    font-size: 21px;
+  }
+  
+  #cloud-img {
+    height: 80px;
+    width: 80px;
+    padding: 20px 0px 0px 16px;
+  }
+}

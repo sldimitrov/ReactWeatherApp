@@ -107,3 +107,9 @@ and (max-width: 1149px) {
     padding-bottom: 5px;
   }
 }
+
+@media only screen and (min-width: 1800px) {
+  #top-bar-container {
+    width: 88.6vw;
+  }
+}

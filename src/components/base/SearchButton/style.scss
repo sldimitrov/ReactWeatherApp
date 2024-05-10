@@ -39,3 +39,10 @@ and (max-width: 1149px) {
     height: 28px;
   }
 }
+
+@media only screen and (min-width: 1800px) {
+  #searcher-img {
+    width: 31px;
+    height: 31px;
+  }
+}

@@ -212,3 +212,24 @@ and (max-width: 1149px) {
     height: 135px;
   }
 }
+
+@media only screen and (min-width: 1800px) {
+  .weather-details-container {
+    display: flex;
+    align-items: end;
+    height: 6vh;
+    width: 15vw;
+  }
+  
+  #weather-details {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px;
+  }
+  
+  #blank-container {
+    display: flex;
+    width: 42vw;
+    height: 18.5vh;
+  }
+}

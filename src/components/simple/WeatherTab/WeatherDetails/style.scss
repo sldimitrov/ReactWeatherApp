@@ -148,3 +148,18 @@ and (max-width: 1149px) {
     height: 6vh;
   }
 }
+
+
+@media only screen and (min-width: 1800px) {
+  #forecast-heading-container {
+    display: flex;
+    align-items: end;
+    padding-bottom: 20px;
+    width: 55vw;
+    height: 9.5vh;
+  }
+  
+  #forecast-heading {
+    font-size: 20px;
+  }
+}

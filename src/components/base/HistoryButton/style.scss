@@ -30,3 +30,10 @@ and (max-width: 1149px) {
     height: 30px;
   }
 }
+
+@media only screen and (min-width: 1800px) {
+  #h-image {
+    width: 34px;
+    height: 34px;
+  }
+}

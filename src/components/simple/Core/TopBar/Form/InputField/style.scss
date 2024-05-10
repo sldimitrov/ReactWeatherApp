@@ -94,3 +94,14 @@ and (max-width: 1149px) {
     padding-left: 5px;
   }
 }
+
+
+@media only screen and (min-width: 1800px) {
+  #search-text {
+    font-size: 23px;
+  }
+
+  #search-text::placeholder {
+    font-size: 23px;
+  }
+}

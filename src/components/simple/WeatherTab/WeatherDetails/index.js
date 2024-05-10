@@ -1,4 +1,4 @@
-import Forecast from './Forecast.jsx';
-import './style.scss';
+import WeatherDetails from "./WeatherDetails.jsx";
+import "./style.scss";
 
-export default Forecast;
+export default WeatherDetails;

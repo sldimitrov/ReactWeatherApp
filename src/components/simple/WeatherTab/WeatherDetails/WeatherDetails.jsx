@@ -1,4 +1,4 @@
-export default function Forecast({ children, forecastHeading }) {
+export default function WeatherDetails({ children, forecastHeading }) {
   return (
     <>
       <section className="forecast-container">

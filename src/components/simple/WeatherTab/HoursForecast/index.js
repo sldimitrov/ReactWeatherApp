@@ -1,4 +1,4 @@
-import Weather from './Weather.jsx';
-import './style.scss';
+import HoursForecast from "./HoursForecast.jsx";
+import "./style.scss";
 
-export default Weather;
+export default HoursForecast;

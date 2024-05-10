@@ -84,3 +84,14 @@ and (max-width: 1149px) {
       height: 23px;
   } 
 }
+
+@media only screen and (min-width: 1800px) {
+  #sidebar-heading {
+      font-size: 25px;
+  }
+
+  #exit-img {
+      width: 24px;
+      height: 26px;
+  } 
+}
