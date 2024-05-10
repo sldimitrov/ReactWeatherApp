@@ -2,7 +2,7 @@
 ## `React Weather App`
 
 # Description #
-<img align="right" width="300" height="300" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/411e28f1-4dd0-4c6c-8758-1ddeff414195"/>
+<img align="right" width="220" height="220" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/411e28f1-4dd0-4c6c-8758-1ddeff414195"/>
  This Weather app combines wide range of skills including working with *HTML*, *CSS* and *JS*. I needed to use all of them to build this project in `React`. That helped me to get alogn with the basis principles and the essentials for this `framework`.
 The design is responsible and it's suitable for `many divices`. The functionality of the website imitates the behaviour of all modern weather apps. You can simply check the `daily-forecast` and other details in `real-time` for every city, town or country in the world! 
 
