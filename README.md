@@ -37,7 +37,7 @@ Install React Weather APP with npm
 # Screenshots #
 ### Overview of the phone and tablet design 🎨
 <img src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/e40d4b5f-01f9-4f00-a59d-e76925b5da06" width="380" height="525"/>
-<img src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/670ddc0c-d4b5-40e7-a93f-73c08e2109bb" width="190" height="380" />
+<img src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/999271ae-221a-4011-9b92-feecf9c6234e" width="190" height="380" />
 
 # Status: 📶
 All tasks that were given to me for this project are completed. ✅ <br/> 
