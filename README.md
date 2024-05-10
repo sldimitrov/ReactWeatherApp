@@ -38,6 +38,10 @@ Install React Weather APP with npm
 <img src="https://github.com/sldimitrov/Web/assets/135168991/8f616d41-3f13-4cee-96e3-87a258682fb2" width="380" height="525"/>
 <img src="https://github.com/sldimitrov/Web/assets/135168991/d6b6d2e9-a095-4411-b551-91db94212ba5" width="190" height="380" />
 
+# Status: 📶
+All tasks that were given to me for this project are completed. ✅ <br/> 
+Although, I am not satisfied completely because there is always a thing or two to improve. Stay tuned for more!
+
 # Postscript #
 ```python 
 print('Thank you for the attention!' * n_times)
