@@ -15,7 +15,6 @@ The design is responsible and it's suitable for `many divices`. The functionalit
  Another crucial concept were the components. As I had already mentioned in the description I have used HTML, CSS and JS for the development of the website application. ⚙️
  The reason for this is that is exactly what React components are made of. 
 Some of which have state and change dynamically on base on the extracted data. Other were rendered conditionality is something that you do a lot when using React. So what where I got this weather data from 🔍? The answer is - OpenWeatherAPI. For the API request i have been using axios which provides excellent opportunity to handle requests and their reponses. 
- <img align="right" width="300" height="200" alt="react jsx syntax" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/45879b38-fc52-4411-9b7b-f12f68a74f5e" />
 
 
 ## Installation
