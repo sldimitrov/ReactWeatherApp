@@ -17,6 +17,22 @@ The design is responsible and it's suitable for many divices. The functionality 
  The reason for this is that is exactly what React components are made of.
 Some of which have state and change dynamically on base on the extracted data. Other were rendered conditionality is something that you do a lot when using React. So what where I got this weather data from 🔍? The answer is - OpenWeatherAPI. For the API request i have been using axios which provides excellent opportunity to handle requests and their reponses. 
 
+## Installation
+
+Install React Weather APP with npm
+
+* First make sure that you have cloned the repo in your local folder.
+* Then open it in your favourite code editor and type this in the console:
+
+```bash
+  npm install
+```
+*With this command you install all packages that you need to run the React project.*
+* After you install *node_modules* folder is being install type:
+```bash
+  npm start
+```
+
 # Screenshots #
 ### Overview of the phone and tablet design 🎨
 <img src="https://github.com/sldimitrov/Web/assets/135168991/8f616d41-3f13-4cee-96e3-87a258682fb2" width="380" height="525"/>
