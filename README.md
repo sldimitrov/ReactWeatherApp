@@ -1,15 +1,15 @@
-# Project Title: 🌤️
+# Project Title: 🌤️ #
 ## `React Weather App`
 
-# Description #
+# Description: #
 <img align="right" width="180" height="180" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/411e28f1-4dd0-4c6c-8758-1ddeff414195"/>
  This Weather app combines wide range of skills including working with *HTML*, *CSS* and *JS*. I needed to use all of them to build this project in `React`. That helped me to get alogn with the basis principles and the essentials for this `framework`.
 The design is responsible and it's suitable for `many divices`. The functionality of the website imitates the behaviour of all modern weather apps. You can simply check the `daily-forecast` and other details in `real-time` for every city, town or country in the world! 
 
-# Live demo of the functionality #
+# Live demo of the functionality: 🔗 #
 [https://github.com/sldimitrov/Web/assets/135168991/41c57568-3de4-469f-b46b-392aaf3ad847](https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/3ae2d7ed-a9ae-41b7-9843-e18a628effcd)
 
-# Knowledge stack #
+# Knowledge stack: ⚛️ #
  ### Many core principles in React were applied as i have been developing this project.
  <img align="right" width="330" height="200" alt="react core concepts" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/7b864aeb-9cf4-49a4-905e-ec10290f2932" /> 
  Lets begin with the JSX syntax that is something specific for this framework. It is simply a mix between HTML code and JS. 
@@ -18,7 +18,7 @@ The design is responsible and it's suitable for `many divices`. The functionalit
 Some of which have state and change dynamically on base on the extracted data. Other were rendered conditionality is something that you do a lot when using React. So what where I got this weather data from 🔍? The answer is - OpenWeatherAPI. For the API request i have been using axios which provides excellent opportunity to handle requests and their reponses. 
 
 
-# Installation
+# Setup / Installation: 💻 #
 
 ## Install React Weather APP with npm
 
@@ -33,6 +33,9 @@ Some of which have state and change dynamically on base on the extracted data. O
 ```bash
   npm start
 ```
+
+Approach: 🚶
+Briefly explain how you went about the project. The design patterns implemented and code styles used.
 
 # Screenshots #
 ## Overview of the phone and tablet designs 🎨
