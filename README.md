@@ -9,10 +9,13 @@ The design is responsible and it's suitable for many divices. The functionality 
 [https://github.com/sldimitrov/Web/assets/135168991/41c57568-3de4-469f-b46b-392aaf3ad847](https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/3ae2d7ed-a9ae-41b7-9843-e18a628effcd)
 
 # Knowledge stack #
- ### Many core principles in React were applied as i have been developing this project. Lets begin with the JSX syntax that is something specific for this framework. Another crucial concept were the components. Some of which have state and change dynamically on base on the extracted data. Other were rendered conditionality is something that you do a lot when using React. So what where I got this weather data from 🔍? The answer is - OpenWeatherAPI. For the API request i have been using axios which provides excellent opportunity to handle requests and their reponses. As I had already mentioned in the description I have used HTML, CSS and JS for the development of the website application. ⚙️
---
-![Screenshot 2024-04-14 210046](https://github.com/sldimitrov/Web/assets/135168991/15fbc680-94fb-48f7-99bf-976210a32d62)
-
+ ### Many core principles in React were applied as i have been developing this project.
+ ![Screenshot 2024-05-11 010225](https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/7b864aeb-9cf4-49a4-905e-ec10290f2932)
+ Lets begin with the JSX syntax that is something specific for this framework. It is simply a mix between HTML code and JS. 
+ ![Screenshot 2024-05-11 010245](https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/45879b38-fc52-4411-9b7b-f12f68a74f5e)
+ Another crucial concept were the components. As I had already mentioned in the description I have used HTML, CSS and JS for the development of the website application. ⚙️
+ The reason for this is that is exactly what React components are made of.
+Some of which have state and change dynamically on base on the extracted data. Other were rendered conditionality is something that you do a lot when using React. So what where I got this weather data from 🔍? The answer is - OpenWeatherAPI. For the API request i have been using axios which provides excellent opportunity to handle requests and their reponses. 
 
 # Screenshots #
 ### Overview of the phone and tablet design 🎨
