@@ -28,7 +28,7 @@ Install React Weather APP with npm
   npm install
 ```
 *With this command you install all packages that you need to run the React project.*
-* After you install *node_modules* folder is being install type:
+* After the *node_modules* folder is being install type:
 ```bash
   npm start
 ```
