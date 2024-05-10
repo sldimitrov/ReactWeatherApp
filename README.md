@@ -2,7 +2,7 @@
 ## `React Weather App`
 
 # Description #
-This Weather app combines wide range of skills including working with HTML, CSS and JS. I needed to use all of them to build this project in React. That helped me to get alogn with the basis principles and the essentials for this framework.<br>
+This Weather app combines wide range of skills including working with HTML, CSS and JS. <br> I needed to use all of them to build this project in React.  That helped me to get alogn with the basis principles and the essentials for this framework.<br>
 The design is responsible and it's suitable for many divices. The functionality of the website imitates the behaviour of all modern weather apps. You can simply check the daily-forecast and other details in real-time for every city, town or country in the world! 
 
 # Live demo of the functionality #
