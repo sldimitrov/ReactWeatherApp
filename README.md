@@ -13,9 +13,9 @@ The design is responsible and it's suitable for `many divices`. The functionalit
  ### Many core principles in React were applied as i have been developing this project.
  <img align="right" width="330" height="200" alt="react core concepts" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/7b864aeb-9cf4-49a4-905e-ec10290f2932" /> 
  Lets begin with the JSX syntax that is something specific for this framework.
-Another crucial concept were the components. As I had already mentioned in the description I have used HTML, CSS and JS in the development process. ⚙️
-The reason for this is that is exactly what React components are made of. 
-Some of them have state and change dynamically on base on the extracted data. Other don't have state or are rendered conditionality. <br/> So where I have received this weather data from 🔍? The answer is - OpenWeatherAPI. For the RESTapi requests I have been using Axios which provides excellent opportunity to handle requests and their reponses. 
+Another crucial concept were the components. As I had already mentioned in the description I have used HTML, CSS and JS in the development process. ⚙️ <br/>
+The reason for this is that is exactly what React components are made of. Some of them have state and change dynamically on base on the extracted data. Other don't have state or are rendered conditionality. <br/> 
+So where I have received this weather data from 🔍? The answer is - OpenWeatherAPI. For the RESTapi requests I have been using Axios which provides excellent opportunity to handle requests and their reponses. 
 
 
 # Setup / Installation: 💻 #
