@@ -7,7 +7,7 @@ The design is responsible and it's suitable for many divices. The functionality 
 
 # Live demo of the functionality #
 
-https://github.com/sldimitrov/Web/assets/135168991/41c57568-3de4-469f-b46b-392aaf3ad847
+[https://github.com/sldimitrov/Web/assets/135168991/41c57568-3de4-469f-b46b-392aaf3ad847](https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/3ae2d7ed-a9ae-41b7-9843-e18a628effcd)
 
 # Knowledge stack #
  ### As I had already mentioned in the description I have used HTML, CSS and JS for the development of the website application. ⚙️
