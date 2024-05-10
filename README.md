@@ -10,7 +10,7 @@ The design is responsible and it's suitable for `many divices`. The functionalit
 
 # Knowledge stack #
  ### Many core principles in React were applied as i have been developing this project.
- <img align="right" width="300" height="200" alt="react core concepts" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/7b864aeb-9cf4-49a4-905e-ec10290f2932" /> 
+ <img align="right" width="330" height="200" alt="react core concepts" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/7b864aeb-9cf4-49a4-905e-ec10290f2932" /> 
  Lets begin with the JSX syntax that is something specific for this framework. It is simply a mix between HTML code and JS. 
  Another crucial concept were the components. As I had already mentioned in the description I have used HTML, CSS and JS for the development of the website application. ⚙️
  The reason for this is that is exactly what React components are made of. 
