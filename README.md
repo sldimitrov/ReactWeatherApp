@@ -1,7 +1,7 @@
 # React Weather App Documentation 🌤️
 
 # Description #
-This Weather Application combine wide range of skills including working with HTML, CSS and Javascript with RESTapi. The design is responsible and it's suitable for many divices. The functionality of the website imitates the behaviour of all modern weather apps. This means you can check the forecast and other details in real-time for every city, town or country in the world. 
+This Weather Application combine wide range of skills including working with HTML, CSS and JS. I managed to apply all of them in this React project. The design is responsible and it's suitable for many divices. The functionality of the website imitates the behaviour of all modern weather apps. This means you can check the forecast and other details in real-time for every city, town or country in the world. 
 
 # Live demo of the functionality #
 
