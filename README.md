@@ -15,7 +15,7 @@ The design is responsible and it's suitable for `many divices`. The functionalit
  Lets begin with the JSX syntax that is something specific for this framework.
 Another crucial concept were the components. As I had already mentioned in the description I have used HTML, CSS and JS in the development process. ⚙️
 The reason for this is that is exactly what React components are made of. 
-Some of them have state and change dynamically on base on the extracted data. Other don't have state or are rendered conditionality. So where I have received this weather data from 🔍? The answer is - OpenWeatherAPI. For the RESTapi requests I have been using Axios which provides excellent opportunity to handle requests and their reponses. 
+Some of them have state and change dynamically on base on the extracted data. Other don't have state or are rendered conditionality. <br/> So where I have received this weather data from 🔍? The answer is - OpenWeatherAPI. For the RESTapi requests I have been using Axios which provides excellent opportunity to handle requests and their reponses. 
 
 
 # Setup / Installation: 💻 #
