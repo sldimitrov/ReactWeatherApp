@@ -1,4 +1,4 @@
-# Project Title: 🌤️ #
+e# Project Title: 🌤️ #
 ## `React Weather App`
 
 # Description: #
@@ -34,8 +34,9 @@ Another crucial concept I have used in action are the components. They involve w
  🔍 So where I have received this weather data from? The answer is - OpenWeatherAPI. For the RESTapi requests I have been using Axios which 
  provides excellent opportunity to handle requests and their reponses.<br/>
  🌀 Some components have state and change dynamically. Other are rendered conditionality, but in the end, props is what is making them reusable and quite useful. In order to use my state across many components without prop-drilling I have used custom hooks and useContext to derive the state everywhere I need it. Other hooks that were implement in my project are useState, useEffect, useMemo and useCallback
+ 
  ### To sum up the tech-stack:
- - React, HTML, CSS, Axios, JavaScript.
+ --- React, HTML, CSS, Axios, JavaScript.
 </p> 
 
 
