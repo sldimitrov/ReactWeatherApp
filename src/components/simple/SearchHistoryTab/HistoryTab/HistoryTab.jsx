@@ -15,6 +15,7 @@ export default function HistoryTab() {
   const [historyTab, setHistoryTab] = useHistoryTab();
 
   useEffect(() => {
+    // Load the cities that are in LC within the SearchHistory
     const searchedCities = Object.keys(localStorage);
     for (let i = 0; i < searchedCities.length; i++) {
       setSearchHistory((prevHistory) => [

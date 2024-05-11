@@ -117,13 +117,14 @@ and (max-width: 1149px) {
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 270px;
+    max-width: 295px;
     padding-left: 5px;
     padding-top: 10px;
   }
   
   #city {
     max-height: 195px;
+    max-width: 330px;
     font-weight: 400px;
     font-size: 60px;
   }
