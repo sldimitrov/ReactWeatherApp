@@ -74,13 +74,13 @@ Another crucial concept I have used in action are the components. They involve w
 
 
 ## Status: 📶
-All tasks that were given to me for this project are completed. ✅ <br/> 
+* All tasks that were given to me for this project are completed. ✅ <br/> 
 Although, I am not satisfied completely because there is always a thing or two to improve. <br/>
 *Stay tuned for more!* 📈
 
 ## Credits: 📝
 ### This project is course work for my internship in Orbis. <br/>
-Here I want to express my gratitude for my menthor *Mr. Serafimov*. 🙏 <br/>
+* Here I want to express my gratitude for my menthor *Mr. Serafimov*. 🙏 <br/>
 He was always by my side and without him and his responsive help this project could never be finished. <br/>
 Along with that, thanks to the other workers in the companany that welcomed me warmly. <br/>
 Last but not least, acknowledgement to *Mr. Kovachev* that gave me the change to show my skills and determination and what I am capable of!
