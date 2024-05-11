@@ -6,6 +6,10 @@
  This Weather app combines wide range of skills including working with HTML, CSS and JS. I needed to use all of them to build this project in React. That helped me to get alogn with the basis principles and the essentials for this framework.
 The design is responsible and it's suitable for many divices. The functionality of the website imitates the behaviour of all modern weather apps. You can simply check the daily-forecast and other details in real-time for every city, town or country in the world! 
 
+# Deployment #
+For the deployment of my project I have decided to use Vercel. It helps us to share any github project on the web any with ease. After all, testing is the main reason I am deploying mine so...
+ - [React Weather App Test](https://react-weather-app-ten.vercel.app/)
+
 # Live demo of the functionality: 🔗 #
 [https://github.com/sldimitrov/Web/assets/135168991/41c57568-3de4-469f-b46b-392aaf3ad847](https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/3ae2d7ed-a9ae-41b7-9843-e18a628effcd)
 
