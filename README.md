@@ -7,8 +7,14 @@
 
 ## Table of contents
 * [Functionality Live Demo](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#live-demo-of-the-functionality-)
-* [Technologies](#technologies)
-* [Setup](#setup)
+* [Deployment](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#deployment-)
+* [Feedback](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#feedback-)
+* [Knowledge stack](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#knowledge-stack-%EF%B8%8F)
+* [Setup/Installation](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#setup--installation-)
+* [Screenshots](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#screenshots)
+* [Status](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#status-)
+* [Credits](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#credits-)
+* [License](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#license-%EF%B8%8F)
 
 # Live demo of the functionality: 🔗 #
 [https://github.com/sldimitrov/Web/assets/135168991/41c57568-3de4-469f-b46b-392aaf3ad847](https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/3ae2d7ed-a9ae-41b7-9843-e18a628effcd)
