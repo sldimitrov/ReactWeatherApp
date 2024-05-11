@@ -60,6 +60,7 @@ Another crucial concept I have used in action are the components. They involve w
  <img alt="tablet design" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/e40d4b5f-01f9-4f00-a59d-e76925b5da06" width="380" height="525"/>
  <img alt="phone design" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/999271ae-221a-4011-9b92-feecf9c6234e" width="190" height="380" />
 </div>
+
 ---
 
 ### Overview of the SearchHistoryTab 🔍
