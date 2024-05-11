@@ -1,51 +1,48 @@
+#search-button {
+  padding: 0;
+  border: none;
+  background: none; 
+}
 
 @media only screen and (max-width: 639px) { 
   #search-button {
-    border-radius: 50px;
-    border-width: 2px;
-    border-color: #132059;
     margin: 0px;
   }
+  
   #searcher-img {
-    background-color: rgb(48, 54, 141);
-    border-radius: 50px;
-    width: 7px;
-    height: 6px;
-    padding: 2px;
+    width: 12px;
+    height: 11px;
   }
 }
 
 @media only screen and (min-width: 640px)
 and (max-width: 1149px) {
   #search-button {
-    border-radius: 50px;
-    border-width: 3px;
-    border-color: #132059;
     margin: 0px;
-}
+  }
 
-#searcher-img {
-    background-color: rgb(48, 54, 141);
-    border-radius: 50px;
-    width: 10px;
-    height: 12px;
-    padding: 5px;
+  #searcher-img {
+    width: 22px;
+    height: 21px;
+    padding-right: 3px;
   }
 } 
 
 @media only screen and (min-width: 1150px) {
   #search-button {
-    border-radius: 50px;
-    border-width: 5px;
-    border-color: #132059;
-    transition: background-color 3 ease;
+    padding-right: 15px;
+    padding-bottom: 5px;
   }
 
   #searcher-img {
-    background-color: rgb(48, 54, 141);
-    width: 14px;
-    height: 15px;
-    margin: 5px;
-    padding: 5px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  #searcher-img {
+    width: 31px;
+    height: 31px;
   }
 }

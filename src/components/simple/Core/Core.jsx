@@ -6,18 +6,17 @@ import TopBar from "./TopBar";
 import Logo from "./TopBar/Logo";
 import Form from "./TopBar/Form";
 import MainInfo from "./MainInfo";
+import dateFormatter from "../../../services/dateFormatter.js";
 
 export default function Core() {
   // Use custom hooks to receive the useContext state
-  const actualData = useTheme();
-
+  const [actualData] = useTheme();
   const [mainInfo, setMainInfo] = useState([
     "16°",
     "London",
     "06:09 - Monday, 9 Sep ‘23",
     "Clouds",
   ]);
-
   useEffect(() => {
     /* This anonymous function extract the data
      from the current state and updates UI */
@@ -25,20 +24,17 @@ export default function Core() {
       let city = actualData.name;
       let currentTemperature = Math.round(actualData.main.temp) + "°";
       let forecastHeading = actualData.weather[0].main;
-      const myUnixTimestamp = actualData.dt; // start with a Unix timestamp
-      const currDate = new Date(myUnixTimestamp * 1000).toUTCString(); // convert timestamp to milliseconds
-
-      let dataArray = [currentTemperature, city, currDate, forecastHeading];
+      const date = dateFormatter(actualData.dt); // start with a Unix timestamp
+      let dataArray = [currentTemperature, city, date, forecastHeading];
       // Update the mainInfo state
       setMainInfo(dataArray);
     }
   }, [actualData]);
-
   return (
     <>
       <TopBar>
         <Logo />
-        <Form onClickSearch={getWeatherData} onSubmitForm={getWeatherData} />
+        <Form onSearchCity={getWeatherData} />
       </TopBar>
       <MainInfo
         temperature={mainInfo[0]}

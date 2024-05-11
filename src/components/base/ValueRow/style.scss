@@ -11,10 +11,6 @@
       opacity: 0.7;
       width: 23vh;
   }
-
-  .icons {
-      max-height: 23px;
-  }
 }
 
 @media only screen and (min-width: 640px) {
@@ -35,11 +31,6 @@
   #value {
     padding-right: 8px;
   }
-
-  .icons {
-    width: 18px;
-    height: 23px;
-  }
 } 
 
 @media only screen and (min-width: 1150px) {
@@ -47,21 +38,46 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 76vw;
-    height: 6vh;
+    width: 50vw;
+    height: 30px;
   }
 
   .w-characteristics {
       opacity: 0.7;
       width: 23vh;
+      min-width: 20vh;
   }
 
   #value {
-    padding-left: 20px;
+    display: flex;
+    justify-content: end;
+    width: 90px;
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+    height: 75px;
   }
 
-  .icons {
-    height: 25px;
-    width: 19px;
+  .w-characteristics {
+      opacity: 0.7;
+      width: 23vh;
+      min-width: 20vh;
+      font-size: 20px;
+  }
+
+  #value {
+    display: flex;
+    justify-content: end;
+    width: 90px;
+    font-size: 20px;
+    margin: 0;
   }
 }

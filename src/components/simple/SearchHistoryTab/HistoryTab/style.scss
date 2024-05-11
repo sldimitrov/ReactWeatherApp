@@ -1,0 +1,241 @@
+@media only screen and (max-width: 639px) { 
+  .sidebar-container {
+    z-index: 3;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    width: 35vw;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    border-right: 3px solid white;
+    opacity: 1;
+    left: -50vw;
+    top: 0;
+    transition: left 0.3s ease;
+    padding-left: 25px;
+  }
+
+  .sidebar-container.active {
+      left: 0;
+  }
+
+  .sidebar-background-container {
+      z-index: 2;
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(39, 33, 33);
+      opacity: 0.3;
+      left: -100%;
+      top: 0;
+      transition: left 0.35s ease;
+  }
+
+  .sidebar-background-container.active {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(27, 25, 25);
+      opacity: 0.8;
+      left: 0;
+  }
+
+  #history-img {
+      width: 10px;
+      height: 10px;
+  }
+
+  #history-button {
+      border-radius: 50px;
+      border-width: 2px;
+      border-color: #132059;
+  }
+
+  .city-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 10px;
+      width: 13vw;
+      height: 5.5vh;
+      margin: 0px;
+  }
+}
+
+@media only screen and (min-width: 640px)
+and (max-width: 1149px) { 
+  .sidebar-container {
+    z-index: 3;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    width: 30vw;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    border-right: 3px solid white;
+    opacity: 1;
+    left: -40vw;
+    top: 0;
+    transition: left 0.3s ease;
+    padding-left: 28px;
+  }
+
+  .sidebar-container.active {
+      left: 0;
+  }
+
+  .sidebar-background-container {
+      z-index: 2;
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(39, 33, 33);
+      opacity: 0.3;
+      left: -100%;
+      top: 0;
+      transition: left 0.35s ease;
+  }
+
+  .sidebar-background-container.active {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(27, 25, 25);
+      opacity: 0.8;
+      left: 0;
+  }
+
+  #history-img {
+      width: 20px;
+      height: 20px;
+  }
+
+  #history-button {
+      border-radius: 50px;
+      border-width: 3px;
+      border-color: #132059;
+  }
+
+  .city-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 8vw;
+      height: 5.5vh;
+      margin: 0px;
+  }
+}
+  
+
+@media only screen and (min-width: 1150px) {
+  .sidebar-container {
+    z-index: 3;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    width: 16vw;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    border-right: 3px solid white;
+    opacity: 1;
+    left: -18vw;
+    transition: left 0.3s ease;
+    padding-left: 25px;
+  }
+
+  .sidebar-container.active {
+      left: 0;
+  }
+
+  .sidebar-background-container {
+      z-index: 2;
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(39, 33, 33);
+      opacity: 0.3;
+      left: -100%;
+      transition: left 0.35s ease;
+  }
+
+  .sidebar-background-container.active {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(27, 25, 25);
+      opacity: 0.8;
+      left: 0;
+  }
+  
+  .city-name {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      width: 6vw;
+      height: 5.5vh;
+      margin: 0px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .sidebar-container {
+    z-index: 3;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    width: 16vw;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    border-right: 3px solid white;
+    opacity: 1;
+    left: -18vw;
+    transition: left 0.3s ease;
+    padding-left: 25px;
+  }
+
+  .sidebar-container.active {
+      left: 0;
+  }
+
+  .sidebar-background-container {
+      z-index: 2;
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(39, 33, 33);
+      opacity: 0.3;
+      left: -100%;
+      transition: left 0.35s ease;
+  }
+
+  .sidebar-background-container.active {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(27, 25, 25);
+      opacity: 0.8;
+      left: 0;
+  }
+  
+  .city-name {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      width: 6vw;
+      height: 5.5vh;
+      margin: 0px;
+  }
+}

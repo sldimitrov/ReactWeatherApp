@@ -1,13 +1,11 @@
-import historyImg from "../../../images/history.png";
-import { useHistoryTab, useSetHistoryTab } from "../../../themeContext";
+import historyImg from "../../../assets/history.png";
+import { useHistoryTab } from "../../../themeContext";
 
 export default function HistoryButton() {
-  const historyTab = useHistoryTab();
-  const setHistoryTab = useSetHistoryTab();
+  const [historyTab, setHistoryTab] = useHistoryTab();
 
   function handleClickHistory() {
     setHistoryTab(!historyTab);
-    console.log(historyTab);
   }
   return (
     <button id="history-button">

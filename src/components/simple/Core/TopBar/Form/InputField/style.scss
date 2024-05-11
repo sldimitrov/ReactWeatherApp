@@ -1,33 +1,61 @@
+#search-text {
+  border: none;
+  background: none;
+  border-radius: 50px;
+  color: white;
+}
+
+#search-text:focus,
+#search-text:active {
+  background-color: none;
+}
+
 @media only screen and (max-width: 639px) { 
   #search-text {
     display: flex;
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
-    font-size: 9px;
-    opacity: 0.8;
+    font-size: 12px;
+    opacity: 0.7;
     margin-bottom: 4x;
     border-radius: 40px;
     border-width: 3px;
-    width: 20vw;
-    padding: 3px;
+    width: 28vw;
+  }
+
+  #search-text::placeholder {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 12px;
+    color: white;
+    opacity: 0.7;
   }
 }
 
 @media only screen and (min-width: 640px)
 and (max-width: 1149px) {
   #search-text {
-    display: flex;
-    flex-shrink: 1;
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-size: 20px;
+    color: white;
     opacity: 0.8;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
     border-radius: 40px;
     border-width: 3px;
     width: 22vw;
-    padding-left: 5px;
+    
+  }
+
+  #search-text::placeholder {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: 500;
   }
 } 
 
@@ -36,12 +64,44 @@ and (max-width: 1149px) {
     display: flex;
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-size: 18px;
-    opacity: 0.8;
-    width: 16vw;
-    border-radius: 40px;
-    border-width: 4px;
-    padding: 8px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    width: 18vw;
+    text-shadow: 1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+    padding-bottom: 3px;
+  }
+
+  #search-text::placeholder {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.7;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+  }
+
+  #search-text[type="text"]:focus {
+    color: white;
+    border: 2px solid black;
+    border-radius: 50px;
+    outline: 1px solid rgb(255, 255, 255);
+    padding-left: 5px;
+  }
+}
+
+
+@media only screen and (min-width: 1800px) {
+  #search-text {
+    font-size: 23px;
+  }
+
+  #search-text::placeholder {
+    font-size: 23px;
   }
 }

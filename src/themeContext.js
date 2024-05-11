@@ -1,79 +1,54 @@
-import React, { useContext, useState, useMemo } from 'react';
-import getWeatherData from './services/getWeatherData';
+import React, { useContext, useState, useMemo } from "react";
+import getWeatherData from "./services/getWeatherData";
 
 // Create context constants
 const DataContext = React.createContext();
-const DataUpdateContext = React.createContext();
 const SelectedCity = React.createContext();
-const SetSelectedCity = React.createContext();
 const SearchHistory = React.createContext();
-const SetSearchHistory = React.createContext();
 const HistoryTab = React.createContext();
-const SetHistoryTab = React.createContext();
-
-
+const HourlyData = React.createContext();
 // Initialise Custom Hooks to derive state when imported
-export function useTheme() { 
-  return useContext(DataContext)
+export function useTheme() {
+  return useContext(DataContext);
 }
-
-export function useThemeUpdate() {
-  return useContext(DataUpdateContext)
-}
-
 export function useSelectedCity() {
-  return useContext(SelectedCity)
+  return useContext(SelectedCity);
 }
-
-export function useSetSelectedCity() {
-  return useContext(SetSelectedCity)
-}
-
 export function useSearchHistory() {
-  return useContext(SearchHistory)
+  return useContext(SearchHistory);
 }
-
-export function useSetSearchHistory() {
-  return useContext(SetSearchHistory)
-}
-
 export function useHistoryTab() {
-  return useContext(HistoryTab)
+  return useContext(HistoryTab);
+}
+export function useHourlyData() {
+  return useContext(HourlyData);
 }
 
-export function useSetHistoryTab() {
-  return useContext(SetHistoryTab)
-}
-
-export function ThemeProvider({children}) {
+export function ThemeProvider({ children }) {
   /* This function packs all the required state and combines it into a useful ThemeProvider.
    That allow components to use state very comfortable by just importing it. */
   const [actualData, setActualData] = useState("");
+  const [hourlyData, setHourlyData] = useState();
   const [selectedCity, setSelectedCity] = useState("");
   const [searchHistory, setSearchHistory] = useState([]);
   const [historyTabVisibility, setHistoryTabVisibility] = useState(false);
-
   useMemo(() => {
-    getWeatherData("London", setActualData);
+    getWeatherData("London", setActualData, setHourlyData);
   }, []);
-
+  // Provide the required state to every component
   return (
-    <DataContext.Provider value={actualData}>
-      <DataUpdateContext.Provider value={setActualData}>
-        <SelectedCity.Provider value={selectedCity}>
-          <SetSelectedCity.Provider value={setSelectedCity}>
-            <SearchHistory.Provider value={searchHistory}>
-              <SetSearchHistory.Provider value={setSearchHistory}>
-                <HistoryTab.Provider value={historyTabVisibility}>
-                  <SetHistoryTab.Provider value={setHistoryTabVisibility}>
-                    {children} 
-                  </SetHistoryTab.Provider>
-                </HistoryTab.Provider>
-              </SetSearchHistory.Provider>
-            </SearchHistory.Provider>
-          </SetSelectedCity.Provider>
-        </SelectedCity.Provider>
-      </DataUpdateContext.Provider>
+    <DataContext.Provider value={[actualData, setActualData]}>
+      <SelectedCity.Provider value={[selectedCity, setSelectedCity]}>
+        <SearchHistory.Provider value={[searchHistory, setSearchHistory]}>
+          <HistoryTab.Provider
+            value={[historyTabVisibility, setHistoryTabVisibility]}
+          >
+            <HourlyData.Provider value={[hourlyData, setHourlyData]}>
+              {children}
+            </HourlyData.Provider>
+          </HistoryTab.Provider>
+        </SearchHistory.Provider>
+      </SelectedCity.Provider>
     </DataContext.Provider>
-  )
+  );
 }

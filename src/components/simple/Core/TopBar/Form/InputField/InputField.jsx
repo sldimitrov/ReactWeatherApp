@@ -1,14 +1,17 @@
-import { useState } from "react";
-import { useThemeUpdate } from "../../../../../../themeContext";
 import {
+  useTheme,
   useSelectedCity,
-  useSetSelectedCity,
+  useHourlyData,
 } from "../../../../../../themeContext";
 
-export default function InputField({ onSubmitForm }) {
-  const [currInputText, setCurrInputText] = useState("");
-  const setSelectedCity = useSetSelectedCity();
-  const setActualData = useThemeUpdate();
+export default function InputField({
+  onSearchCity,
+  currInputText,
+  setCurrInputText,
+}) {
+  const [selectedCity, setSelectedCity] = useSelectedCity();
+  const [hourlyData, setHourlyData] = useHourlyData();
+  const [actualData, setActualData] = useTheme();
 
   function enterValue(value) {
     setCurrInputText(value);
@@ -16,7 +19,7 @@ export default function InputField({ onSubmitForm }) {
 
   function submitForm(pressedKey) {
     if (pressedKey === "Enter") {
-      onSubmitForm(currInputText, setActualData);
+      onSearchCity(currInputText, setActualData, setHourlyData);
       setSelectedCity(currInputText);
     }
   }
@@ -28,7 +31,8 @@ export default function InputField({ onSubmitForm }) {
         placeholder="Search Location..."
         spellCheck="false"
         id="search-text"
-        maxLength="16"
+        autoComplete="off"
+        maxLength="18"
         value={currInputText}
         onChange={(e) => enterValue(e.target.value)}
         onKeyUp={(e) => {

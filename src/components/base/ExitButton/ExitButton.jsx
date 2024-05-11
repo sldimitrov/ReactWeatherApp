@@ -1,4 +1,4 @@
-import exitButtonImg from "../../images/exit_button.png";
+import exitButtonImg from "../../assets/exit_button.png";
 
 export default function ExitButton({ onSelectExit }) {
   function handleClickExit() {

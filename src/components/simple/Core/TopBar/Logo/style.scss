@@ -11,7 +11,6 @@
 
 @media only screen and (min-width: 640px)
 and (max-width: 1149px) {
-
   #logo {
     display: flex;
     width: 80px;
@@ -32,9 +31,15 @@ and (max-width: 1149px) {
 
   #logo {
       display: flex;
-      width: 96px;
+      width: 89.89px;
+      height: 49px;
+  }
+}
+
+@media only screen and (min-width: 10px) {
+  #logo {
+      display: flex;
+      width: 100.89px;
       height: 55px;
-      left: 75px;
-      top: 30px;
   }
 }
