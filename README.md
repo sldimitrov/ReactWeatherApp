@@ -72,7 +72,7 @@ Another crucial concept I have used in action are the components. They involve w
 ## Status: 📶
 All tasks that were given to me for this project are completed. ✅ <br/> 
 Although, I am not satisfied completely because there is always a thing or two to improve. <br/>
-*Stay tuned for more!*
+*Stay tuned for more!* 📈
 
 ## Credits: 📝
 ### This project is course work for my internship in Orbis. <br/>
