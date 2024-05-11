@@ -3,8 +3,7 @@
 
 # Description: #
 <img align="right" width="180" height="180" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/411e28f1-4dd0-4c6c-8758-1ddeff414195"/>
- People nowadays can look straight in the future... You don't believe me? In order to knock you out I am presenting you my new project named React Weather App. My application allows you to predict the unpredictable and travel safely. Hourly-forecast with the essential data for the day is what I am offering you. There is nothing I want in return. Go on and check out at   
- - [test](https://react-weather-app-ten.vercel.app/)
+ People nowadays can look straight in the future... You don't believe me? In order to knock you out I am presenting you my new project named React Weather App. My application allows you to predict the unpredictable and travel safely. Hourly-forecast with the essential data for the day is what I am offering you. The main purpose behind the project is my course work at Orbis and also to get familiar with JS, in this case with React
 
 
 
