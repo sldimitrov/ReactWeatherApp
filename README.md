@@ -36,8 +36,8 @@ Another crucial concept I have used in action are the components. They involve w
  🌀 Some components have state and change dynamically. Other are rendered conditionality, but in the end, props is what is making them reusable and quite useful. In order to use my state across many components without prop-drilling I have used custom hooks and useContext to derive the state everywhere I need it. Other hooks that were implement in my project are useState, useEffect, useMemo and useCallback
  
  ### To sum up the tech-stack:
-Core: `React, JavaScript, HTML` <br/>
-Additional libraries: `Axios, Sass`
+* Core: `React, JavaScript, HTML` <br/>
+* Additional libraries: `Axios, Sass`
 </p> 
 
 
