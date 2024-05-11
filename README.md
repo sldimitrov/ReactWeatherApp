@@ -57,10 +57,11 @@ Another crucial concept I have used in action are the components. They involve w
 ## Screenshots 
 ### Overview of the phone and tablet designs 🎨
 <div>
- <img align="center" alt="tablet design" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/e40d4b5f-01f9-4f00-a59d-e76925b5da06" width="380" height="525"/>
- <img align="center" alt="phone design" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/999271ae-221a-4011-9b92-feecf9c6234e" width="190" height="380" />
+ <img alt="search history tab" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/d52288ef-b740-41aa-bd4e-17e785bb7974" width="720" height="403" />
+ 
+ <img alt="tablet design" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/e40d4b5f-01f9-4f00-a59d-e76925b5da06" width="380" height="525"/>
+ <img alt="phone design" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/999271ae-221a-4011-9b92-feecf9c6234e" width="190" height="380" />
 </div>
- <img align="center" alt="search history tab" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/d52288ef-b740-41aa-bd4e-17e785bb7974" width="720" height="403" />
 
 
 
