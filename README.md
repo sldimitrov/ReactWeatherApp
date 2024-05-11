@@ -6,7 +6,7 @@
  People nowadays can look straight in the future... You don't believe me? In order to knock you out I am presenting you my new project named React Weather App. My application allows you to predict the unpredictable and travel safely. Hourly-forecast with the essential data for the day is what I am offering you. The main purpose behind the project is my course work at Orbis and also to get familiar with JS framework, in my case with React.
 
 ## Table of contents
-* [General info](#https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#live-demo-of-the-functionality-)
+* [Functionality Live Demo](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#live-demo-of-the-functionality-)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
