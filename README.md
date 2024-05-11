@@ -3,8 +3,11 @@
 
 # Description: #
 <img align="right" width="180" height="180" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/411e28f1-4dd0-4c6c-8758-1ddeff414195"/>
- This Weather app combines wide range of skills including working with HTML, CSS and JS. I needed to use all of them to build this project in React. That helped me to get alogn with the basis principles and the essentials for this framework.
-The design is responsible and it's suitable for many divices. The functionality of the website imitates the behaviour of all modern weather apps. You can simply check the daily-forecast and other details in real-time for every city, town or country in the world! 
+## Description
+ People nowadays can look straight in the future... You don't believe me? In order to knock you out I am presenting you my new project named React Weather App. My application allows you to predict the unpredictable and travel safely. Hourly-forecast with the essential data for the day is what I am offering you. There is nothing I want in return. Go on and check out at 
+
+
+
 
 # Live demo of the functionality: 🔗 #
 [https://github.com/sldimitrov/Web/assets/135168991/41c57568-3de4-469f-b46b-392aaf3ad847](https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/3ae2d7ed-a9ae-41b7-9843-e18a628effcd)
