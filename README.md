@@ -1,4 +1,4 @@
-e# Project Title: 🌤️ #
+# Project Title: 🌤️ #
 ## `React Weather App`
 
 # Description: #
