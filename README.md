@@ -56,8 +56,13 @@ Another crucial concept I have used in action are the components. They involve w
 
 ## Screenshots 
 ### Overview of the phone and tablet designs 🎨
-<img src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/e40d4b5f-01f9-4f00-a59d-e76925b5da06" width="380" height="525"/>
-<img src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/999271ae-221a-4011-9b92-feecf9c6234e" width="190" height="380" />
+<div>
+ <img src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/e40d4b5f-01f9-4f00-a59d-e76925b5da06" width="380" height="525"/>
+ <img src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/999271ae-221a-4011-9b92-feecf9c6234e" width="190" height="380" />
+</div>
+ <img src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/5797429c-d724-461c-a670-a88dda843a74" width="720" height="403" />
+
+
 
 ## Status: 📶
 All tasks that were given to me for this project are completed. ✅ <br/> 
