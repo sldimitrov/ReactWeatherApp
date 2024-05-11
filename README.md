@@ -32,9 +32,9 @@ Another crucial concept were the components. As I had already mentioned in the d
 
 ## Install React Weather APP with npm
 
-* First make sure that you have node and npm installed on your machine.
-* After that, clone the repo somewhere locally.
-* Open it in your favourite code editor and type this in the terminal:
+* First make sure that you have `node` and `npm` installed on your machine.
+* After that, `clone` the `repo` somewhere locally.
+* Open it in your favourite `code editor` and type this in the terminal:
 
 ```bash
   npm install
