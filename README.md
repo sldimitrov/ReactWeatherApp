@@ -30,7 +30,7 @@
 <img align="right" width="340" height="190" alt="react core concepts" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/7b864aeb-9cf4-49a4-905e-ec10290f2932" /> 
 <p>
  ⚙️ Lets begin with the JSX syntax that is something specific for this framework.
-Another crucial concept I have used in action are the components. They involve woking with HTML, CSS and JS in order to being develop. <br/>
+Another crucial concept I have used in action are the components. They involve working with HTML, CSS and JS in order to being develop. <br/>
  🔍 So where I have received this weather data from? The answer is - OpenWeatherAPI. For the RESTapi requests I have been using Axios which 
  provides excellent opportunity to handle requests and their reponses.<br/>
  🌀 Some components have state and change dynamically. Other are rendered conditionality, but in the end, props is what is making them reusable and quite useful. In order to use my state across many components without prop-drilling I have used custom hooks and useContext to derive the state everywhere I need it. Other hooks I hooks that were implement in my project are useState, useEffect, useMemo and useCallback
