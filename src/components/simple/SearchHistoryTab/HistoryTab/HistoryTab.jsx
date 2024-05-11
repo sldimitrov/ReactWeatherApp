@@ -14,6 +14,16 @@ export default function HistoryTab() {
   const [searchHistory, setSearchHistory] = useSearchHistory();
   const [historyTab, setHistoryTab] = useHistoryTab();
 
+  useEffect(() => {
+    const searchedCities = Object.keys(localStorage);
+    for (let i = 0; i < searchedCities.length; i++) {
+      setSearchHistory((prevHistory) => [
+        ...prevHistory,
+        searchedCities[i].replace(/"/g, ""),
+      ]);
+    }
+  }, []);
+
   function handleClickHistory() {
     setHistoryTab(!historyTab);
   }
