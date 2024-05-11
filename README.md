@@ -16,16 +16,16 @@
 * [Credits](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#credits-)
 * [License](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#license-%EF%B8%8F)
 
-# Live demo of the functionality: 🔗 #
+## Live demo of the functionality: 🔗 
 [https://github.com/sldimitrov/Web/assets/135168991/41c57568-3de4-469f-b46b-392aaf3ad847](https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/3ae2d7ed-a9ae-41b7-9843-e18a628effcd)
 
-# Deployment 🌞 #
+## Deployment 🌞 
 *For the deployment of my project I have decided to use Vercel. It helps us to share any github project on the web with ease. After all, testing is the main reason I am deploying mine so...*
  - [React Weather App Test](https://react-weather-app-ten.vercel.app/)
-# Feedback 💭💭  #
+## Feedback 💭💭  
 *In case you want to share your thoughs about my project you are free to do so at slavidimitrov54@gmail.com*
 
-# Knowledge stack: <⚛️/> #
+## Knowledge stack: <⚛️/> 
  ### Many core principles in React were applied as I have been developing this project.
  <img align="right" width="340" height="190" alt="react core concepts" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/7b864aeb-9cf4-49a4-905e-ec10290f2932" /> 
  <p>
@@ -38,9 +38,9 @@ Another crucial concept were the components. As I had already mentioned in the d
  </p> 
 
 
-# Setup / Installation: 💻 #
+## Setup / Installation: 💻 
 
-## Install React Weather APP with npm
+### Install React Weather APP with npm
 
 * First make sure that you have `node` and `npm` installed on your machine.
 * After that, `clone` the `repo` somewhere locally.
@@ -55,21 +55,18 @@ Another crucial concept were the components. As I had already mentioned in the d
   npm start
 ```
 
-# Approach: 🚶 #
-Briefly explain how you went about the project. The design patterns implemented and code styles used.
-
-# Screenshots #
-## Overview of the phone and tablet designs 🎨
+## Screenshots 
+### Overview of the phone and tablet designs 🎨
 <img src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/e40d4b5f-01f9-4f00-a59d-e76925b5da06" width="380" height="525"/>
 <img src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/999271ae-221a-4011-9b92-feecf9c6234e" width="190" height="380" />
 
-# Status: 📶
+## Status: 📶
 All tasks that were given to me for this project are completed. ✅ <br/> 
 Although, I am not satisfied completely because there is always a thing or two to improve. <br/>
 *Stay tuned for more!*
 
-# Credits: 📝
-## This project is course work for my internship in Orbis. <br/>
+## Credits: 📝
+### This project is course work for my internship in Orbis. <br/>
 Here I want to express my gratitude for my menthor *Mr. Serafimov*. 🙏 <br/>
 He was always by my side and without him and his responsive help this project could never be finished. <br/>
 Along with that, thanks to the other workers in the companany that welcomed me warmly. <br/>
