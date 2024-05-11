@@ -12,7 +12,8 @@ The design is responsible and it's suitable for many divices. The functionality 
 # Deployment 🌞 #
 For the deployment of my project I have decided to use Vercel. It helps us to share any github project on the web with ease. After all, testing is the main reason I am deploying mine so...
  - [React Weather App Test](https://react-weather-app-ten.vercel.app/)
-### In case you want to share your thoughs about my project you are free to do so at slavidimitrov54@gmail.com
+# Feedback 💭💭  #
+In case you want to share your thoughs about my project you are free to do so at slavidimitrov54@gmail.com
 
 # Knowledge stack: ⚛️🌡️ #
  ### Many core principles in React were applied as I have been developing this project.
