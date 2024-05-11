@@ -3,7 +3,7 @@
 
 # Description: #
 <img align="right" width="150" height="150" src="https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/411e28f1-4dd0-4c6c-8758-1ddeff414195"/>
- People nowadays can look straight in the future... You don't believe me? In order to knock you out I am presenting you my new project named React Weather App. My application allows you to predict the unpredictable and travel safely. Hourly-forecast with the essential data for the day is what I am offering you. The main purpose behind the project is my course work at Orbis and also to get familiar with JS framework, in my case with React.
+* People nowadays can look straight in the future... You don't believe me? In order to knock you out I am presenting you my new project named React Weather App. My application allows you to predict the unpredictable and travel safely. Hourly-forecast with the essential data for the day is what I am offering you. The main purpose behind the project is my course work at Orbis and also to get familiar with JS framework, in my case with React.
 
 ## Table of contents
 * [Functionality Live Demo](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#live-demo-of-the-functionality-)
@@ -20,10 +20,10 @@
 [https://github.com/sldimitrov/Web/assets/135168991/41c57568-3de4-469f-b46b-392aaf3ad847](https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/3ae2d7ed-a9ae-41b7-9843-e18a628effcd)
 
 ## Deployment 🌞 
-*For the deployment of my project I have decided to use Vercel. It helps us to share any github project on the web with ease. After all, testing is the main reason I am deploying mine so...*
+* *For the deployment of my project I have decided to use Vercel. It helps us to share any github project on the web with ease. After all, testing is the main reason I am deploying mine so...*
  - [React Weather App Test](https://react-weather-app-ten.vercel.app/)
 ## Feedback 💭💭  
-*In case you want to share your thoughs about my project you are free to do so at slavidimitrov54@gmail.com*
+* *In case you want to share your thoughs about my project you are free to do so at slavidimitrov54@gmail.com*
 
 ## Knowledge stack: <⚛️/> 
  ### Many core principles in React were applied as I have been developing this project.
