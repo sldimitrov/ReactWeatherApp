@@ -1,19 +1,19 @@
-
 @media only screen and (max-width: 639px) { 
   .sidebar-nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 10px;
+    justify-content: space-between;
+    padding-top: 10px;
     border-bottom: 2px solid white;
-    width: 30vw;
+    width: 100%;
   }
 
   #sidebar-heading {
-      z-index: 2;
-      margin: 0px;
-      color: #fff;
-      font-size: 12px;
+    z-index: 2;
+    margin: 0px;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 15px;
   }
 
   #exit-button {
@@ -32,17 +32,18 @@ and (max-width: 1149px) {
   .sidebar-nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 10px;
     border-bottom: 2px solid white;
-    width: 26.5vw;
+    width: 100%;
   }
 
   #sidebar-heading {
-      z-index: 2;
-      margin: 0px;
-      color: #fff;
-      font-size: 18px;
+    z-index: 2;
+    margin: 0px;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 10px;
   }
 
   #exit-button {
@@ -63,7 +64,8 @@ and (max-width: 1149px) {
     justify-content: space-around;
     margin-top: 10px;
     border-bottom: 2px solid white;
-    width: 15vw;
+    width: 22vw;
+    padding: 5px 0px 5px 0px;
   }
 
   #sidebar-heading {
@@ -87,7 +89,7 @@ and (max-width: 1149px) {
 
 @media only screen and (min-width: 1800px) {
   #sidebar-heading {
-      font-size: 25px;
+    font-size: 25px;
   }
 
   #exit-img {

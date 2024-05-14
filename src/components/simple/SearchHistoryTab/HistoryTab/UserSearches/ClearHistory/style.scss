@@ -24,18 +24,20 @@
 
 @media only screen and (max-width: 639px) { 
   #clear-history-btn {
-    left: 7vw;
+    width: 100%;
+    bottom: 5px;
   }  
 
   #clear-text {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 640px) 
 and (max-width: 1149px) {  
   #clear-history-btn {
-    left: 70px;
+    width: 100%;
+    bottom: 0;
   }
 
   #clear-text {
@@ -45,8 +47,10 @@ and (max-width: 1149px) {
 
 @media only screen and (min-width: 1150px) {
   #clear-history-btn {
-    width: 82%;
-    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 1px;
   }
 
   #clear-text {

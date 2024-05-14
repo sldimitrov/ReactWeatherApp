@@ -1,0 +1,26 @@
+@media only screen and (max-width: 639px) { 
+  #buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+  }  
+}
+
+
+@media only screen and (min-width: 640px) 
+and (max-width: 1149px) { 
+  #buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+  }  
+} 
+
+
+@media only screen and (min-width: 1150px) {
+  #buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+  }  
+}

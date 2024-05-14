@@ -32,7 +32,7 @@ export default function HistoryTab() {
     // When the city changes and its not empty we add it to the HistoryTab
     if (selectedCity) {
       if (!searchHistory.includes(selectedCity)) {
-        setSearchHistory((prevHistory) => [...prevHistory, selectedCity]);
+        setSearchHistory((prevHistory) => [selectedCity, ...prevHistory]);
       }
     }
   }, [selectedCity]);

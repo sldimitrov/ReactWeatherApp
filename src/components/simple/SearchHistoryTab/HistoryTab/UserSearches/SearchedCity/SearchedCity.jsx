@@ -6,18 +6,15 @@ export default function SearchedCity({ city, onClickButton }) {
   const [actualData, setActualData] = useTheme();
   const [hourlyData, setHourlyData] = useHourlyData();
   return (
-    <div className="browsed-city" id="example">
+    <div
+      className="browsed-city"
+      id="example"
+      onClick={() => {
+        getWeatherData(city, setActualData, setHourlyData);
+        onClickButton();
+      }}
+    >
       <p id="town">{city}</p>
-
-      <img
-        src={resetImg}
-        alt="Image for reseting searches"
-        id="reset-button"
-        onClick={() => {
-          getWeatherData(city, setActualData, setHourlyData);
-          onClickButton();
-        }}
-      />
     </div>
   );
 }

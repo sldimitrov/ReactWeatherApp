@@ -21,13 +21,15 @@ export default function Form({ onSearchCity }) {
         currInputText={currInputText}
         setCurrInputText={setCurrInputText}
       />
-      <HistoryButton />
-      <SearchButton
-        onSelectButton={() => {
-          onSearchCity(currInputText, setActualData, setHourlyData);
-          setSelectedCity(currInputText);
-        }}
-      />
+      <div id="buttons-container">
+        <HistoryButton />
+        <SearchButton
+          onSelectButton={() => {
+            onSearchCity(currInputText, setActualData, setHourlyData);
+            setSelectedCity(currInputText);
+          }}
+        />
+      </div>
     </div>
   );
 }
