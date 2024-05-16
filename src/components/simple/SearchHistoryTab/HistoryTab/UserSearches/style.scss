@@ -1,3 +1,9 @@
+.scrollbox-history {
+  overflow: auto;
+  height: 1400px;
+  padding-bottom: 30px;
+}
+
 @media only screen and (max-width: 639px) { 
   .history-container {
     display: flex;
@@ -22,11 +28,5 @@ and (max-width: 1149px) {
     align-items: center;
     height: 100%;
     margin-top: 1px;
-  }
-
-  .scrollbox-history {
-    overflow: auto;
-    height: 1400px;
-    padding-bottom: 30px;
   }
 }
