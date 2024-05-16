@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 10px;
     border-bottom: 2px solid white;
     width: 100%;
   }
@@ -12,8 +11,9 @@
     z-index: 2;
     margin: 0px;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     padding-left: 15px;
+    padding-bottom: 3px;
   }
 
   #exit-button {
@@ -42,8 +42,9 @@ and (max-width: 1149px) {
     z-index: 2;
     margin: 0px;
     color: #fff;
-    font-size: 20px;
+    font-size: 24px;
     padding-left: 10px;
+    padding-bottom: 5px;
   }
 
   #exit-button {
