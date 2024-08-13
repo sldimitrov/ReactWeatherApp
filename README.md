@@ -20,9 +20,6 @@
 ## Live demo of the functionality: 🔗 
 [https://github.com/sldimitrov/Web/assets/135168991/41c57568-3de4-469f-b46b-392aaf3ad847](https://github.com/sldimitrov/ReactWeatherApp/assets/135168991/3ae2d7ed-a9ae-41b7-9843-e18a628effcd)
 
-## Deployment 🌞 
-* *For the deployment of my project I have decided to use Vercel. It helps us to share any github project on the web with ease. After all, testing is the main reason I am deploying mine so...*
- - [React Weather App Test](https://react-weather-app-ten.vercel.app/)
 ## Feedback 💭💭  
 * *In case you want to share your thoughs about my project you are free to do so at slavidimitrov54@gmail.com*
 
