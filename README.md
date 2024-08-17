@@ -8,7 +8,6 @@
 
 ## Table of contents
 * [Functionality Live Demo](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#live-demo-of-the-functionality-)
-* [Deployment](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#deployment-)
 * [Feedback](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#feedback-)
 * [Knowledge stack](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#knowledge-stack-%EF%B8%8F)
 * [Setup/Installation](https://github.com/sldimitrov/ReactWeatherApp/blob/main/README.md#setup--installation-)
